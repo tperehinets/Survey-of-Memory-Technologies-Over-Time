@@ -15,10 +15,10 @@ function parseCSV() {
             const parsedData = {
                 name: "NAND",
                 year: parseInt(data.Year),
-                capacity: parseInt(data['Capacity (bits)']),
+                capacity: parseFloat(data['Capacity (bits)']),
                 chip_area: parseFloat(data['Chip Area (mm^2)']),
-                density: parseInt(data['Density (Mbit/mm^2)']),
-                bits_per_cell: parseInt(data['Bits/cell']),
+                density: parseFloat(data['Density (Mbit/mm^2)']),
+                bits_per_cell: parseFloat(data['Bits/cell']),
                 source: data.Source
             };
             jsonArray.push(parsedData);

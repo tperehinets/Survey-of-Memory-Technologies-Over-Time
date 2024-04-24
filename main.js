@@ -5781,19 +5781,20 @@ async function run() {
     vendor: 'Intel'
   }
 
-    ]
-
-
+]
 
 
     // Instert documents into the collection
-    const em = emerging.insertMany(emergingDocuments);
+    // const em = emerging.insertMany(emergingDocuments);
     const est = established.insertMany(establishedDocuments);
+
+   
 
 
   } finally {
     // Ensures that the client will close when you finish/error
-    await client.close();
+//    await client.close();
+    console.log("Worked, data is populated")
   }
 }
 run().catch(console.dir);

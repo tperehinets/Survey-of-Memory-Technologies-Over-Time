@@ -15,9 +15,9 @@ function parseCSV() {
             const parsedData = {
                 name: "DRAM",
                 capacity: parseInt(data.Year),
-                capacity: parseInt(data['Capacity (bits)']),
+                capacity: parseFloat(data['Capacity (bits)']),
                 chip_area: parseFloat(data['Chip Area (mm^2)']),
-                density: parseInt(data['Density (Mb/mm^2)']),
+                density: parseFloat(data['Density (Mb/mm^2)']),
                 source: data.References
             };
             jsonArray.push(parsedData);
