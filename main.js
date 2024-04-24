@@ -2984,9 +2984,2802 @@ async function run() {
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
+        {
+            name: 'DRAM',
+            capacity: 16384,
+            chip_area: 35,
+            density: 0,
+            source: 'K. Itoh, K. Shimohigashi, K. Chiba, K. Taniguchi and Y. Kawamoto, "A high-speed 16K-bit NMOS RAM," 1976 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, Philadelphia, PA, USA, 1976, pp. 140-141.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 16384,
+            chip_area: 21.8902788,
+            density: 0,
+            source: 'C. Ahlquist, J. Breivogel, J. Koo, J. McCollum, W. Oldham and A. Renninger, "A 16K dynamic RAM," 1976 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, Philadelphia, PA, USA, 1976, pp. 128-129.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 16384,
+            chip_area: 17.870932,
+            density: 0,
+            source: 'P. Schroeder and R. Proebsting, "A 16K × 1 bit dynamic RAM," 1977 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, Philadelphia, PA, USA, 1977, pp. 12-13.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 16384,
+            chip_area: 16.77416,
+            density: 0,
+            source: 'P. Quinn, J. Early, W. Sander and T. Longo, "A 16K × 1 I3L dynamic RAM," 1978 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, San Francisco, CA, USA, 1978, pp. 154-155.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 65536,
+            chip_area: 24,
+            density: 0,
+            source: 'Ilbok Lee, R. Yu, F. Smith, S. Wong and M. Embrathiry, "A 64Kb MOS dynamic RAM," 1979 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, Philadelphia, PA, USA, 1979, pp. 146-147.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 65536,
+            chip_area: 40.42,
+            density: 0,
+            source: 'R. Cenker, D. Clemons, W. Huber, J. Petrizzi, F. Procyk and G. Trout, "A fault-tolerant 64K dynamic RAM," 1979 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, Philadelphia, PA, USA, 1979, pp. 150-151.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 262144,
+            chip_area: 41.58,
+            density: 0,
+            source: 'S. Matsue et al., "A 256 K dynamic RAM," 1980 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, San Francisco, CA, USA, 1980, pp. 232-233.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 65536,
+            chip_area: 22.27673,
+            density: 0,
+            source: 'S. Eaton, D. Wooten, W. Slemmer and J. Brady, "A 100ns 64K dynamic RAM using redundancy techniques," 1981 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, New York, NY, USA, 1981, pp. 84-85.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 262144,
+            chip_area: 46.8,
+            density: 0,
+            source: 'M. Ishihara, T. Matsumoto, S. Shimizu, K. Mitsusada, K. Shimohigashi and T. Mano, "A 256K dynamic MOS RAM with alpha immune and redundancy," 1982 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, San Francisco, CA, USA, 1982, pp. 74-75.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 294912,
+            chip_area: 59,
+            density: 0,
+            source: 'B. Fitzgerald and E. Thoma, "A 288Kb dynamic RAM," 1982 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, San Francisco, CA, USA, 1982, pp. 68-69.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 262144,
+            chip_area: 34.1,
+            density: 0,
+            source: 'T. Nakano, T. Yabu, E. Noguchi, K. Shirai and K. Miyasaka, "A sub 100ns 256Kb DRAM," 1983 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, New York, NY, USA, 1983, pp. 224-225.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 1048576,
+            chip_area: 75.858,
+            density: 0,
+            source: 'S. Suzuki, M. Nakao, T. Takeshima, M. Yoshida, M. Kikuchi and K. Nakamura, "A 128K word × 8b DRAM," 1984 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, San Francisco, CA, USA, 1984, pp. 106-107.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 1048576,
+            chip_area: 69.6,
+            density: 0,
+            source: 'H. Kirsch et al., "A 1Mb CMOS DRAM," 1985 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, New York, NY, USA, 1985, pp. 256-257.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 1048576,
+            chip_area: 54.7008,
+            density: 0,
+            source: 'Y. Takemae et al., "A 1Mb DRAM with 3-dimensional stacked capacitor cells," 1985 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, New York, NY, USA, 1985, pp. 250-251.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 1048576,
+            chip_area: 63.2394,
+            density: 0,
+            source: 'F. Horiguchi, Y. Itoh, H. Iizuka, M. Ogura and F. Masuoka, "A 1Mb DRAM with a folded capacitor cell structure," 1985 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, New York, NY, USA, 1985, pp. 244-245.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 4194304,
+            chip_area: 99.96,
+            density: 0,
+            source: 'A. Shah et al., "A 4Mb DRAM with cross point trench transistor cell," 1986 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, Anaheim, CA, USA, 1986, pp. 268-269.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 4194304,
+            chip_area: 67.1,
+            density: 0,
+            source: 'T. Sumi et al., "A 60ns 4Mb DRAM in a 300mil DIP," 1987 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, New York, NY, USA, 1987, pp. 282-283.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 16777216,
+            chip_area: 141.86,
+            density: 0,
+            source: 'Aoki et al., "An Experimental 16mb Dram with Transposed Data-Line Structure," 1988 IEEE International Solid-State Circuits Conference, 1988 ISSCC. Digest of Technical Papers, San Francisco, CA, USA, 1988, pp. 250-.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 16777216,
+            chip_area: 93.85,
+            density: 0,
+            source: 'Inoue et al., "A 16mb Dram with an Open Bit-Line Architecture," 1988 IEEE International Solid-State Circuits Conference, 1988 ISSCC. Digest of Technical Papers, San Francisco, CA, USA, 1988, pp. 246-.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 16777216,
+            chip_area: 136.9,
+            density: 0,
+            source: 'S. Fujii et al., "A 45 ns 16 Mb DRAM with triple-well structure," IEEE International Solid-State Circuits Conference, 1989 ISSCC. Digest of Technical Papers, New York, NY, USA, 1989, pp. 248-249.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 16777216,
+            chip_area: 140.86,
+            density: 0,
+            source: 'H. Kalter et al., "A 50 ns 16 Mb DRAM with a 10 ns data rate," 1990 37th IEEE International Conference on Solid-State Circuits, San Francisco, CA, USA, 1990, pp. 232-233.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 67108864,
+            chip_area: 176.4,
+            density: 0,
+            source: 'Y. Oowaki et al., "A 33ns 64Mb DRAM," 1991 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, San Francisco, CA, USA, 1991, pp. 114-299.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 67108864,
+            chip_area: 224.7238,
+            density: 0,
+            source: 'M. Taguchi et al., "A 40ns 64Mb DRAM With Current-sensing Data-bus Amplifier," 1991 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, San Francisco, CA, USA, 1991, pp. 112-299.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 67108864,
+            chip_area: 186.034,
+            density: 0,
+            source: 'H. Koike et al., "A 30 ns 64 Mb DRAM with built-in self-test and repair function," 1992 IEEE International Solid-State Circuits Conference Digest of Technical Papers, San Francisco, CA, USA, 1992, pp. 150-151.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 268435456,
+            chip_area: 333.2,
+            density: 0,
+            source: 'T. Sugibayashi et al., "A 30 ns 256 Mb DRAM with multi-divided array structure," 1993 IEEE International Solid-State Circuits Conference Digest of Technical Papers, San Francisco, CA, USA, 1993, pp. 50-51.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 268435456,
+            chip_area: 478.08,
+            density: 0,
+            source: 'G. Kitsukawa et al., "256 Mb DRAM technologies for file applications," 1993 IEEE International Solid-State Circuits Conference Digest of Technical Papers, San Francisco, CA, USA, 1993, pp. 48-49.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 268435456,
+            chip_area: 304.2288,
+            density: 0,
+            source: `M. Asakura et al., "A 34 ns 256 Mb DRAM with boosted sense-ground scheme," Proceedings of IEEE International Solid-State Circuits Conference - ISSCC '94, San Francisco, CA, USA, 1994, pp. 140-141.`
+          },
+          {
+            name: 'DRAM',
+            capacity: 1073741824,
+            chip_area: 714.56,
+            density: 1,
+            source: `M. Horiguchi et al., "An experimental 220 MHz 1 Gb DRAM," Proceedings ISSCC '95 - International Solid-State Circuits Conference, San Francisco, CA, USA, 1995, pp. 252-253.`
+          },
+          {
+            name: 'DRAM',
+            capacity: 1073741824,
+            chip_area: 936,
+            density: 1,
+            source: `T. Sugibayashi et al., "A 1 Gb DRAM for file applications," Proceedings ISSCC '95 - International Solid-State Circuits Conference, San Francisco, CA, USA, 1995, pp. 254-255.`
+          },
+          {
+            name: 'DRAM',
+            capacity: 1073741824,
+            chip_area: 581.7695,
+            density: 1,
+            source: 'Y. Nitta et al., "A 1.6 GB/s data-rate 1 Gb synchronous DRAM with hierarchical square-shaped memory block and distributed bank architecture," 1996 IEEE International Solid-State Circuits Conference. Digest of TEchnical Papers, ISSCC, San Francisco, CA, USA, 1996, pp. 376-377.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 4294967296,
+            chip_area: 985.6,
+            density: 4,
+            source: 'T. Murotani et al., "A 4-level storage 4 Gb DRAM," 1997 IEEE International Solids-State Circuits Conference. Digest of Technical Papers, San Francisco, CA, USA, 1997, pp. 74-75.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 1073741824,
+            chip_area: 505,
+            density: 2,
+            source: 'S. Eto et al., "A 1 Gb SDRAM with ground level precharged bitline and non-boosted 2.1 V word line," 1998 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, ISSCC. First Edition (Cat. No.98CH36156), San Francisco, CA, USA, 1998, pp. 82-83.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 1073741824,
+            chip_area: 390,
+            density: 2,
+            source: 'T. Kirihata et al., "A 390 mm/sup 2/ 16-bank 1 Gb DDR SDRAM with hybrid bitline architecture," 1999 IEEE International Solid-State Circuits Conference. Digest of Technical Papers. ISSCC. First Edition (Cat. No.99CH36278), San Francisco, CA, 1999, pp. 422-423.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 4294967296,
+            chip_area: 644.76,
+            density: 6,
+            source: 'Hongil Yoon et al., "A 4 Gb DDR SDRAM with gain-controlled pre-sensing and reference bitline calibration schemes in the twisted open bitline architecture," 2001 IEEE International Solid-State Circuits Conference. Digest of Technical Papers. ISSCC (Cat. No.01CH37177), San Francisco, CA, USA, 2001, pp. 378-379.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 536870912,
+            chip_area: 113,
+            density: 4,
+            source: 'T. Kirihata et al., "A 113 mm/sup 2/ 600 Mb/s/pin 512 Mb DDR2 SDRAM with vertically-folded bitline architecture," 2001 IEEE International Solid-State Circuits Conference. Digest of Technical Papers. ISSCC (Cat. No.01CH37177), San Francisco, CA, USA, 2001, pp. 382-383.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 536870912,
+            chip_area: 84.6,
+            density: 6,
+            source: 'S. Wuensche et al., "A 110 nm 512 Mb DDR DRAM with vertical transistor trench cell," 2002 Symposium on VLSI Circuits. Digest of Technical Papers (Cat. No.02CH37302), Honolulu, HI, USA, 2002, pp. 114-115.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 536870912,
+            chip_area: 126.5,
+            density: 4,
+            source: 'T. Matano et al., "A 1-Gb/s/pin 512-Mb DDRII SDRAM using a digital DLL and a slew-rate-controlled output buffer," in IEEE Journal of Solid-State Circuits, vol. 38, no. 5, pp. 762-768, May 2003.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 2147483648,
+            chip_area: 195.64,
+            density: 10,
+            source: 'Kye Hyun Kyung et al., "A 800Mb/s/pin 2GB DDR2 SDRAM using an 80nm triple metal technology," ISSCC. 2005 IEEE International Digest of Technical Papers. Solid-State Circuits Conference, 2005., San Francisco, CA, 2005, pp. 468-610 Vol. 1.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 536870912,
+            chip_area: 112.86,
+            density: 4,
+            source: 'M. Brox et al., "A 2Gb/s/pin 512Mb Graphics DRAM with NoiseReduction Techniques," 2006 IEEE International Solid State Circuits Conference - Digest of Technical Papers, San Francisco, CA, 2006, pp. 537-546.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 536870912,
+            chip_area: 88,
+            density: 5,
+            source: 'B. Johnson, B. Keeth, F. Lin and H. Zheng, "Phase-Tolerant Latency Control for a Combination 512Mb 2.0Gb/s/pin GDDR3 and 2.5Gb/s/pin GDDR4 SDRAM," 2007 IEEE International Solid-State Circuits Conference. Digest of Technical Papers, San Francisco, CA, 2007, pp. 494-617.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 536870912,
+            chip_area: 68,
+            density: 7,
+            source: 'S. Bae et al., "A 60nm 6Gb/s/pin GDDR5 Graphics DRAM with Multifaceted Clocking and ISI/SSN-Reduction Techniques," 2008 IEEE International Solid-State Circuits Conference - Digest of Technical Papers, San Francisco, CA, 2008, pp. 278-613.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 4294967296,
+            chip_area: 173.82,
+            density: 23,
+            source: 'Yongsam Moon et al., "1.2V 1.6Gb/s 56nm 6F2 4Gb DDR3 SDRAM with hybrid-I/O sense amplifier and segmented sub-array architecture," 2009 IEEE International Solid-State Circuits Conference - Digest of Technical Papers, San Francisco, CA, 2009, pp. 128-129,129a.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 1073741824,
+            chip_area: 130,
+            density: 7,
+            source: 'R. Kho et al., "75nm 7Gb/s/pin 1Gb GDDR5 graphics memory device with bandwidth-improvement techniques," 2009 IEEE International Solid-State Circuits Conference - Digest of Technical Papers, San Francisco, CA, 2009, pp. 134-135,135a.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 1073741824,
+            chip_area: 84.23,
+            density: 12,
+            source: 'Bong Hwa Jeong et al., "A 1.35V 4.3GB/s 1Gb LPDDR2 DRAM with controllable repeater and on-the-fly power-cut scheme for low-power and high-speed mobile application," 2009 IEEE International Solid-State Circuits Conference - Digest of Technical Papers, San Francisco, CA, 2009, pp. 132-133.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 1073741824,
+            chip_area: 61.6,
+            density: 16,
+            source: 'T. Oh et al., "A 7Gb/s/pin GDDR5 SDRAM with 2.5ns bank-to-bank active time and no bank-group restriction," 2010 IEEE International Solid-State Circuits Conference - (ISSCC), San Francisco, CA, 2010, pp. 434-435.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 2147483648,
+            chip_area: 80.6,
+            density: 25,
+            source: 'S. Bae et al., "A 40nm 2Gb 7Gb/s/pin GDDR5 SDRAM with a programmable DQ ordering crosstalk equalizer and adjustable clock-tracking BW," 2011 IEEE International Solid-State Circuits Conference, San Francisco, CA, 2011, pp. 498-500.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 4294967296,
+            chip_area: 30.9,
+            density: 132,
+            source: 'K. Lim et al., "A 1.2V 23nm 6F2 4Gb DDR3 SDRAM with local-bitline sense amplifier, hybrid LIO sense amplifier and dummy-less array architecture," 2012 IEEE International Solid-State Circuits Conference, San Francisco, CA, 2012, pp. 42-44.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 4294967296,
+            chip_area: 76,
+            density: 53,
+            source: 'K. Sohn et al., "A 1.2V 30nm 3.2Gb/s/pin 4Gb DDR4 SDRAM with dual-error detection and PVT-tolerant data-fetch scheme," 2012 IEEE International Solid-State Circuits Conference, San Francisco, CA, 2012, pp. 38-40.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 4294967296,
+            chip_area: 51.2,
+            density: 80,
+            source: 'H. Lee et al., "25.3 A 1.35V 5.0Gb/s/pin GDDR5M with 5.4mW standby power and an error-adaptive duty-cycle corrector," 2014 IEEE International Solid-State Circuits Conference Digest of Technical Papers (ISSCC), San Francisco, CA, 2014, pp. 434-435.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 8589934592,
+            chip_area: 88.1,
+            density: 92,
+            source: 'T. Oh et al., "25.1 A 3.2Gb/s/pin 8Gb 1.0V LPDDR4 SDRAM with integrated ECC engine for sub-1V DRAM core operation," 2014 IEEE International Solid-State Circuits Conference Digest of Technical Papers (ISSCC), San Francisco, CA, 2014, pp. 430-431.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 8589934592,
+            chip_area: 62.04,
+            density: 132,
+            source: 'H. Joo et al., "18.1 A 20nm 9Gb/s/pin 8Gb GDDR5 DRAM with an NBTI monitor, jitter reduction techniques and improved power distribution," 2016 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, 2016, pp. 314-315.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 8589934592,
+            chip_area: 85,
+            density: 96,
+            source: 'M. Brox et al., "23.1 An 8Gb 12Gb/s/pin GDDR5X DRAM for cost-effective high-performance applications," 2017 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, 2017, pp. 388-389.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 2147483648,
+            chip_area: 18.52,
+            density: 110,
+            source: 'N. Kwak et al., "23.3 A 4.8Gb/s/pin 2Gb LPDDR4 SDRAM with sub-100µA self-refresh current for IoT applications," 2017 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, 2017, pp. 392-393.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 8589934592,
+            chip_area: 47.9,
+            density: 171,
+            source: 'Y. Kim et al., "A 16Gb 18Gb/S/pin GDDR6 DRAM with per-bit trainable single-ended DFE and PLL-less clocking," 2018 IEEE International Solid - State Circuits Conference - (ISSCC), San Francisco, CA, 2018, pp. 204-206.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 8589934592,
+            chip_area: 42.77,
+            density: 191,
+            source: 'K. C. Chun et al., "A 16Gb LPDDR4X SDRAM with an NBTI-tolerant circuit solution, an SWD PMOS GIDL reduction technique, an adaptive gear-down scheme and a metastable-free DQS aligner in a 10nm class DRAM process," 2018 IEEE International Solid - State Circuits Conference - (ISSCC), San Francisco, CA, 2018, pp. 206-208.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 17179869184,
+            chip_area: 76.22,
+            density: 214,
+            source: 'D. Kim et al., "23.2 A 1.1V 1ynm 6.4Gb/s/pin 16Gb DDR5 SDRAM with a Phase-Rotator-Based DLL, High-Speed SerDes and RX/TX Equalization Scheme," 2019 IEEE International Solid- State Circuits Conference - (ISSCC), San Francisco, CA, USA, 2019, pp. 380-382.'
+          },
+          {
+            name: 'DRAM',
+            capacity: 8589934592,
+            chip_area: 45.9,
+            density: 178,
+            source: 'K. Ha et al., "23.1 A 7.5Gb/s/pin LPDDR5 SDRAM With WCK Clocking and Non-Target ODT for High Speed and With DVFS, Internal Data Copy, and Deep-Sleep Mode for Low Power," 2019 IEEE International Solid- State Circuits Conference - (ISSCC), San Francisco, CA, USA, 2019, pp. 378-380.'
+          }, 
+          {
+            name: 'NAND',
+            year: 1989,
+            capacity: 4194304,
+            chip_area: 163.71,
+            density: 0,
+            bits_per_cell: 1,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 1995,
+            capacity: 33554432,
+            chip_area: 94.9,
+            density: 0,
+            bits_per_cell: 1,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 1995,
+            capacity: 33554432,
+            chip_area: 104.3868,
+            density: 0,
+            bits_per_cell: 1,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 1996,
+            capacity: 134217728,
+            chip_area: 117,
+            density: 1,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 1999,
+            capacity: 268435456,
+            chip_area: 129.76,
+            density: 1,
+            bits_per_cell: 1,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2001,
+            capacity: 1073741824,
+            chip_area: 116.7,
+            density: 8,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2002,
+            capacity: 1073741824,
+            chip_area: 129.6,
+            density: 7,
+            bits_per_cell: 1,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2002,
+            capacity: 1073741824,
+            chip_area: 125.2,
+            density: 8,
+            bits_per_cell: 1,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2003,
+            capacity: 2147483648,
+            chip_area: 141,
+            density: 14,
+            bits_per_cell: 1,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2004,
+            capacity: 4294967296,
+            chip_area: 127.3,
+            density: 32,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2005,
+            capacity: 8589934592,
+            chip_area: 133,
+            density: 61,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2005,
+            capacity: 8589934592,
+            chip_area: 146,
+            density: 56,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2006,
+            capacity: 8589934592,
+            chip_area: 98.8,
+            density: 82,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2006,
+            capacity: 4294967296,
+            chip_area: 140,
+            density: 29,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2008,
+            capacity: 8589934592,
+            chip_area: 169.5,
+            density: 48,
+            bits_per_cell: 1,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2008,
+            capacity: 4294967296,
+            chip_area: NaN,
+            density: NaN,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2008,
+            capacity: 17179869184,
+            chip_area: 182,
+            density: 90,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2008,
+            capacity: 17179869184,
+            chip_area: 120,
+            density: 136,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2008,
+            capacity: 17179869184,
+            chip_area: 142.5,
+            density: 114,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2009,
+            capacity: 34359738368,
+            chip_area: 201,
+            density: 163,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2009,
+            capacity: 68719476736,
+            chip_area: 244.45,
+            density: 268,
+            bits_per_cell: 4,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2009,
+            capacity: 34359738368,
+            chip_area: 112.86,
+            density: 290,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2009,
+            capacity: 34359738368,
+            chip_area: 172,
+            density: 190,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2010,
+            capacity: 34359738368,
+            chip_area: 159,
+            density: 206,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2010,
+            capacity: 34359738368,
+            chip_area: 146,
+            density: 224,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2010,
+            capacity: 34359738368,
+            chip_area: 126,
+            density: 260,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2011,
+            capacity: 68719476736,
+            chip_area: NaN,
+            density: NaN,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2011,
+            capacity: 34359738368,
+            chip_area: 181.5,
+            density: 180,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2011,
+            capacity: 68719476736,
+            chip_area: 151,
+            density: 434,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2012,
+            capacity: 68719476736,
+            chip_area: 109.5,
+            density: 598,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2012,
+            capacity: 137438953472,
+            chip_area: 170.6,
+            density: 768,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2012,
+            capacity: 68719476736,
+            chip_area: 112.8,
+            density: 580,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2013,
+            capacity: 137438953472,
+            chip_area: 146.5,
+            density: 894,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2014,
+            capacity: 137438953472,
+            chip_area: 173.3,
+            density: 756,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2014,
+            capacity: 68719476736,
+            chip_area: 93.43,
+            density: 701,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2014,
+            capacity: 137438953472,
+            chip_area: 133,
+            density: 985,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2015,
+            capacity: 68719476736,
+            chip_area: 75,
+            density: 873,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2015,
+            capacity: 137438953472,
+            chip_area: 68.9,
+            density: 1902,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2016,
+            capacity: 137438953472,
+            chip_area: 130,
+            density: 1008,
+            bits_per_cell: 2,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2016,
+            capacity: 824633720832,
+            chip_area: 179.2,
+            density: 4388,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2016,
+            capacity: 274877906944,
+            chip_area: 97.6,
+            density: 2685,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2017,
+            capacity: 549755813888,
+            chip_area: 128.5,
+            density: 4080,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2017,
+            capacity: 549755813888,
+            chip_area: 132,
+            density: 3971,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2018,
+            capacity: 549755813888,
+            chip_area: 86,
+            density: 6096,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2018,
+            capacity: 1099511627776,
+            chip_area: 181.8827709,
+            density: 5765,
+            bits_per_cell: 4,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2019,
+            capacity: 549755813888,
+            chip_area: 101.58,
+            density: 5161,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2019,
+            capacity: 549755813888,
+            chip_area: 66,
+            density: 7943,
+            bits_per_cell: 3,
+            source: 'ISSCC'
+          },
+          {
+            name: 'NAND',
+            year: 2019,
+            capacity: 1462350464942,
+            chip_area: 160.2258824,
+            density: 8704,
+            bits_per_cell: 4,
+            source: 'ISSCC'
+          }, 
+          {
+    name: 'NAND',
+    year: 1989,
+    capacity: 4194304,
+    chip_area: 163.71,
+    density: 0,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 1995,
+    capacity: 33554432,
+    chip_area: 94.9,
+    density: 0,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 1995,
+    capacity: 33554432,
+    chip_area: 104.3868,
+    density: 0,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 1996,
+    capacity: 134217728,
+    chip_area: 117,
+    density: 1,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 1999,
+    capacity: 268435456,
+    chip_area: 129.76,
+    density: 1,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2001,
+    capacity: 1073741824,
+    chip_area: 116.7,
+    density: 8,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2002,
+    capacity: 1073741824,
+    chip_area: 129.6,
+    density: 7,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2002,
+    capacity: 1073741824,
+    chip_area: 125.2,
+    density: 8,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2003,
+    capacity: 2147483648,
+    chip_area: 141,
+    density: 14,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2004,
+    capacity: 4294967296,
+    chip_area: 127.3,
+    density: 32,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2005,
+    capacity: 8589934592,
+    chip_area: 133,
+    density: 61,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2005,
+    capacity: 8589934592,
+    chip_area: 146,
+    density: 56,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2006,
+    capacity: 8589934592,
+    chip_area: 98.8,
+    density: 82,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2006,
+    capacity: 4294967296,
+    chip_area: 140,
+    density: 29,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2008,
+    capacity: 8589934592,
+    chip_area: 169.5,
+    density: 48,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2008,
+    capacity: 4294967296,
+    chip_area: NaN,
+    density: NaN,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2008,
+    capacity: 17179869184,
+    chip_area: 182,
+    density: 90,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2008,
+    capacity: 17179869184,
+    chip_area: 120,
+    density: 136,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2008,
+    capacity: 17179869184,
+    chip_area: 142.5,
+    density: 114,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2009,
+    capacity: 34359738368,
+    chip_area: 201,
+    density: 163,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2009,
+    capacity: 68719476736,
+    chip_area: 244.45,
+    density: 268,
+    bits_per_cell: 4,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2009,
+    capacity: 34359738368,
+    chip_area: 112.86,
+    density: 290,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2009,
+    capacity: 34359738368,
+    chip_area: 172,
+    density: 190,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2010,
+    capacity: 34359738368,
+    chip_area: 159,
+    density: 206,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2010,
+    capacity: 34359738368,
+    chip_area: 146,
+    density: 224,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2010,
+    capacity: 34359738368,
+    chip_area: 126,
+    density: 260,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2011,
+    capacity: 68719476736,
+    chip_area: NaN,
+    density: NaN,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2011,
+    capacity: 34359738368,
+    chip_area: 181.5,
+    density: 180,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2011,
+    capacity: 68719476736,
+    chip_area: 151,
+    density: 434,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2012,
+    capacity: 68719476736,
+    chip_area: 109.5,
+    density: 598,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2012,
+    capacity: 137438953472,
+    chip_area: 170.6,
+    density: 768,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2012,
+    capacity: 68719476736,
+    chip_area: 112.8,
+    density: 580,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2013,
+    capacity: 137438953472,
+    chip_area: 146.5,
+    density: 894,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2014,
+    capacity: 137438953472,
+    chip_area: 173.3,
+    density: 756,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2014,
+    capacity: 68719476736,
+    chip_area: 93.43,
+    density: 701,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2014,
+    capacity: 137438953472,
+    chip_area: 133,
+    density: 985,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2015,
+    capacity: 68719476736,
+    chip_area: 75,
+    density: 873,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2015,
+    capacity: 137438953472,
+    chip_area: 68.9,
+    density: 1902,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2016,
+    capacity: 137438953472,
+    chip_area: 130,
+    density: 1008,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2016,
+    capacity: 824633720832,
+    chip_area: 179.2,
+    density: 4388,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2016,
+    capacity: 274877906944,
+    chip_area: 97.6,
+    density: 2685,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2017,
+    capacity: 549755813888,
+    chip_area: 128.5,
+    density: 4080,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2017,
+    capacity: 549755813888,
+    chip_area: 132,
+    density: 3971,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2018,
+    capacity: 549755813888,
+    chip_area: 86,
+    density: 6096,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2018,
+    capacity: 1099511627776,
+    chip_area: 181.8827709,
+    density: 5765,
+    bits_per_cell: 4,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2019,
+    capacity: 549755813888,
+    chip_area: 101.58,
+    density: 5161,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2019,
+    capacity: 549755813888,
+    chip_area: 66,
+    density: 7943,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2019,
+    capacity: 1462350464942,
+    chip_area: 160.2258824,
+    density: 8704,
+    bits_per_cell: 4,
+    source: 'ISSCC'
+  },
 
-
-
+  {
+    name: 'SRAM',
+    year: 1965,
+    cell_area: 46805555.56,
+    density: 0.02136498516,
+    cgp: NaN,
+    m1_pitch: 901,
+    source: '[1] ',
+    vendor: 'Fairchild'
+  },
+  {
+    name: 'SRAM',
+    year: 1969,
+    cell_area: 20600,
+    density: 48.54368932,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[2]',
+    vendor: 'mentioned in the text '
+  },
+  {
+    name: 'SRAM',
+    year: 1975,
+    cell_area: 1334.8313,
+    density: 749.1583393,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[3]',
+    vendor: 'INTEL 16K'
+  },
+  {
+    name: 'SRAM',
+    year: 1975,
+    cell_area: 989.9259,
+    density: 1010.17662,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[4]',
+    vendor: 'INTEL 32K'
+  },
+  {
+    name: 'SRAM',
+    year: 1977,
+    cell_area: 842.74774,
+    density: 1186.594698,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[5]',
+    vendor: 'MITSUBISHI 16K'
+  },
+  {
+    name: 'SRAM',
+    year: 1977,
+    cell_area: 747.7065,
+    density: 1337.423173,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[6]',
+    vendor: 'NEC 16K'
+  },
+  {
+    name: 'SRAM',
+    year: 1977,
+    cell_area: 1000.8047,
+    density: 999.195947,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[7]',
+    vendor: 'INTEL 16 K'
+  },
+  {
+    name: 'SRAM',
+    year: 1977,
+    cell_area: 1111.1724,
+    density: 899.9503587,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[8]',
+    vendor: 'TOSHIBA 16K'
+  },
+  {
+    name: 'SRAM',
+    year: 1979,
+    cell_area: 760.6233,
+    density: 1314.711237,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[9]',
+    vendor: 'TOSHIBA 16K'
+  },
+  {
+    name: 'SRAM',
+    year: 1980,
+    cell_area: 781,
+    density: 1280.409731,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[10]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 377.8352,
+    density: 2646.656532,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[11]',
+    vendor: 'HITACHI 4K'
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 348.0083,
+    density: 2873.494684,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[12]',
+    vendor: 'NEC64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 322.94116,
+    density: 3096.53932,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[13]',
+    vendor: 'TOSHIBA 64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 306.47644,
+    density: 3262.893552,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[14]',
+    vendor: 'INTEL 64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 290.8511,
+    density: 3438.185381,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[15]',
+    vendor: 'HITACHI 64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 267.91623,
+    density: 3732.509971,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[16]',
+    vendor: 'TOSHIBA 64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1983,
+    cell_area: 279.135,
+    density: 3582.495925,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[17]',
+    vendor: 'NEC64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1983,
+    cell_area: 313,
+    density: 3194.888179,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[18]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1984,
+    cell_area: 148.5,
+    density: 6734.006734,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[19]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1985,
+    cell_area: 149.35797,
+    density: 6695.323992,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[20]',
+    vendor: 'TOSHIBA 256K'
+  },
+  {
+    name: 'SRAM',
+    year: 1986,
+    cell_area: 126,
+    density: 7936.507937,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[21]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1989,
+    cell_area: 50,
+    density: 20000,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[22]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1991,
+    cell_area: NaN,
+    density: NaN,
+    cgp: NaN,
+    m1_pitch: 2.3,
+    source: '[23]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1992,
+    cell_area: 20,
+    density: 50000,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[24]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1994,
+    cell_area: 20.5,
+    density: 48780.4878,
+    cgp: NaN,
+    m1_pitch: 0.88,
+    source: '[25]',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 1995,
+    cell_area: 8,
+    density: 125000,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[26]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1996,
+    cell_area: 10.26,
+    density: 97465.88694,
+    cgp: NaN,
+    m1_pitch: 0.64,
+    source: '[27]',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 1998,
+    cell_area: 5.59,
+    density: 178890.8766,
+    cgp: NaN,
+    m1_pitch: 0.5,
+    source: '[28]',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 1998,
+    cell_area: 5.4,
+    density: 185185.1852,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[29]',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 1998,
+    cell_area: 3.2,
+    density: 312500,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[30]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1999,
+    cell_area: 4.23,
+    density: 236406.6194,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[31]',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2000,
+    cell_area: 2.09,
+    density: 478468.8995,
+    cgp: NaN,
+    m1_pitch: 0.35,
+    source: '[32]',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2001,
+    cell_area: 1.3,
+    density: 769230.7692,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 2001,
+    cell_area: 1.8,
+    density: 555555.5556,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2002,
+    cell_area: 1,
+    density: 1000000,
+    cgp: NaN,
+    m1_pitch: 0.22,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2002,
+    cell_area: 0.992,
+    density: 1008064.516,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2004,
+    cell_area: 0.57,
+    density: 1754385.965,
+    cgp: NaN,
+    m1_pitch: 0.21,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2004,
+    cell_area: 0.52,
+    density: 1923076.923,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 2005,
+    cell_area: 0.54,
+    density: 1851851.852,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2007,
+    cell_area: 0.346,
+    density: 2890173.41,
+    cgp: NaN,
+    m1_pitch: 0.16,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2007,
+    cell_area: 0.249,
+    density: 4016064.257,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2007,
+    cell_area: 0.21,
+    density: 4761904.762,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 2008,
+    cell_area: 0.157,
+    density: 6369426.752,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2009,
+    cell_area: 0.148,
+    density: 6756756.757,
+    cgp: NaN,
+    m1_pitch: 0.1125,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2009,
+    cell_area: 0.12,
+    density: 8333333.333,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2010,
+    cell_area: 0.08,
+    density: 12500000,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 2012,
+    cell_area: 0.092,
+    density: 10869565.22,
+    cgp: NaN,
+    m1_pitch: 0.08,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2014,
+    cell_area: 0.0588,
+    density: 17006802.72,
+    cgp: NaN,
+    m1_pitch: 0.052,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2016,
+    cell_area: 0.027,
+    density: 37037037.04,
+    cgp: NaN,
+    m1_pitch: 0.04,
+    source: '',
+    vendor: 'TSMC'
+  },
+  {
+    name: 'SRAM',
+    year: 2016,
+    cell_area: 0.04,
+    density: 25000000,
+    cgp: NaN,
+    m1_pitch: 0.048,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2017,
+    cell_area: 0.0312,
+    density: 32051282.05,
+    cgp: NaN,
+    m1_pitch: 0.036,
+    source: '',
+    vendor: 'Intel '
+  },
+  {
+    name: 'SRAM',
+    year: 2017,
+    cell_area: 0.0269,
+    density: 37174721.19,
+    cgp: NaN,
+    m1_pitch: 0.04,
+    source: '',
+    vendor: 'Global foundries '
+  },
+  {
+    name: 'SRAM',
+    year: 2018,
+    cell_area: 0.0262,
+    density: 38167938.93,
+    cgp: NaN,
+    m1_pitch: 0.036,
+    source: '',
+    vendor: 'Samsung '
+  },
+  {
+    name: 'SRAM',
+    year: 2019,
+    cell_area: 0.021,
+    density: 47619047.62,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'TSMC'
+  },
+  {
+    name: 'SRAM',
+    year: 2022,
+    cell_area: 0.024,
+    density: 41666666.67,
+    cgp: NaN,
+    m1_pitch: 0.03,
+    source: '',
+    vendor: 'Intel'
+  }, 
+  {
+    name: 'NAND',
+    year: 1989,
+    capacity: 4194304,
+    chip_area: 163.71,
+    density: 0,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 1995,
+    capacity: 33554432,
+    chip_area: 94.9,
+    density: 0,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 1995,
+    capacity: 33554432,
+    chip_area: 104.3868,
+    density: 0,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 1996,
+    capacity: 134217728,
+    chip_area: 117,
+    density: 1,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 1999,
+    capacity: 268435456,
+    chip_area: 129.76,
+    density: 1,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2001,
+    capacity: 1073741824,
+    chip_area: 116.7,
+    density: 8,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2002,
+    capacity: 1073741824,
+    chip_area: 129.6,
+    density: 7,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2002,
+    capacity: 1073741824,
+    chip_area: 125.2,
+    density: 8,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2003,
+    capacity: 2147483648,
+    chip_area: 141,
+    density: 14,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2004,
+    capacity: 4294967296,
+    chip_area: 127.3,
+    density: 32,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2005,
+    capacity: 8589934592,
+    chip_area: 133,
+    density: 61,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2005,
+    capacity: 8589934592,
+    chip_area: 146,
+    density: 56,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2006,
+    capacity: 8589934592,
+    chip_area: 98.8,
+    density: 82,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2006,
+    capacity: 4294967296,
+    chip_area: 140,
+    density: 29,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2008,
+    capacity: 8589934592,
+    chip_area: 169.5,
+    density: 48,
+    bits_per_cell: 1,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2008,
+    capacity: 4294967296,
+    chip_area: NaN,
+    density: NaN,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2008,
+    capacity: 17179869184,
+    chip_area: 182,
+    density: 90,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2008,
+    capacity: 17179869184,
+    chip_area: 120,
+    density: 136,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2008,
+    capacity: 17179869184,
+    chip_area: 142.5,
+    density: 114,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2009,
+    capacity: 34359738368,
+    chip_area: 201,
+    density: 163,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2009,
+    capacity: 68719476736,
+    chip_area: 244.45,
+    density: 268,
+    bits_per_cell: 4,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2009,
+    capacity: 34359738368,
+    chip_area: 112.86,
+    density: 290,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2009,
+    capacity: 34359738368,
+    chip_area: 172,
+    density: 190,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2010,
+    capacity: 34359738368,
+    chip_area: 159,
+    density: 206,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2010,
+    capacity: 34359738368,
+    chip_area: 146,
+    density: 224,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2010,
+    capacity: 34359738368,
+    chip_area: 126,
+    density: 260,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2011,
+    capacity: 68719476736,
+    chip_area: NaN,
+    density: NaN,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2011,
+    capacity: 34359738368,
+    chip_area: 181.5,
+    density: 180,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2011,
+    capacity: 68719476736,
+    chip_area: 151,
+    density: 434,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2012,
+    capacity: 68719476736,
+    chip_area: 109.5,
+    density: 598,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2012,
+    capacity: 137438953472,
+    chip_area: 170.6,
+    density: 768,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2012,
+    capacity: 68719476736,
+    chip_area: 112.8,
+    density: 580,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2013,
+    capacity: 137438953472,
+    chip_area: 146.5,
+    density: 894,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2014,
+    capacity: 137438953472,
+    chip_area: 173.3,
+    density: 756,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2014,
+    capacity: 68719476736,
+    chip_area: 93.43,
+    density: 701,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2014,
+    capacity: 137438953472,
+    chip_area: 133,
+    density: 985,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2015,
+    capacity: 68719476736,
+    chip_area: 75,
+    density: 873,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2015,
+    capacity: 137438953472,
+    chip_area: 68.9,
+    density: 1902,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2016,
+    capacity: 137438953472,
+    chip_area: 130,
+    density: 1008,
+    bits_per_cell: 2,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2016,
+    capacity: 824633720832,
+    chip_area: 179.2,
+    density: 4388,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2016,
+    capacity: 274877906944,
+    chip_area: 97.6,
+    density: 2685,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2017,
+    capacity: 549755813888,
+    chip_area: 128.5,
+    density: 4080,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2017,
+    capacity: 549755813888,
+    chip_area: 132,
+    density: 3971,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2018,
+    capacity: 549755813888,
+    chip_area: 86,
+    density: 6096,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2018,
+    capacity: 1099511627776,
+    chip_area: 181.8827709,
+    density: 5765,
+    bits_per_cell: 4,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2019,
+    capacity: 549755813888,
+    chip_area: 101.58,
+    density: 5161,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2019,
+    capacity: 549755813888,
+    chip_area: 66,
+    density: 7943,
+    bits_per_cell: 3,
+    source: 'ISSCC'
+  },
+  {
+    name: 'NAND',
+    year: 2019,
+    capacity: 1462350464942,
+    chip_area: 160.2258824,
+    density: 8704,
+    bits_per_cell: 4,
+    source: 'ISSCC'
+  },
+  {
+    name: 'SRAM',
+    year: 1965,
+    cell_area: 46805555.56,
+    density: 0.02136498516,
+    cgp: NaN,
+    m1_pitch: 901,
+    source: '[1] ',
+    vendor: 'Fairchild'
+  },
+  {
+    name: 'SRAM',
+    year: 1969,
+    cell_area: 20600,
+    density: 48.54368932,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[2]',
+    vendor: 'mentioned in the text '
+  },
+  {
+    name: 'SRAM',
+    year: 1975,
+    cell_area: 1334.8313,
+    density: 749.1583393,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[3]',
+    vendor: 'INTEL 16K'
+  },
+  {
+    name: 'SRAM',
+    year: 1975,
+    cell_area: 989.9259,
+    density: 1010.17662,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[4]',
+    vendor: 'INTEL 32K'
+  },
+  {
+    name: 'SRAM',
+    year: 1977,
+    cell_area: 842.74774,
+    density: 1186.594698,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[5]',
+    vendor: 'MITSUBISHI 16K'
+  },
+  {
+    name: 'SRAM',
+    year: 1977,
+    cell_area: 747.7065,
+    density: 1337.423173,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[6]',
+    vendor: 'NEC 16K'
+  },
+  {
+    name: 'SRAM',
+    year: 1977,
+    cell_area: 1000.8047,
+    density: 999.195947,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[7]',
+    vendor: 'INTEL 16 K'
+  },
+  {
+    name: 'SRAM',
+    year: 1977,
+    cell_area: 1111.1724,
+    density: 899.9503587,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[8]',
+    vendor: 'TOSHIBA 16K'
+  },
+  {
+    name: 'SRAM',
+    year: 1979,
+    cell_area: 760.6233,
+    density: 1314.711237,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[9]',
+    vendor: 'TOSHIBA 16K'
+  },
+  {
+    name: 'SRAM',
+    year: 1980,
+    cell_area: 781,
+    density: 1280.409731,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[10]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 377.8352,
+    density: 2646.656532,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[11]',
+    vendor: 'HITACHI 4K'
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 348.0083,
+    density: 2873.494684,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[12]',
+    vendor: 'NEC64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 322.94116,
+    density: 3096.53932,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[13]',
+    vendor: 'TOSHIBA 64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 306.47644,
+    density: 3262.893552,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[14]',
+    vendor: 'INTEL 64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 290.8511,
+    density: 3438.185381,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[15]',
+    vendor: 'HITACHI 64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1981,
+    cell_area: 267.91623,
+    density: 3732.509971,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[16]',
+    vendor: 'TOSHIBA 64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1983,
+    cell_area: 279.135,
+    density: 3582.495925,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[17]',
+    vendor: 'NEC64K'
+  },
+  {
+    name: 'SRAM',
+    year: 1983,
+    cell_area: 313,
+    density: 3194.888179,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[18]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1984,
+    cell_area: 148.5,
+    density: 6734.006734,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[19]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1985,
+    cell_area: 149.35797,
+    density: 6695.323992,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[20]',
+    vendor: 'TOSHIBA 256K'
+  },
+  {
+    name: 'SRAM',
+    year: 1986,
+    cell_area: 126,
+    density: 7936.507937,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[21]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1989,
+    cell_area: 50,
+    density: 20000,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[22]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1991,
+    cell_area: NaN,
+    density: NaN,
+    cgp: NaN,
+    m1_pitch: 2.3,
+    source: '[23]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1992,
+    cell_area: 20,
+    density: 50000,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[24]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1994,
+    cell_area: 20.5,
+    density: 48780.4878,
+    cgp: NaN,
+    m1_pitch: 0.88,
+    source: '[25]',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 1995,
+    cell_area: 8,
+    density: 125000,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[26]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1996,
+    cell_area: 10.26,
+    density: 97465.88694,
+    cgp: NaN,
+    m1_pitch: 0.64,
+    source: '[27]',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 1998,
+    cell_area: 5.59,
+    density: 178890.8766,
+    cgp: NaN,
+    m1_pitch: 0.5,
+    source: '[28]',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 1998,
+    cell_area: 5.4,
+    density: 185185.1852,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[29]',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 1998,
+    cell_area: 3.2,
+    density: 312500,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[30]',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 1999,
+    cell_area: 4.23,
+    density: 236406.6194,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '[31]',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2000,
+    cell_area: 2.09,
+    density: 478468.8995,
+    cgp: NaN,
+    m1_pitch: 0.35,
+    source: '[32]',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2001,
+    cell_area: 1.3,
+    density: 769230.7692,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 2001,
+    cell_area: 1.8,
+    density: 555555.5556,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2002,
+    cell_area: 1,
+    density: 1000000,
+    cgp: NaN,
+    m1_pitch: 0.22,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2002,
+    cell_area: 0.992,
+    density: 1008064.516,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2004,
+    cell_area: 0.57,
+    density: 1754385.965,
+    cgp: NaN,
+    m1_pitch: 0.21,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2004,
+    cell_area: 0.52,
+    density: 1923076.923,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 2005,
+    cell_area: 0.54,
+    density: 1851851.852,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2007,
+    cell_area: 0.346,
+    density: 2890173.41,
+    cgp: NaN,
+    m1_pitch: 0.16,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2007,
+    cell_area: 0.249,
+    density: 4016064.257,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2007,
+    cell_area: 0.21,
+    density: 4761904.762,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 2008,
+    cell_area: 0.157,
+    density: 6369426.752,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2009,
+    cell_area: 0.148,
+    density: 6756756.757,
+    cgp: NaN,
+    m1_pitch: 0.1125,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2009,
+    cell_area: 0.12,
+    density: 8333333.333,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2010,
+    cell_area: 0.08,
+    density: 12500000,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: ''
+  },
+  {
+    name: 'SRAM',
+    year: 2012,
+    cell_area: 0.092,
+    density: 10869565.22,
+    cgp: NaN,
+    m1_pitch: 0.08,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2014,
+    cell_area: 0.0588,
+    density: 17006802.72,
+    cgp: NaN,
+    m1_pitch: 0.052,
+    source: '',
+    vendor: 'Intel'
+  },
+  {
+    name: 'SRAM',
+    year: 2016,
+    cell_area: 0.027,
+    density: 37037037.04,
+    cgp: NaN,
+    m1_pitch: 0.04,
+    source: '',
+    vendor: 'TSMC'
+  },
+  {
+    name: 'SRAM',
+    year: 2016,
+    cell_area: 0.04,
+    density: 25000000,
+    cgp: NaN,
+    m1_pitch: 0.048,
+    source: '',
+    vendor: 'IBM'
+  },
+  {
+    name: 'SRAM',
+    year: 2017,
+    cell_area: 0.0312,
+    density: 32051282.05,
+    cgp: NaN,
+    m1_pitch: 0.036,
+    source: '',
+    vendor: 'Intel '
+  },
+  {
+    name: 'SRAM',
+    year: 2017,
+    cell_area: 0.0269,
+    density: 37174721.19,
+    cgp: NaN,
+    m1_pitch: 0.04,
+    source: '',
+    vendor: 'Global foundries '
+  },
+  {
+    name: 'SRAM',
+    year: 2018,
+    cell_area: 0.0262,
+    density: 38167938.93,
+    cgp: NaN,
+    m1_pitch: 0.036,
+    source: '',
+    vendor: 'Samsung '
+  },
+  {
+    name: 'SRAM',
+    year: 2019,
+    cell_area: 0.021,
+    density: 47619047.62,
+    cgp: NaN,
+    m1_pitch: NaN,
+    source: '',
+    vendor: 'TSMC'
+  },
+  {
+    name: 'SRAM',
+    year: 2022,
+    cell_area: 0.024,
+    density: 41666666.67,
+    cgp: NaN,
+    m1_pitch: 0.03,
+    source: '',
+    vendor: 'Intel'
+  }
 
     ]
 
@@ -2996,8 +5789,6 @@ async function run() {
     // Instert documents into the collection
     const em = emerging.insertMany(emergingDocuments);
     const est = established.insertMany(establishedDocuments);
-
-    const document = await emerging.find({"name": "STTMRAM"}).toArray();
 
 
   } finally {

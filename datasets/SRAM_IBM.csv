@@ -1,0 +1,27 @@
+Year,Node (nm),Structure,SRAM cell area (um^2),CGP (nm) [1],Metal Pitch (nm) [2],Width (nm) [3],Fin Pitch (nm),Fin Height (nm),Lg (nm),Vdd,Tox (nm),,Cf_ratio,Cg (fF/um) [4],Cgtot (fF) [5],CV^2 (fJ),,Ref
+1982,1000,planar,,,2000,2000,,,900,5,25,,0,1.243,2.4851,62.127,,"G. J. Hu, et al., IEDM, 1982"
+1987,500,planar,,,1000,1000,,,500,3.3,12.5,,0,1.381,1.3806,15.035,,"H.I. Hanafi, et al., ESSDERC, 1987"
+1988,250,planar,,,500,500,,,250,2.5,7,,0,1.233,0.6163,3.852,,"B. Davari, et al., IEDM 1988"
+1993,NA,planar,,,640,640,,,90,1.5,3.5,,0,0.888,0.5680,1.278,,"Y. Taur, et al., IEDM, 1993"
+1998,250,planar,5.4,540,540,540,,,80,1.8,3.5,,0,0.789,0.4260,1.380,,"L. Su, et al., IEDM 1998"
+1998,NA,planar,,,500,500,,,60,1.5,3.6,,0,0.575,0.2876,0.647,,"M. Hargrove, et al., IEDM, 1998"
+1999,180,planar,4.23,,490,490,,,150,1.5,3.3,,0,1.569,0.7687,1.730,,"E. Leobandung, et al., IEDM 1999"
+2001,130,planar,1.8,350,350,350,,,48,1.2,2.3,,0,0.720,0.2521,0.363,,"J.W. Sleight, et al., IEDM 2001"
+2002,90,planar,0.992,245,245,245,,,46,1,1.2,,0,1.323,0.3242,0.324,,"M. Khare, et al., IEDM 2002"
+2005,65,planar,,,210,210,,,30,1,1.05,,0,0.986,0.2071,0.207,,"Lee, et al., IEDM, 2005"
+2005,65,planar,0.54,260,180,180,,,55,1.2,2,,0,0.949,0.1708,0.246,,"A. Steegen, et al., IEDM, 2005"
+2007,45,planar,0.249,180,130,130,,,35,1,1.2,,0,1.007,0.1309,0.131,,"Z. Luo, et al., VLSI-T, 2007"
+2008,45,planar,,,160,160,,,25,1,1.4,,0,0.616,0.0986,0.099,,"Henson, et al., IEDM, 2008"
+2008,45,planar,,,160,160,,,35,0.9,1.15,,0,1.050,0.1681,0.136,,"Yang, et al., IEDM, 2008"
+2008,32,planar,,,112.5,112.5,,,28,0.9,1.2,,0,0.805,0.0906,0.073,,"Arnaud, et al., IEDM, 2008"
+2008,32,planar,0.157,126,100,100,,,30,0.8,1.2,,0,0.863,0.0863,0.055,,"X. Chen, et al., VLSI, 2008"
+2009,28,planar,0.12,114,90,90,,,30,1,1.4,,0,0.740,0.0666,0.067,,"F. Arnaud, IEDM, 2009"
+2016,10,FinFET,0.04,64,48,,,,,,,,,,,,,"H.-J. Cho (Samsung), VLSI-T, 2016"
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+[1] contacted gate pitch,,,,,,,,,,,,,,,,,,
+"[2] Metal 1 or local interconnect pitch. If metal pitch was not reported in the paper, it is assumed to be 2x of the Node",,,,,,,,,,,,,,,,,,
+[3] Transistor minimum width is assumed to be equal to the Metal 1 pitch for the planar transistors,,,,,,,,,,,,,,,,,,
+[4] Cg = eps_Si/Tox*Lg. The gate capacitance per device width is normalized to the Fin Pitch for FinFETs. ,,,,,,,,,,,,,,,,,,
+"[5] Cgtot = Cg*Wmin, where Wmin is either the Width for planar transistors or the Fin Pitch for FinFETs.",,,,,,,,,,,,,,,,,,
