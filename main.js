@@ -3,6 +3,8 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 require('dotenv').config();
 
+
+
 const uri = process.env.uri;
 
 
@@ -22,6 +24,8 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
+    
+
     const db = client.db('NVMS');
 
     db.createCollection('Emerging');
@@ -38,21 +42,21 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: "F = 180",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 30,
         setpulsewidthns: 50,
         thresholdvoltagev: 1,
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
+
+
         hrslrsratiominimum: 60,
-        rhigh: "2x105 ",
-        rlow: "7x103",
-        endurance: "1.25x1012",
-        retention: "100s@ 177℃",
-        retentionextrapolation: "10y@ 120℃",
-        resetenergypj: "??",
+        rhigh: "2x10^5 ",
+        rlow: "7x10^3",
+        endurance: "1.25x10^12",
+        retention: "100s@ 177degC",
+        retentionextrapolation: "10y@ 120degC",
+
         year: 2001,
         citation: "Lai, S.; Lowrey, T., \"OUM - A 180 nm nonvolatile memory cell element technology for stand alone and embedded applications,\" Electron Devices Meeting, 2001. IEDM '01. Technical Digest. International , vol., no., pp.36.5.1,36.5.4, 2-5 Dec. 2001",
         title: "OUM - A 180 nm Nonvolatile Memory Cell Element Technology For Stand Alone and Embedded Applications",
@@ -68,22 +72,22 @@ async function run() {
         publicationyear: "ISSCC 2002",
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
-        structure: "??",
-        cellareanm2: "??",
+
+
         heaterpitchnm: "F = 180",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 30,
         setpulsewidthns: 50,
         thresholdvoltagev: 0.6,
         resetcurrentuaorvoltage: "V = 0.7 V",
         setcurrentuaorvoltage: "V = 0.7 V",
         hrslrsratiominimum: 20,
-        rhigh: "8.5x104",
-        rlow: "2x104",
+        rhigh: "8.5x10^4",
+        rlow: "2x10^4",
         endurance: "1012",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2002,
         citation: "Gill, M.; Lowrey, T.; Park, J., \"Ovonic unified memory - a high-performance nonvolatile memory technology for stand-alone memory and embedded applications,\" Solid-State Circuits Conference, 2002. Digest of Technical Papers. ISSCC. 2002 IEEE International , vol.1, no., pp.202,459 vol.1, 7-7 Feb. 2002",
         title: "Ovonic unified memory - a high-performance nonvolatile memory technology for stand-alone memory and embedded applications",
@@ -100,7 +104,7 @@ async function run() {
         pcmmaterial: "GST  (7% N-doped)",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 80,
         filmthicknessnm: 100,
         resetpulsewidthns: 50,
@@ -109,12 +113,12 @@ async function run() {
         resetcurrentuaorvoltage: 600,
         setcurrentuaorvoltage: 200,
         hrslrsratiominimum: 6,
-        rhigh: "??",
-        rlow: "??",
-        endurance: "2x107",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+        endurance: "2x10^7",
+
+
+
         year: 2003,
         citation: "Horii, H.; Yi, J.H.; Park, J.-H.; Ha, Y.H.; Baek, I.G.; Park, S.O.; Hwang, Y.N.; Lee, S.H.; Kim, Y.T.; Lee, K.H.; U-In Chung; Moon, J.T., \"A novel cell technology using N-doped GeSbTe films for phase change RAM,\" VLSI Technology, 2003. Digest of Technical Papers. 2003 Symposium on , vol., no., pp.177,178, 10-12 June 2003",
         title: "A novel cell technology using N-doped GeSbTe films for phase change RAM",
@@ -131,7 +135,7 @@ async function run() {
         pcmmaterial: "GST 225",
         _2d3dgeometry: "2D",
         structure: "Edge Contact",
-        cellareanm2: "??",
+
         heaterpitchnm: 20,
         filmthicknessnm: 200,
         resetpulsewidthns: 30,
@@ -140,12 +144,12 @@ async function run() {
         resetcurrentuaorvoltage: 200,
         setcurrentuaorvoltage: 130,
         hrslrsratiominimum: 20,
-        rhigh: "2x105",
-        rlow: "4x103",
+        rhigh: "2x10^5",
+        rlow: "4x10^3",
         endurance: "105",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2003,
         citation: "Ha, Y.H.; Yi, J.H.; Horii, H.; Park, J.H.; Joo, S.H.; Park, S.O.; U-In Chung; Moon, J.T., \"An edge contact type cell for Phase Change RAM featuring very low power consumption,\" VLSI Technology, 2003. Digest of Technical Papers. 2003 Symposium on , vol., no., pp.175,176, 10-12 June 2003",
         title: "An edge contact type cell for Phase Change RAM featuring very low power consumption",
@@ -170,13 +174,13 @@ async function run() {
         thresholdvoltagev: 1.1,
         resetcurrentuaorvoltage: 2000,
         setcurrentuaorvoltage: 1600,
-        hrslrsratiominimum: "??",
-        rhigh: "??",
-        rlow: "??",
-        endurance: "1.58x109",
-        retention: "100h@ 125℃",
-        retentionextrapolation: "2y@ 85℃",
-        resetenergypj: "??",
+
+
+
+        endurance: "1.58x10^9",
+        retention: "100h@ 125degC",
+        retentionextrapolation: "2y@ 85degC",
+
         year: 2003,
         citation: "Hwang, Y.N.; Hong, J.S.; Lee, S.H.; Ahn, S.J.; Jeong, G.T.; Koh, G.H.; Oh, J.H.; Kim, H.-J.; Jeong, W.C.; Lee, S.Y.; Park, J.H.; Ryoo, K.C.; Horii, H.; Ha, Y.H.; Yi, J.H.; Cho, W.Y.; Kim, Y.T.; Lee, K. -H; Joo, S.H.; Park, S.O.; Chung, U.I.; Jeong, H.S.; Kinam Kim, \"Full integration and reliability evaluation of phase-change RAM based on 0.24 /spl mu/m-CMOS technologies,\" VLSI Technology, 2003. Digest of Technical Papers. 2003 Symposium on , vol., no., pp.173,174, 10-12 June 2003",
         title: "Full integration and reliability evaluation of phase-change RAM based on 0.24 /spl mu/m-CMOS technologies",
@@ -192,7 +196,7 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "ATE",
-        cellareanm2: "??",
+
         heaterpitchnm: 70,
         filmthicknessnm: 100,
         resetpulsewidthns: 30,
@@ -201,12 +205,12 @@ async function run() {
         resetcurrentuaorvoltage: 1300,
         setcurrentuaorvoltage: 600,
         hrslrsratiominimum: 30,
-        rhigh: "2x105",
-        rlow: "6x103",
+        rhigh: "2x10^5",
+        rlow: "6x10^3",
         endurance: "107",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2003,
         citation: "Yi, J.H.; Ha, Y.H.; Park, J.H.; Kuh, B.J.; Horii, H.; Kim, Y.T.; Park, S.O.; Hwang, Y.N.; Lee, S.H.; Ahn, S.J.; Lee, S.Y.; Hong, J.S.; Lee, K.H.; Lee, N.I.; Kang, H.K.; U-In Chung; Moon, J.T., \"Novel cell structure of PRAM with thin metal layer inserted GeSbTe,\" Electron Devices Meeting, 2003. IEDM '03 Technical Digest. IEEE International , vol., no., pp.37.3.1,37.3.4, 8-10 Dec. 2003",
         title: "Novel cell structure of PRAM with thin metal layer inserted GeSbTe",
@@ -223,21 +227,21 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 400,
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 15,
         setpulsewidthns: 1250,
         thresholdvoltagev: 2.5,
         resetcurrentuaorvoltage: "V = 2.8",
         setcurrentuaorvoltage: "V = 1.3 V",
         hrslrsratiominimum: 20,
-        rhigh: "2x106",
-        rlow: "3x104",
+        rhigh: "2x10^6",
+        rlow: "3x10^4",
         endurance: "106",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2003,
         citation: "Takaura, N.; Terao, M.; Kurotsuchi, K.; Yamauchi, T.; Tonomura, O.; Hanaoka, Y.; Takemura, R.; Osada, K.; Kawahara, T.; Matsuoka, H., \"A GeSbTe phase-change memory cell featuring a tungsten heater electrode for low-power, highly stable, and short-read-cycle operations,\" Electron Devices Meeting, 2003. IEDM '03 Technical Digest. IEEE International , vol., no., pp.37.2.1,37.2.4, 8-10 Dec. 2003",
         title: "A GeSbTe phase-change memory cell featuring a tungsten heater electrode for low-power, highly stable, and short-read-cycle operations",
@@ -257,18 +261,18 @@ async function run() {
         cellareanm2: 640000,
         heaterpitchnm: 40,
         filmthicknessnm: 200,
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
+
+
         thresholdvoltagev: 1.1,
         resetcurrentuaorvoltage: 700,
-        setcurrentuaorvoltage: "??",
-        hrslrsratiominimum: "??",
+
+
         rhigh: "106",
         rlow: "103",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
+
         year: 2003,
         citation: "Hwang, Y.N.; Lee, S.H.; Ahn, S.J.; Lee, S.Y.; Ryoo, K.C.; Hong, H.S.; Koo, H.C.; Yeung, F.; Oh, J.H.; Kim, H.J.; Jeong, W.C.; Park, J.H.; Horii, H.; Ha, Y.H.; Yi, J.H.; Koh, G.H.; Jeong, G.T.; Jeong, H.S.; Kinam Kim, \"Writing current reduction for high-density phase-change RAM,\" Electron Devices Meeting, 2003. IEDM '03 Technical Digest. IEEE International , vol., no., pp.37.1.1,37.1.4, 8-10 Dec. 2003",
         title: "Writing current reduction for high-density phase-change RAM",
@@ -283,21 +287,21 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "Edge Contact",
-        cellareanm2: "??",
-        heaterpitchnm: "??",
-        filmthicknessnm: "??",
+
+
+
         resetpulsewidthns: 30,
         setpulsewidthns: 50,
         thresholdvoltagev: 1.1,
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
+
+
         hrslrsratiominimum: 20,
-        rhigh: "2x105",
-        rlow: "8x103",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "10y@ 120℃",
-        resetenergypj: "??",
+        rhigh: "2x10^5",
+        rlow: "8x10^3",
+
+
+        retentionextrapolation: "10y@ 120degC",
+
         year: 2003,
         citation: "Lai, S., \"Current status of the phase change memory and its future,\" Electron Devices Meeting, 2003. IEDM '03 Technical Digest. IEEE International , vol., no., pp.10.1.1,10.1.4, 8-10 Dec. 2003",
         title: "Current status of the phase change memory and its future",
@@ -315,19 +319,19 @@ async function run() {
         structure: "Mushroom",
         cellareanm2: 250,
         heaterpitchnm: "F = 180",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 100,
         setpulsewidthns: 100,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 50,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 20,
-        rhigh: "3x105",
+        rhigh: "3x10^5",
         rlow: "104",
         endurance: "109",
-        retention: "100s@ 210℃",
-        retentionextrapolation: "10y@ 110℃",
-        resetenergypj: "??",
+        retention: "100s@ 210degC",
+        retentionextrapolation: "10y@ 110degC",
+
         year: 2003,
         citation: "Pirovano, A.; Lacaita, A.L.; Benvenuti, A.; Pellizzer, F.; Hudgens, S.; Bez, R., \"Scaling analysis of phase-change memory technology,\" Electron Devices Meeting, 2003. IEDM '03 Technical Digest. IEEE International , vol., no., pp.29.6.1,29.6.4, 8-10 Dec. 2003",
         title: "Scaling analysis of phase-change memory technology",
@@ -342,22 +346,22 @@ async function run() {
         publicationyear: "ISSCC 2004",
         pcmmaterial: "GST 225",
         _2d3dgeometry: "2D",
-        structure: "??",
+
         cellareanm2: 504000,
         heaterpitchnm: "F = 180",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: "20 (dev), 50 (cct)",
         setpulsewidthns: "80 (dev), 120 (cct)",
         thresholdvoltagev: 0.5,
         resetcurrentuaorvoltage: "Vcircuit = 3 V",
         setcurrentuaorvoltage: "Vcircuit = 3 V",
         hrslrsratiominimum: 10,
-        rhigh: "2x105",
-        rlow: "2x103",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+        rhigh: "2x10^5",
+        rlow: "2x10^3",
+
+
+
+
         year: 2004,
         citation: "Woo Yeong Cho; Beak-Hyung Cho; Byung-Gil Choi; Hyung-Rok Oh; Sang-beom Kang; Kim, Ki-Sung; Kyung-Hee Kim; Du-Eung Kim; Choong-Keun Kwak; Hyun-Geun Byun; Young-nam Hwang; Su-jin Ahn; Gi-tae Jung; Hong-sik Jung; Kim, Kinam, \"A 0.18 μm 3.0 V 64 Mb non-volatile phase-transition random-access memory (PRAM),\" Solid-State Circuits Conference, 2004. Digest of Technical Papers. ISSCC. 2004 IEEE International , vol., no., pp.40,512 Vol.1, 15-19 Feb. 2004",
         title: "A 0.18 μm 3.0 V 64 Mb non-volatile phase-transition random-access memory (PRAM)",
@@ -386,8 +390,8 @@ async function run() {
         rhigh: "106",
         rlow: "104",
         endurance: "1011",
-        retention: "100s@ 200℃",
-        retentionextrapolation: "10y@ 110℃",
+        retention: "100s@ 200degC",
+        retentionextrapolation: "10y@ 110degC",
         resetenergypj: 36,
         year: 2004,
         citation: "Pellizzer, F.; Pirovano, A.; Ottogalli, F.; Magistretti, M.; Scaravaggi, M.; Zuliani, P.; Tosi, M.; Benvenuti, A.; Besana, P.; Cadeo, S.; Marangon, T.; Morandi, R.; Piva, R.; Spandre, A.; Zonca, R.; Modelli, A.; Varesi, E.; Lowrey, T.; Lacaita, A.; Casagrande, G.; Cappelletti, P.; Bez, R., \"Novel μtrench phase-change memory cell for embedded and stand-alone non-volatile memory applications,\" VLSI Technology, 2004. Digest of Technical Papers. 2004 Symposium on , vol., no., pp.18,19, 15-17 June 2004",
@@ -407,18 +411,18 @@ async function run() {
         cellareanm2: 504000,
         heaterpitchnm: "F = 180",
         filmthicknessnm: 400,
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
+
+
         thresholdvoltagev: 0.45,
         resetcurrentuaorvoltage: 1000,
         setcurrentuaorvoltage: 500,
-        hrslrsratiominimum: "??",
+
         rhigh: "106",
-        rlow: "2x104",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+        rlow: "2x10^4",
+
+
+
+
         year: 2004,
         citation: "Lee, S.-H.; Hwang, Y.N.; Lee, S.Y.; Ryoo, K.C.; Ahn, S.J.; Koo, H.C.; Jeong, C.W.; Kim, Kinam; Koh, G.H.; Jeong, G.T.; Jeong, H.S.; Kinam Kim, \"Full integration and cell characteristics for 64Mb nonvolatile PRAM,\" VLSI Technology, 2004. Digest of Technical Papers. 2004 Symposium on , vol., no., pp.20,21, 15-17 June 2004",
         title: "Full integration and cell characteristics for 64Mb nonvolatile PRAM",
@@ -435,18 +439,18 @@ async function run() {
         structure: "Mushroom",
         cellareanm2: 320000,
         heaterpitchnm: "F = 180",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 40,
         setpulsewidthns: 150,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 300,
         setcurrentuaorvoltage: "V = 2.7 V",
         hrslrsratiominimum: 20,
-        rhigh: "4x105",
-        rlow: "2x104",
-        endurance: "5x106",
-        retention: "??",
-        retentionextrapolation: "??",
+        rhigh: "4x10^5",
+        rlow: "2x10^4",
+        endurance: "5x10^6",
+
+
         resetenergypj: 32.7,
         year: 2004,
         citation: "Bedeschi, F.; Resta, C.; Khouri, O.; Buda, E.; Costa, L.; Ferraro, M.; Pellizzer, F.; Ottogalli, F.; Pirovano, A.; Tosi, M.; Bez, R.; Gastaldi, R.; Casagrande, G., \"An 8Mb demonstrator for high-density 1.8V Phase-Change Memories,\" VLSI Circuits, 2004. Digest of Technical Papers. 2004 Symposium on , vol., no., pp.442,445, 17-19 June 2004",
@@ -465,19 +469,19 @@ async function run() {
         structure: "Mushroom",
         cellareanm2: 290000,
         heaterpitchnm: "F = 120",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 10,
         setpulsewidthns: 150,
         thresholdvoltagev: 0.6,
-        resetcurrentuaorvoltage: "??",
+
         setcurrentuaorvoltage: 600,
         hrslrsratiominimum: 30,
-        rhigh: "2x106",
-        rlow: "6x103",
+        rhigh: "2x10^6",
+        rlow: "6x10^3",
         endurance: "109",
-        retention: "??",
-        retentionextrapolation: "10y@ 85℃",
-        resetenergypj: "??",
+
+        retentionextrapolation: "10y@ 85degC",
+
         year: 2004,
         citation: "Ahn, S.J.; Song, Y.J.; Jeong, C.W.; Shin, J.M.; Fai, Y.; Hwang, Y.N.; Lee, S.H.; Ryoo, K.C.; Lee, S.Y.; Park, J.-H.; Horii, H.; Ha, Y.H.; Yi, J.H.; Kuh, B.J.; Koh, G.H.; Jeong, G.T.; Jeong, H.S.; Kim, Kinam; Ryu, B.-I., \"Highly manufacturable high density phase change memory of 64Mb and beyond,\" Electron Devices Meeting, 2004. IEDM Technical Digest. IEEE International , vol., no., pp.907,910, 13-15 Dec. 2004",
         title: "Highly manufacturable high density phase change memory of 64Mb and beyond",
@@ -493,10 +497,10 @@ async function run() {
         publicationyear: "ISSCC 2005",
         pcmmaterial: "GST 225",
         _2d3dgeometry: "2D",
-        structure: "??",
+
         cellareanm2: 504000,
         heaterpitchnm: "F = 180",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 40,
         setpulsewidthns: 180,
         thresholdvoltagev: 0.5,
@@ -504,10 +508,10 @@ async function run() {
         setcurrentuaorvoltage: 200,
         hrslrsratiominimum: 10,
         rhigh: "105",
-        rlow: "1.2x103",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
+        rlow: "1.2x10^3",
+
+
+
         resetenergypj: 64.8,
         year: 2005,
         citation: "Hyung-rok On; Beak-Hyung Cho; Woo Yeong Cho; Sangbeom Kang; Byung-Gil Choi; Kim, Ki-Sung; Ki-sung Kim; Du-Eung Kim; Choong-Keun Kwak; Hyun-Geun Byun; Jeong, Gi-Tae; Hong-Sik Jeong; Kim, Kinam, \"Enhanced write performance of a 64 Mb phase-change random access memory,\" Solid-State Circuits Conference, 2005. Digest of Technical Papers. ISSCC. 2005 IEEE International , vol., no., pp.48,584 Vol. 1, 10-10 Feb. 2005",
@@ -523,22 +527,22 @@ async function run() {
         publicationyear: "ISSCC 2006",
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
-        structure: "??",
+
         cellareanm2: 166000,
         heaterpitchnm: "F = 100",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 500,
         setpulsewidthns: 500,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 600,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 10,
         rhigh: "105",
-        rlow: "1.5x103",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+        rlow: "1.5x10^3",
+
+
+
+
         year: 2006,
         citation: "Sangbeom Kang; WooYeong Cho; Beak-Hyung Cho; Kwang-Jin Lee; Chang-Soo Lee; Hyung-Rock Oh; Byung-Gil Choi; Qi Wang; Hye-Jin Kim; Mu-Hui Park; Yu-Hwan Ro; Suyeon Kim; Du-Eung Kim; Kang-Sik Cho; Choong-Duk Ha; Youngran Kim; Ki-Sung Kim; Choong-Ryeol Hwang; Choong-Keun Kwak; Hyun-Geun Byun; Yun Sueng Shin, \"A 0.1/spl mu/m 1.8V 256Mb 66MHz Synchronous Burst PRAM,\" Solid-State Circuits Conference, 2006. ISSCC 2006. Digest of Technical Papers. IEEE International , vol., no., pp.487,496, 6-9 Feb. 2006",
         title: "A 0.1/spl mu/m 1.8V 256Mb 66MHz Synchronous Burst PRAM",
@@ -554,21 +558,21 @@ async function run() {
         pcmmaterial: "GST  (N-doped)",
         _2d3dgeometry: "2D",
         structure: "Confined",
-        cellareanm2: "??",
+
         heaterpitchnm: " D = 75, F = 180",
         filmthicknessnm: 50,
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
+
+
         thresholdvoltagev: 1.1,
         resetcurrentuaorvoltage: 900,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 100,
         rhigh: "107",
         rlow: "105",
         endurance: "106",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2006,
         citation: "Happ, T.D.; Breitwisch, M.; Schrott, A.; Philipp, J.B.; Lee, M-H; Cheek, R.; Nirschl, T.; Lamorey, M.; Ho, C.H.; Chen, S.-H.; Chen, C.F.; Joseph, E.; Zaidi, S.; Burr, G.W.; Yee, B.; Chen, Y.C.; Raoux, S.; Lung, H. -L; Bergmann, R.; Lam, C., \"Novel One-Mask Self-Heating Pillar Phase Change Memory,\" VLSI Technology, 2006. Digest of Technical Papers. 2006 Symposium on , vol., no., pp.120,121, 0-0 0",
         title: "Novel One-Mask Self-Heating Pillar Phase Change Memory",
@@ -585,19 +589,19 @@ async function run() {
         structure: "μtrench",
         cellareanm2: 96800,
         heaterpitchnm: "F = 90",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
+
+
         resetcurrentuaorvoltage: 400,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 80,
-        rhigh: "4x105",
-        rlow: "4x103",
+        rhigh: "4x10^5",
+        rlow: "4x10^3",
         endurance: "108",
-        retention: "??",
-        retentionextrapolation: "10y@ 110℃",
-        resetenergypj: "??",
+
+        retentionextrapolation: "10y@ 110degC",
+
         year: 2006,
         citation: "Pellizzer, F.; Benvenuti, A.; Gleixner, B.; Kim, Y.; Johnson, B.; Magistretti, M.; Marangon, T.; Pirovano, A.; Bez, R.; Atwood, G., \"A 90nm Phase Change Memory Technology for Stand-Alone Non-Volatile Memory Applications,\" VLSI Technology, 2006. Digest of Technical Papers. 2006 Symposium on , vol., no., pp.122,123, 0-0 0",
         title: "A 90nm Phase Change Memory Technology for Stand-Alone Non-Volatile Memory Applications",
@@ -616,19 +620,19 @@ async function run() {
         structure: "Lance",
         cellareanm2: 96800,
         heaterpitchnm: "F = 90",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
+
+
         resetcurrentuaorvoltage: 700,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 80,
-        rhigh: "3x105",
-        rlow: "3x103",
+        rhigh: "3x10^5",
+        rlow: "3x10^3",
         endurance: "108",
-        retention: "??",
-        retentionextrapolation: "10y@ 115℃",
-        resetenergypj: "??",
+
+        retentionextrapolation: "10y@ 115degC",
+
         year: 2006,
         citation: "Pellizzer, F.; Benvenuti, A.; Gleixner, B.; Kim, Y.; Johnson, B.; Magistretti, M.; Marangon, T.; Pirovano, A.; Bez, R.; Atwood, G., \"A 90nm Phase Change Memory Technology for Stand-Alone Non-Volatile Memory Applications,\" VLSI Technology, 2006. Digest of Technical Papers. 2006 Symposium on , vol., no., pp.122,123, 0-0 0",
         title: "A 90nm Phase Change Memory Technology for Stand-Alone Non-Volatile Memory Applications",
@@ -653,11 +657,11 @@ async function run() {
         resetcurrentuaorvoltage: 100,
         setcurrentuaorvoltage: 100,
         hrslrsratiominimum: 100,
-        rhigh: "6x106",
-        rlow: "5x103",
+        rhigh: "6x10^6",
+        rlow: "5x10^3",
         endurance: "106",
-        retention: "100s@ 170℃",
-        retentionextrapolation: "10y@ 110℃",
+        retention: "100s@ 170degC",
+        retentionextrapolation: "10y@ 110degC",
         resetenergypj: 15,
         year: 2006,
         citation: "Matsui, Y.; Kurotsuchi, K.; Tonomura, O.; Morikawa, T.; Kinoshita, M.; Fujisaki, Y.; Matsuzaki, N.; Hanzawa, S.; Terao, M.; Takaura, N.; Moriya, H.; Iwasaki, T.; Moniwa, M.; Koga, T., \"Ta2O5 Interfacial Layer between GST and W Plug enabling Low Power Operation of Phase Change Memories,\" Electron Devices Meeting, 2006. IEDM '06. International , vol., no., pp.1,4, 11-13 Dec. 2006",
@@ -674,8 +678,8 @@ async function run() {
         pcmmaterial: "Doped GeSb",
         _2d3dgeometry: "2D",
         structure: "Bridge Cell",
-        cellareanm2: "??",
-        heaterpitchnm: "??",
+
+
         filmthicknessnm: 3,
         resetpulsewidthns: 70,
         setpulsewidthns: 100,
@@ -683,12 +687,12 @@ async function run() {
         resetcurrentuaorvoltage: 100,
         setcurrentuaorvoltage: 60,
         hrslrsratiominimum: 50,
-        rhigh: "3x106",
-        rlow: "4x104",
+        rhigh: "3x10^6",
+        rlow: "4x10^4",
         endurance: "104",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2006,
         citation: "Chen, Y.C.; Rettner, C.T.; Raoux, S.; Burr, G.W.; Chen, S.-H.; Shelby, R.M.; Salinga, M.; Risk, W.P.; Happ, T.D.; McClelland, G.M.; Breitwisch, M.; Schrott, A.; Philipp, J.B.; Lee, M-H; Cheek, R.; Nirschl, T.; Lamorey, M.; Chen, C.F.; Joseph, E.; Zaidi, S.; Yee, B.; Lung, H. -L; Bergmann, R.; Lam, C., \"Ultra-Thin Phase-Change Bridge Memory Device Using GeSb,\" Electron Devices Meeting, 2006. IEDM '06. International , vol., no., pp.1,4, 11-13 Dec. 2006",
         title: "Ultra-Thin Phase-Change Bridge Memory Device Using GeSb",
@@ -713,12 +717,12 @@ async function run() {
         resetcurrentuaorvoltage: 100,
         setcurrentuaorvoltage: 100,
         hrslrsratiominimum: 100,
-        rhigh: "6x106",
-        rlow: "5x103",
+        rhigh: "6x10^6",
+        rlow: "5x10^3",
         endurance: "106",
-        retention: "100s@ 170℃",
-        retentionextrapolation: "10y@ 110℃",
-        resetenergypj: "??",
+        retention: "100s@ 170degC",
+        retentionextrapolation: "10y@ 110degC",
+
         year: 2007,
         citation: "Hanzawa, Satoru; Kitai, N.; Osada, K.; Kotabe, A.; Matsui, Y.; Matsuzaki, N.; Takaura, N.; Moniwa, M.; Kawahara, T., \"A 512kB Embedded Phase Change Memory with 416kB/s Write Throughput at 100μA Cell Write Current,\" Solid-State Circuits Conference, 2007. ISSCC 2007. Digest of Technical Papers. IEEE International , vol., no., pp.474,616, 11-15 Feb. 2007",
         title: "A 512kB Embedded Phase Change Memory with 416kB/s Write Throughput at 100μA Cell Write Current",
@@ -736,19 +740,19 @@ async function run() {
         structure: "Mushroom",
         cellareanm2: 46700,
         heaterpitchnm: "F = 90",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 50,
         setpulsewidthns: 400,
         thresholdvoltagev: 1,
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
-        hrslrsratiominimum: "??",
-        rhigh: "8x105",
-        rlow: "2x103",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
+        rhigh: "8x10^5",
+        rlow: "2x10^3",
+
+
+
+
         year: 2007,
         citation: "Kwang-Jin Lee; Beak-Hyung Cho; Woo-Yeong Cho; Sangbeom Kang; Byung-Gil Choi; Hyung-Rok Oh; Chang-Soo Lee; Hye-Jin Kim; Joon-min Park; Qi Wang; Mu-Hui Park; Yu-Hwan Ro; Joon-Yong Choi; Kim, Ki-Sung; Young-Ran Kim; In-Cheol Shin; Ki-won Lim; Ho-Keun Cho; Chang-Han Choi; Won-ryul Chung; Du-Eung Kim; Kwang-Suk Yu; Jeong, Gi-Tae; Hong-Sik Jeong; Choong-Keun Kwak; Chang-Hyun Kim; Kim, Kinam, \"A 90nm 1.8V 512Mb Diode-Switch PRAM with 266MB/s Read Throughput,\" Solid-State Circuits Conference, 2007. ISSCC 2007. Digest of Technical Papers. IEEE International , vol., no., pp.472,616, 11-15 Feb. 2007",
         title: "A 90nm 1.8V 512Mb Diode-Switch PRAM with 266MB/s Read Throughput",
@@ -764,21 +768,21 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "Pore",
-        cellareanm2: "??",
+
         heaterpitchnm: "D = 43, F = 180",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 50,
         setpulsewidthns: 80,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 250,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 100,
         rhigh: "107",
         rlow: "104",
         endurance: "105",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2007,
         citation: "Breitwisch, M.; Nirschl, T.; Chen, C.F.; Zhu, Y.; Lee, M-H; Lamorey, M.; Burr, G.W.; Joseph, E.; Schrott, A.; Philipp, J.B.; Cheek, R.; Happ, T.D.; Chen, S.-H.; Zaidi, S.; Flaitz, P.; Bruley, J.; Dasaka, R.; Rajendran, B.; Rossnage, S.; Yang, M.; Chen, Y.C.; Bergmann, R.; Lung, H. -L; Lam, C., \"Novel Lithography-Independent Pore Phase Change Memory,\" VLSI Technology, 2007 IEEE Symposium on , vol., no., pp.100,101, 12-14 June 2007",
         title: "Novel Lithography-Independent Pore Phase Change Memory",
@@ -793,21 +797,21 @@ async function run() {
         pcmmaterial: "GST 225",
         _2d3dgeometry: "2D",
         structure: "Confined",
-        cellareanm2: "??",
+
         heaterpitchnm: 50,
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
+
+
         resetcurrentuaorvoltage: 260,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 100,
         rhigh: "106",
-        rlow: "6.7x103",
+        rlow: "6.7x10^3",
         endurance: "108",
-        retention: "48h@ 140℃",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+        retention: "48h@ 140degC",
+
+
         year: 2007,
         citation: "Lee, J.I.; Park, H.; Cho, S.L.; Park, Y.L.; Bae, B.J.; Park, J.H.; Park, J.S.; An, H.G.; Bae, J.S.; Ahn, D.H.; Kim, Y.T.; Horii, H.; Song, S.A.; Shin, J.C.; Park, S.O.; Kim, H.S.; Chung, U-in; Moon, J.T.; Ryu, B.-I., \"Highly Scalable Phase Change Memory with CVD GeSbTe for Sub 50nm Generation,\" VLSI Technology, 2007 IEEE Symposium on , vol., no., pp.102,103, 12-14 June 2007",
         title: "Highly Scalable Phase Change Memory with CVD GeSbTe for Sub 50nm Generation",
@@ -834,9 +838,9 @@ async function run() {
         rhigh: "106",
         rlow: "104",
         endurance: "1011",
-        retention: "100s@ 200℃",
-        retentionextrapolation: "10y@ 110℃",
-        resetenergypj: "??",
+        retention: "100s@ 200degC",
+        retentionextrapolation: "10y@ 110degC",
+
         year: 2007,
         citation: "Mantegazza, D.; Ielmini, D.; Varesi, E.; Pirovano, A.; Lacaita, A.L., \"Statistical analysis and modeling of programming and retention in PCM arrays,\" Electron Devices Meeting, 2007. IEDM 2007. IEEE International , vol., no., pp.311,314, 10-12 Dec. 2007",
         title: "Statistical analysis and modeling of programming and retention in PCM arrays",
@@ -851,21 +855,21 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "Cross-spacer",
-        cellareanm2: "??",
+
         heaterpitchnm: "F = 180",
         filmthicknessnm: 40,
         resetpulsewidthns: 50,
         setpulsewidthns: 100,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 350,
         setcurrentuaorvoltage: 150,
         hrslrsratiominimum: 15,
-        rhigh: "2x105",
+        rhigh: "2x10^5",
         rlow: "104",
         endurance: "106",
-        retention: "??",
-        retentionextrapolation: "10y@ 85℃",
-        resetenergypj: "??",
+
+        retentionextrapolation: "10y@ 85degC",
+
         year: 2007,
         citation: "Chen, W-S; Lee, C.; Chao, D-S; Chen, Y-C; Chen, F.; Chen, C.W.; Yen, R.; Chen, M-J; Wang, W.H.; Hsiao, T.C.; Yeh, J.T.; Chiou, S.H.; Liu, M.Y.; Wang, T.C.; Chein, L.L.; Huang, C.; Shih, N.T.; Tu, L.S.; Huang, D.; Yu, T.H.; Kao, M.J.; Tsai, M., \"A Novel Cross-Spacer Phase Change Memory with Ultra-Small Lithography Independent Contact Area,\" Electron Devices Meeting, 2007. IEDM 2007. IEEE International , vol., no., pp.319,322, 10-12 Dec. 2007",
         title: "A Novel Cross-Spacer Phase Change Memory with Ultra-Small Lithography Independent Contact Area",
@@ -884,9 +888,9 @@ async function run() {
         structure: "μtrench",
         cellareanm2: 97000,
         heaterpitchnm: "F = 90",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
+
+
+
         thresholdvoltagev: 0.9,
         resetcurrentuaorvoltage: 300,
         setcurrentuaorvoltage: 300,
@@ -894,9 +898,9 @@ async function run() {
         rhigh: "106",
         rlow: "104",
         endurance: "105",
-        retention: "1000h@ 125℃",
-        retentionextrapolation: "10y@ 85℃",
-        resetenergypj: "??",
+        retention: "1000h@ 125degC",
+        retentionextrapolation: "10y@ 85degC",
+
         year: 2008,
         citation: "Bedeschi, F.; Fackenthal, R.; Resta, C.; Donze, E.M.; Jagasivamani, M.; Buda\, E.; Pellizzer, F.; Chow, D.; Cabrini, A.; Calvi, G.; Faravelli, R.; Fantini, A.; Torelli, G.; Mills, D.; Gastaldi, R.; Casagrande, G., \"A Multi-Level-Cell Bipolar-Selected Phase-Change Memory,\" Solid-State Circuits Conference, 2008. ISSCC 2008. Digest of Technical Papers. IEEE International , vol., no., pp.428,625, 3-7 Feb. 2008",
         title: "A Multi-Level-Cell Bipolar-Selected Phase-Change Memory",
@@ -909,24 +913,24 @@ async function run() {
     {
         name: "PCM",
         publicationyear: "IEDM 2008",
-        pcmmaterial: "??",
+
         _2d3dgeometry: "2D",
         structure: "Dash Confined",
         cellareanm2: 10000,
         heaterpitchnm: 7.5,
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
+
+
         setpulsewidthns: 50,
         thresholdvoltagev: 0.65,
         resetcurrentuaorvoltage: 160,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 10,
-        rhigh: "??",
-        rlow: "??",
-        endurance: "2x1010",
-        retention: "??",
-        retentionextrapolation: "10y@ 125℃",
-        resetenergypj: "??",
+
+
+        endurance: "2x10^10",
+
+        retentionextrapolation: "10y@ 125degC",
+
         year: 2008,
         citation: "Im, D.H.; Lee, J.I.; Cho, S.L.; An, H.G.; Kim, D.H.; Kim, I.S.; Park, H.; Ahn, D.H.; Horii, H.; Park, S.O.; Chung, U-in; Moon, J.T., \"A unified 7.5nm dash-type confined cell for high performance PRAM device,\" Electron Devices Meeting, 2008. IEDM 2008. IEEE International , vol., no., pp.1,4, 15-17 Dec. 2008",
         title: "A unified 7.5nm dash-type confined cell for high performance PRAM device",
@@ -943,21 +947,21 @@ async function run() {
         pcmmaterial: "GST 225",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: "F = 180",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
+
+
+
         thresholdvoltagev: 1.1,
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
+
+
         hrslrsratiominimum: 200,
-        rhigh: "3x106",
+        rhigh: "3x10^6",
         rlow: "104",
         endurance: "105",
-        retention: "10h@ 130℃",
-        retentionextrapolation: "10y@ 80℃",
-        resetenergypj: "??",
+        retention: "10h@ 130degC",
+        retentionextrapolation: "10y@ 80degC",
+
         year: 2008,
         citation: "Shih, Y-H; Wu, J.Y.; Rajendran, B.; Lee, M.H.; Cheek, R.; Lamorey, M.; Breitwisch, M.; Zhu, Y.; Lai, E.K.; Chen, C.F.; Stinzianni, E.; Schrott, A.; Joseph, E.; Dasaka, R.; Raoux, S.; Lung, H. -L; Lam, C., \"Mechanisms of retention loss in Ge2Sb2Te5-based Phase-Change Memory,\" Electron Devices Meeting, 2008. IEDM 2008. IEEE International , vol., no., pp.1,4, 15-17 Dec. 2008",
         title: "Mechanisms of retention loss in Ge2Sb2Te5-based Phase-Change Memory",
@@ -970,24 +974,24 @@ async function run() {
     {
         name: "PCM",
         publicationyear: "VLSIT 2009",
-        pcmmaterial: "??",
+
         _2d3dgeometry: "2D",
         structure: "Multi-confined",
         cellareanm2: 250,
         heaterpitchnm: "4.5, 8, 9.5",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 100,
         setpulsewidthns: 200,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 650,
         setcurrentuaorvoltage: 650,
         hrslrsratiominimum: 50,
-        rhigh: "5x105",
+        rhigh: "5x10^5",
         rlow: "104",
-        endurance: "2x105",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+        endurance: "2x10^5",
+
+
+
         year: 2009,
         citation: "Oh, G.H.; Park, Y.L.; Lee, J.I.; Im, D.H.; Bae, J.S.; Kim, D.H.; Ahn, D.H.; Horii, H.; Park, S.O.; Yoon, H.S.; Park, I.S.; Ko, Y.S.; Chung, U-in; Moon, J.T., \"Parallel multi-confined (PMC) cell technology for high density MLC PRAM,\" VLSI Technology, 2009 Symposium on , vol., no., pp.220,221, 16-18 June 2009",
         title: "Parallel multi-confined (PMC) cell technology for high density MLC PRAM",
@@ -1005,19 +1009,19 @@ async function run() {
         structure: "Confined",
         cellareanm2: 290000,
         heaterpitchnm: "F = 90",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 100,
         setpulsewidthns: 300,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 400,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 500,
-        rhigh: "4x106",
-        rlow: "7x103",
+        rhigh: "4x10^6",
+        rlow: "7x10^3",
         endurance: "106",
-        retention: "??",
-        retentionextrapolation: "10y@ 85℃",
-        resetenergypj: "??",
+
+        retentionextrapolation: "10y@ 85degC",
+
         year: 2009,
         citation: "Annunziata, R.; Zuliani, P.; Borghi, M.; De Sandre, G.; Scotti, L.; Prelini, C.; Tosi, M.; Tortorelli, I.; Pellizzer, F., \"Phase Change Memory technology for embedded non volatile memory applications for 90nm and beyond,\" Electron Devices Meeting (IEDM), 2009 IEEE International , vol., no., pp.1,4, 7-9 Dec. 2009",
         title: "Phase Change Memory technology for embedded non volatile memory applications for 90nm and beyond",
@@ -1035,19 +1039,19 @@ async function run() {
         structure: "Confined",
         cellareanm2: 15000,
         heaterpitchnm: "F = 45",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
+
+
         resetcurrentuaorvoltage: 200,
         setcurrentuaorvoltage: 100,
         hrslrsratiominimum: 40,
-        rhigh: "8x105",
-        rlow: "2x104",
+        rhigh: "8x10^5",
+        rlow: "2x10^4",
         endurance: "108",
-        retention: "1h@ 160℃",
-        retentionextrapolation: "10y@ 85℃",
-        resetenergypj: "??",
+        retention: "1h@ 160degC",
+        retentionextrapolation: "10y@ 85degC",
+
         year: 2009,
         citation: "Servalli, G., \"A 45nm generation Phase Change Memory technology,\" Electron Devices Meeting (IEDM), 2009 IEEE International , vol., no., pp.1,4, 7-9 Dec. 2009",
         title: "A 45nm generation Phase Change Memory technology",
@@ -1062,22 +1066,22 @@ async function run() {
         publicationyear: "ISSCC 2010",
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
-        structure: "??",
+
         cellareanm2: 290000,
         heaterpitchnm: "F = 90",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 100,
         setpulsewidthns: 300,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: "V = 2.8 V",
         setcurrentuaorvoltage: "V = 2.8 V",
         hrslrsratiominimum: 20,
         rhigh: "106",
-        rlow: "5x104",
+        rlow: "5x10^4",
         endurance: "106",
-        retention: "??",
-        retentionextrapolation: "10y@ 100℃",
-        resetenergypj: "??",
+
+        retentionextrapolation: "10y@ 100degC",
+
         year: 2010,
         citation: "De Sandre, G.; Bettini, L.; Pirola, A.; Marmonier, L.; Pasotti, M.; Borghi, M.; Mattavelli, P.; Zuliani, P.; Scotti, L.; Mastracchio, G.; Bedeschi, F.; Gastaldi, R.; Bez, R., \"A 90nm 4Mb embedded phase-change memory with 1.2V 12ns read access time and 1MB/s write throughput,\" Solid-State Circuits Conference Digest of Technical Papers (ISSCC), 2010 IEEE International , vol., no., pp.268,269, 7-11 Feb. 2010",
         title: "A 90nm 4Mb embedded phase-change memory with 1.2V 12ns read access time and 1MB/s write throughput",
@@ -1098,15 +1102,9 @@ async function run() {
         filmthicknessnm: 0.9,
         resetpulsewidthns: 30,
         setpulsewidthns: 30,
-        thresholdvoltagev: "??",
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
         hrslrsratiominimum: 50,
-        rhigh: "??",
-        rlow: "??",
-        endurance: "2x1011",
-        retention: "??",
-        retentionextrapolation: "4.5y@ 85℃",
+        endurance: "2x10^11",
+        retentionextrapolation: "4.5y@ 85degC",
         resetenergypj: 45,
         year: 2010,
         citation: "Kim, I.S.; Cho, S.L.; Im, D.H.; Cho, E.H.; Kim, D.H.; Oh, G.H.; Ahn, D.H.; Park, S.O.; Nam, S.W.; Moon, J.T.; Chung, C.H., \"High performance PRAM cell scalable to sub-20nm technology with below 4F2 cell size, extendable to DRAM applications,\" VLSI Technology (VLSIT), 2010 Symposium on , vol., no., pp.203,204, 15-17 June 2010",
@@ -1124,7 +1122,7 @@ async function run() {
         pcmmaterial: "GeTe  (N-doped)",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 300,
         filmthicknessnm: 100,
         resetpulsewidthns: 100,
@@ -1134,11 +1132,11 @@ async function run() {
         setcurrentuaorvoltage: 10000,
         hrslrsratiominimum: 200,
         rhigh: "105",
-        rlow: "4x102",
-        endurance: "??",
-        retention: "100000s@ 200℃",
-        retentionextrapolation: "10y@ 154℃",
-        resetenergypj: "??",
+        rlow: "4x10^2",
+
+        retention: "100000s@ 200degC",
+        retentionextrapolation: "10y@ 154degC",
+
         year: 2010,
         citation: "Fantini, A.; Sousa, V.; Perniola, L.; Gourvest, E.; Bastien, J. -C; Maitrejean, S.; Braga, S.; Pashkov, N.; Bastard, A.; Hyot, B.; Roule, A.; Persico, A.; Feldis, H.; Jahan, C.; Nodin, J-F; Blachier, D.; Toffoli, A.; Reimbold, G.; Fillot, F.; Pierre, F.; Annunziata, R.; Benshael, D.; Mazoyer, P.; Vallée, C.; Billon, T.; Hazart, J.; De Salvo, B.; Boulanger, F., \"N-doped GeTe as performance booster for embedded Phase-Change Memories,\" Electron Devices Meeting (IEDM), 2010 IEEE International , vol., no., pp.29.1.1,29.1.4, 6-8 Dec. 2010",
         title: "N-doped GeTe as performance booster for embedded Phase-Change Memories",
@@ -1155,19 +1153,19 @@ async function run() {
         structure: "Line",
         cellareanm2: 200000,
         heaterpitchnm: "F = 65",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
+
+
+
         thresholdvoltagev: 1.5,
         resetcurrentuaorvoltage: 400,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 100,
         rhigh: "106",
         rlow: "104",
         endurance: "109",
-        retention: "??",
-        retentionextrapolation: "10y@ 55℃",
-        resetenergypj: "??",
+
+        retentionextrapolation: "10y@ 55degC",
+
         year: 2010,
         citation: "Attenborough, K.; Hurkx, G.A.M.; Delhougne, R.; Perez, J.; Wang, M.T.; Ong, T.C.; Luan Tran; Roy, D.; Gravesteijn, D.J.; van Duuren, M.J., \"Phase change memory line concept for embedded memory applications,\" Electron Devices Meeting (IEDM), 2010 IEEE International , vol., no., pp.29.2.1,29.2.4, 6-8 Dec. 2010",
         title: "Phase change memory line concept for embedded memory applications",
@@ -1181,24 +1179,24 @@ async function run() {
     {
         name: "PCM",
         publicationyear: "VLSIT 2011",
-        pcmmaterial: "??",
+
         _2d3dgeometry: "2D",
         structure: "Transistor Chain",
-        cellareanm2: "??",
+
         heaterpitchnm: "40 (gate pitch)",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 30,
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
         resetcurrentuaorvoltage: 45,
-        setcurrentuaorvoltage: "??",
-        hrslrsratiominimum: "??",
-        rhigh: "??",
-        rlow: "??",
+
+
+
+
         endurance: 100,
-        retention: "24h@ 110℃",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+        retention: "24h@ 110degC",
+
+
         year: 2011,
         citation: "Sasago, Y.; Kinoshita, M.; Minemura, H.; Anzai, Y.; Tai, M.; Kurotsuchi, K.; Morita, S.; Takahashi, T.; Takahama, T.; Morimoto, T.; Mine, T.; Shima, A.; Kobayashi, T., \"Phase-change memory driven by poly-Si MOS transistor with low cost and high-programming gigabyte-per-second throughput,\" VLSI Technology (VLSIT), 2011 Symposium on , vol., no., pp.96,97, 14-16 June 2011",
         title: "Phase-change memory driven by poly-Si MOS transistor with low cost and high-programming gigabyte-per-second throughput",
@@ -1213,21 +1211,21 @@ async function run() {
         pcmmaterial: "Doped  GST 225",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: " D = 30-50, F = 90",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
+
+
         setpulsewidthns: 10000,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: "300-1000",
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 20,
         rhigh: "106",
         rlow: "104",
         endurance: "107",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2011,
         citation: "Lung, H. -L; Breitwisch, M.; Wu, J.Y.; Pei-Ying Du; Zhu, Y.; Lee, M-H; Shih, Y-H; Lai, E.K.; Dasaka, R.; Wang, T.Y.; Chen, C.F.; Cheek, R.; Schrott, A.; Joseph, E.; Cheng, H.Y.; Raoux, S.; Lam, C., \"A method to maintain phase-change memory pre-coding data retention after high temperature solder bonding process in embedded systems,\" VLSI Technology (VLSIT), 2011 Symposium on , vol., no., pp.98,99, 14-16 June 2011",
         title: "A method to maintain phase-change memory pre-coding data retention after high temperature solder bonding process in embedded systems",
@@ -1245,16 +1243,14 @@ async function run() {
         heaterpitchnm: 1.2,
         filmthicknessnm: 10,
         resetpulsewidthns: 50,
-        setpulsewidthns: "??",
+
         thresholdvoltagev: 12,
         resetcurrentuaorvoltage: 1.4,
         setcurrentuaorvoltage: 0.45,
         hrslrsratiominimum: 10,
-        rhigh: "2x107",
-        rlow: "1.5x106",
+        rhigh: "2x10^7",
+        rlow: "1.5x10^6",
         endurance: 100,
-        retention: "??",
-        retentionextrapolation: "??",
         resetenergypj: 1.2,
         year: 2011,
         citation: "Jiale Liang; Jeyasingh, R.G.D.; Hong-Yu Chen; Wong, H.-S.P., \"A 1.4µA reset current phase change memory cell with integrated carbon nanotube electrodes for cross-point memory application,\" VLSI Technology (VLSIT), 2011 Symposium on , vol., no., pp.100,101, 14-16 June 2011",
@@ -1273,19 +1269,19 @@ async function run() {
         structure: "Mushroom",
         cellareanm2: 8750000,
         heaterpitchnm: "F = 90",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 20,
         setpulsewidthns: 200,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: "V = 2.5 V",
         setcurrentuaorvoltage: "V = 3 V",
         hrslrsratiominimum: 30,
-        rhigh: "3x106",
+        rhigh: "3x10^6",
         rlow: "105",
         endurance: "107",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2011,
         citation: "Wen, C.-Y.; Li, J.; Kim, S.; Breitwisch, M.; Lam, C.; Paramesh, J.; Pileggi, L.T., \"A non-volatile look-up table design using PCM (phase-change memory) cells,\" VLSI Circuits (VLSIC), 2011 Symposium on , vol., no., pp.302,303, 15-17 June 2011",
         title: "A non-volatile look-up table design using PCM (phase-change memory) cells",
@@ -1302,19 +1298,19 @@ async function run() {
         structure: "Dash Confined",
         cellareanm2: 7000,
         heaterpitchnm: 84,
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 30,
         setpulsewidthns: 30,
         thresholdvoltagev: 1.9,
         resetcurrentuaorvoltage: 200,
         setcurrentuaorvoltage: 80,
         hrslrsratiominimum: 100,
-        rhigh: "3x106",
-        rlow: "6x104",
+        rhigh: "3x10^6",
+        rlow: "6x10^4",
         endurance: "108",
-        retention: "2000s@ 260℃",
-        retentionextrapolation: "10y@ 203℃",
-        resetenergypj: "??",
+        retention: "2000s@ 260degC",
+        retentionextrapolation: "10y@ 203degC",
+
         year: 2011,
         citation: "Lee, S.H.; Park, H.C.; Kim, M.S.; Kim, H.W.; Choi, M.R.; Lee, H.G.; Seo, J.W.; Kim, S.C.; Kim, S.G.; Hong, S.B.; Lee, S.Y.; Lee, J.U.; Kim, Y.S.; Kim, K.S.; Kim, J.I.; Lee, M.Y.; Shin, H.S.; Chae, S.J.; Song, J.H.; Yoon, H.S.; Oh, J.M.; Min, S.K.; Lee, H.M.; Hong, K.R.; Cheong, J.T.; Park, S.N.; Ku, J.C.; Shin, H.S.; Sohn, Y.S.; Park, S.K.; Kim, T.S.; Kim, Y.K.; Park, K.W.; Han, C.S.; Kim, H.W.; Kim, W.; Kim, H.J.; Choi, K.S.; Lee, J.H.; Hong, S.J., \"Highly productive PCRAM technology platform and full chip operation: Based on 4F2 (84nm pitch) cell scheme for 1 Gb and beyond,\" Electron Devices Meeting (IEDM), 2011 IEEE International , vol., no., pp.3.3.1,3.3.4, 5-7 Dec. 2011",
         title: "Highly productive PCRAM technology platform and full chip operation: Based on 4F2 (84nm pitch) cell scheme for 1 Gb and beyond",
@@ -1329,21 +1325,21 @@ async function run() {
         pcmmaterial: "GST (Higher Ge content)",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 47,
         filmthicknessnm: 100,
         resetpulsewidthns: 40,
         setpulsewidthns: 300,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 500,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 50,
-        rhigh: "3x106",
-        rlow: "2x104",
-        endurance: "2x107",
-        retention: "1h@ 190℃",
-        retentionextrapolation: "10y@ 120℃",
-        resetenergypj: "??",
+        rhigh: "3x10^6",
+        rlow: "2x10^4",
+        endurance: "2x10^7",
+        retention: "1h@ 190degC",
+        retentionextrapolation: "10y@ 120degC",
+
         year: 2011,
         citation: "Cheng, H.Y.; Hsu, T.H.; Raoux, S.; Wu, J.Y.; Du, P.Y.; Breitwisch, M.; Zhu, Y.; Lai, E.K.; Joseph, E.; Mittal, S.; Cheek, R.; Schrott, A.; Lai, S. -C; Lung, H. -L; Lam, C., \"A high performance phase change memory with fast switching speed and high temperature retention by engineering the GexSbyTez phase change material,\" Electron Devices Meeting (IEDM), 2011 IEEE International , vol., no., pp.3.4.1,3.4.4, 5-7 Dec. 2011",
         title: "A high performance phase change memory with fast switching speed and high temperature retention by engineering the GexSbyTez phase change material",
@@ -1358,7 +1354,7 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "nanowire",
-        cellareanm2: "??",
+
         heaterpitchnm: "1 to 6",
         filmthicknessnm: 10,
         resetpulsewidthns: 50,
@@ -1367,11 +1363,11 @@ async function run() {
         resetcurrentuaorvoltage: 1,
         setcurrentuaorvoltage: 5,
         hrslrsratiominimum: 25,
-        rhigh: "5x107",
-        rlow: "2x106",
+        rhigh: "5x10^7",
+        rlow: "2x10^6",
         endurance: "200",
-        retention: "??",
-        retentionextrapolation: "??",
+
+
         resetenergypj: 2.5,
         year: 2011,
         citation: "Xiong, F.; Liao, A.D.;Estrada, D.; Pop, E., \"Low-Power Switching of Phase-Change Materials with Carbon Nanotube Electrodes\", Science 29 April 2011: 332 (6029), 568-570.",
@@ -1386,23 +1382,23 @@ async function run() {
     {
         name: "PCM",
         publicationyear: "VLSIT 2012",
-        pcmmaterial: "??",
+
         _2d3dgeometry: "3D",
         structure: "Transistor Chain",
-        cellareanm2: "??",
+
         filmthicknessnm: 2,
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
+
+
+
+
+
         hrslrsratiominimum: 10,
-        rhigh: "??",
-        rlow: "??",
+
+
         endurance: "106",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2012,
         citation: "Kinoshita, M.; Sasago, Y.; Minemura, H.; Anzai, Y.; Tai, M.; Fujisaki, Y.; Kusaba, S.; Morimoto, T.; Takahama, T.; Mine, T.; Shima, A.; Yonamoto, Y.; Kobayashi, T., \"Scalable 3-D vertical chain-cell-type phase-change memory with 4F2 poly-Si diodes,\" VLSI Technology (VLSIT), 2012 Symposium on , vol., no., pp.35,36, 12-14 June 2012",
         title: "Scalable 3-D vertical chain-cell-type phase-change memory with 4F2 poly-Si diodes",
@@ -1418,21 +1414,21 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 40,
         filmthicknessnm: 100,
         resetpulsewidthns: 20,
         setpulsewidthns: 200,
         thresholdvoltagev: "1 - 1.2",
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
+
+
         hrslrsratiominimum: 100,
         rhigh: "106",
-        rlow: "2x104",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+        rlow: "2x10^4",
+
+
+
+
         year: 2012,
         citation: "Lin, Y.Y.; Chen, Y.C.; Lee, F.M.; BrightSky, M.; Lung, H. -L; Lam, C., \"A simple new write scheme for low latency operation of phase change memory,\" VLSI Technology (VLSIT), 2012 Symposium on , vol., no., pp.51,52, 12-14 June 2012",
         title: "A simple new write scheme for low latency operation of phase change memory",
@@ -1447,21 +1443,21 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "Pore",
-        cellareanm2: "??",
+
         heaterpitchnm: 35,
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
+
+
         setpulsewidthns: 5000,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 200,
         setcurrentuaorvoltage: 90,
-        hrslrsratiominimum: "??",
-        rhigh: "??",
-        rlow: "??",
+
+
+
         endurance: "105",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2012,
         citation: "Burr, G.W.; Virwani, K.; Shenoy, R.S.; Padilla, A.; BrightSky, M.; Joseph, E.A.; Lofaro, M.; Kellock, A.J.; King, R.S.; Nguyen, K.; Bowers, A.N.; Jurich, M.; Rettner, C.T.; Jackson, B.; Bethune, D.S.; Shelby, R.M.; Topuria, T.; Arellano, N.; Rice, P.M.; Kurdi, B.N.; Gopalakrishnan, K., \"Large-scale (512kbit) integration of multilayer-ready access-devices based on mixed-ionic-electronic-conduction (MIEC) at 100% yield,\" VLSI Technology (VLSIT), 2012 Symposium on , vol., no., pp.41,42, 12-14 June 2012",
         title: "Large-scale (512kbit) integration of multilayer-ready access-devices based on mixed-ionic-electronic-conduction (MIEC) at 100% yield",
@@ -1476,21 +1472,21 @@ async function run() {
         pcmmaterial: "GST  (C-doped)",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 200,
         filmthicknessnm: 100,
-        resetpulsewidthns: "??",
+
         setpulsewidthns: 10000,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 15000,
         setcurrentuaorvoltage: "V = 2.5 V",
         hrslrsratiominimum: 50,
         rhigh: "105",
         rlow: "103",
         endurance: "108",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2012,
         citation: "Perniola, L.; Noe, P.; Hubert, Q.; Souiki, S.; Ghezzi, G.; Navarro, G.; Cabrini, A.; Persico, A.; Delaye, V.; Blachier, D.; Barnes, J.-P.; Henaff, E.; Tessaire, M.; Souchier, E.; Roule, A.; Fillot, F.; Ferrand, J.; Fargeix, A.; Hippert, F.; Raty, J.-Y.; Jahan, C.; Sousa, V.; Torelli, G.; Maitrejean, S.; De Salvo, B.; Reimbold, G., \"Ti impact in C-doped phase-change memories compliant to Pb-free soldering reflow,\" Electron Devices Meeting (IEDM), 2012 IEEE International , vol., no., pp.18.7.1,18.7.4, 10-13 Dec. 2012",
         title: "Ti impact in C-doped phase-change memories compliant to Pb-free soldering reflow",
@@ -1506,21 +1502,21 @@ async function run() {
         pcmmaterial: "GST (Ge & N-doped)",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 30,
         filmthicknessnm: 100,
-        resetpulsewidthns: "??",
+
         setpulsewidthns: 160,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 50,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 6,
-        rhigh: "4x106",
-        rlow: "2x105",
-        endurance: "2x107",
-        retention: "16h@ 160℃",
-        retentionextrapolation: "10y@ 120℃",
-        resetenergypj: "??",
+        rhigh: "4x10^6",
+        rlow: "2x10^5",
+        endurance: "2x10^7",
+        retention: "16h@ 160degC",
+        retentionextrapolation: "10y@ 120degC",
+
         year: 2012,
         citation: "Cheng, H.Y.; Wu, J.Y.; Cheek, R.; Raoux, S.; BrightSky, M.; Garbin, D.; Kim, S.; Hsu, T.H.; Zhu, Y.; Lai, E.K.; Joseph, E.; Schrott, A.; Lai, S.C.; Ray, A.; Lung, H.L.; Lam, C., \"A thermally robust phase change memory by engineering the Ge/N concentration in (Ge, N)xSbyTe z phase change material,\" Electron Devices Meeting (IEDM), 2012 IEEE International , vol., no., pp.31.1.1,31.1.4, 10-13 Dec. 2012",
         title: "A thermally robust phase change memory by engineering the Ge/N concentration in (Ge, N)xSbyTe zphase change material",
@@ -1535,7 +1531,7 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "Confined",
-        cellareanm2: "??",
+
         filmthicknessnm: 40,
         resetpulsewidthns: 6,
         setpulsewidthns: 100,
@@ -1546,9 +1542,9 @@ async function run() {
         rhigh: "105",
         rlow: "104",
         endurance: "107",
-        retention: "100s@ 190℃",
-        retentionextrapolation: "10y@ 100℃",
-        resetenergypj: "??",
+        retention: "100s@ 190degC",
+        retentionextrapolation: "10y@ 100degC",
+
         year: 2012,
         citation: "Wang, W.J.; Loke, D.; Law, L.T.; Shi, L.P.; Zhao, R.; Li, M.H.; Chen, L.L.; Yang, H.X.; Yeo, Y.C.; Adeyeye, A.O.; Chong, T.C.; Lacaita, A.L., \"Engineering grains of Ge2Sb2Te5 for realizing fast-speed, low-power, and low-drift phase-change memories with further multilevel capabilities,\"Electron Devices Meeting (IEDM), 2012 IEEE International , vol., no., pp.31.3.1,31.3.4, 10-13 Dec. 2012",
         title: "Engineering grains of Ge2Sb2Te5 for realizing fast-speed, low-power, and low-drift phase-change memories with further multilevel capabilities",
@@ -1564,21 +1560,21 @@ async function run() {
         pcmmaterial: "nanocrystal GST",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 60,
         filmthicknessnm: 50,
         resetpulsewidthns: 20,
-        setpulsewidthns: "??",
+
         thresholdvoltagev: 2,
         resetcurrentuaorvoltage: 220,
         setcurrentuaorvoltage: "V = 2 V",
         hrslrsratiominimum: 50,
-        rhigh: "3x106",
-        rlow: "2x104",
+        rhigh: "3x10^6",
+        rlow: "2x10^4",
         endurance: "107",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2012,
         citation: "Morikawa, T.; Akita, K.; Ohyanagi, T.; Kitamura, M.; Kinoshita, M.; Tai, M.; Takaura, N., \"A low power phase change memory using low thermal conductive doped-Ge2Sb2Te 5 with nano-crystalline structure,\" Electron Devices Meeting (IEDM), 2012 IEEE International , vol., no., pp.31.4.1,31.4.4, 10-13 Dec. 2012",
         title: "A low power phase change memory using low thermal conductive doped-Ge2Sb2Te 5 with nano-crystalline structure",
@@ -1594,21 +1590,21 @@ async function run() {
         pcmmaterial: "GeTe/Sb2Te3  SuperLattice",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
-        heaterpitchnm: "??",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
+
+
+
+
         resetcurrentuaorvoltage: "3.3MA/cm2, 0.46V",
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 100,
         rhigh: "105",
         rlow: "103",
         endurance: "106",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2013,
         citation: "Takaura, N.; Ohyanagi, T.; Kitamura, M.; Tai, M.; Kinoshita, M.; Akita, K.; Morikawa, T.; Kato, S.; Araidai, M.; Kamiya, K.; Yamamoto, T.; Shiraishi, K., \"Charge injection Super-lattice Phase Change Memory for low power and high density storage device applications,\" VLSI Technology (VLSIT), 2013 Symposium on , vol., no., pp.T130,T131, 11-13 June 2013",
         title: "Charge injection Super-lattice Phase Change Memory for low power and high density storage device applications",
@@ -1624,20 +1620,20 @@ async function run() {
         _2d3dgeometry: "2D",
         structure: "Confined",
         cellareanm2: 800,
-        heaterpitchnm: "??",
+
         filmthicknessnm: 15,
-        resetpulsewidthns: "??",
+
         setpulsewidthns: 200,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 100,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 10,
         rhigh: "106",
-        rlow: "5x104",
+        rlow: "5x10^4",
         endurance: "108",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2013,
         citation: "Lai, S.C.; Kim, S.; BrightSky, M.; Zhu, Y.; Joseph, E.; Bruce, R.; Cheng, H.Y.; Ray, A.; Raoux, S.; Wu, J.Y.; Wang, T.Y.; Cortes, N.S.; Lin, C.M.; Lin, Y.Y.; Cheek, R.; Lai, E.K.; Lee, M.H.; Lung, H.L.; Lam, C., \"A scalable volume-confined phase change memory using physical vapor deposition,\" VLSI Technology (VLSIT), 2013 Symposium on , vol., no., pp.T132,T133, 11-13 June 2013",
         title: "A scalable volume-confined phase change memory using physical vapor deposition",
@@ -1651,21 +1647,21 @@ async function run() {
         pcmmaterial: "Sputtered GST",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 40,
         filmthicknessnm: 80,
         resetpulsewidthns: 20,
         setpulsewidthns: 20,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 150,
         setcurrentuaorvoltage: "V = 1 V",
         hrslrsratiominimum: 20,
-        rhigh: "3x107",
-        rlow: "2x105",
+        rhigh: "3x10^7",
+        rlow: "2x10^5",
         endurance: "109",
-        retention: "??",
-        retentionextrapolation: "20y@ 55℃",
-        resetenergypj: "??",
+
+        retentionextrapolation: "20y@ 55degC",
+
         year: 2013,
         citation: "Cheng, H.Y.; BrightSky, M.; Raoux, S.; Chen, C.F.; Du, P.Y.; Wu, J.Y.; Lin, Y.Y.; Hsu, T.H.; Zhu, Y.; Kim, S.; Lin, C.M.; Ray, A.; Lung, H.L.; Lam, C., \"Atomic-level engineering of phase change material for novel fast-switching and high-endurance PCM for storage class memory application,\" Electron Devices Meeting (IEDM), 2013 IEEE International , vol., no., pp.30.6.1,30.6.4, 9-11 Dec. 2013",
         title: "Atomic-level engineering of phase change material for novel fast-switching and high-endurance PCM for storage class memory application",
@@ -1681,21 +1677,21 @@ async function run() {
         pcmmaterial: "GeTe/Sb2Te3  SuperLattice",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 50,
         filmthicknessnm: 40,
-        resetpulsewidthns: "??",
+
         setpulsewidthns: 10,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: "70 (@on/off=10)",
         setcurrentuaorvoltage: "V = 1.25 V",
         hrslrsratiominimum: 100,
-        rhigh: "2x106",
-        rlow: "3x103",
+        rhigh: "2x10^6",
+        rlow: "3x10^3",
         endurance: "108",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2013,
         citation: "Ohyanagi, T.; Takaura, N.; Tai, M.; Kitamura, M.; Kinoshita, M.; Akita, K.; Morikawa, T.; Kato, S.; Araidai, M.; Kamiya, K.; Yamamoto, T.; Shiraishi, K., \"Charge-injection phase change memory with high-quality GeTe/Sb2Te3 superlattice featuring 70-μA RESET, 10-ns SET and 100M endurance cycles operations,\" Electron Devices Meeting (IEDM), 2013 IEEE International , vol., no., pp.30.5.1,30.5.4, 9-11 Dec. 2013",
         title: "Charge-injection phase change memory with high-quality GeTe/Sb2Te3 superlattice featuring 70-μA RESET, 10-ns SET and 100M endurance cycles operations",
@@ -1721,11 +1717,11 @@ async function run() {
         resetcurrentuaorvoltage: 1.6,
         setcurrentuaorvoltage: 0.1,
         hrslrsratiominimum: 1000,
-        rhigh: "2.5x109",
-        rlow: "1.3x106",
+        rhigh: "2.5x10^9",
+        rlow: "1.3x10^6",
         endurance: "105",
-        retention: "??",
-        retentionextrapolation: "??",
+
+
         resetenergypj: 0.08,
         year: 2013,
         citation: "Xiong, F.; Bae, M.-H.; Dai, Y.; Liao, A.D.; Behnam, A.; Carrion, E.A.; Hong, S.; Ielmini, D.; Pop, E., \"Self-Aligned Nanotube–Nanowire Phase Change Memory,\" Nano Letters 2013 13 (2), 464-469.",
@@ -1743,21 +1739,21 @@ async function run() {
         pcmmaterial: "Doped  GST 225",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: "F = 90",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
+
+
         setpulsewidthns: "20-30",
-        thresholdvoltagev: "??",
-        resetcurrentuaorvoltage: "??",
+
+
         setcurrentuaorvoltage: 60,
         hrslrsratiominimum: 100,
         rhigh: "107",
         rlow: "105",
         endurance: "109",
-        retention: "0.5h@ 150℃",
-        retentionextrapolation: "1000h@ 85℃",
-        resetenergypj: "??",
+        retention: "0.5h@ 150degC",
+        retentionextrapolation: "1000h@ 85degC",
+
         year: 2014,
         citation: "Lung, H.L.; BrightSky, M.; Chien, W.C.; Wu, J.Y.; Kim, S.; Kim, W.; Cheng, H.Y.; Zhu, Y.; Wang, T.Y.; Cheek, R.; Bruce, R.; Lam, C., \"Towards the integration of both ROM and RAM functions phase change memory cells on a single die for system-on-chip (SOC) applications,\" VLSI Technology (VLSI-Technology): Digest of Technical Papers, 2014 Symposium on , vol., no., pp.1,2, 9-12 June 2014",
         title: "Towards the integration of both ROM and RAM functions phase change memory cells on a single die for system-on-chip (SOC) applications",
@@ -1773,20 +1769,20 @@ async function run() {
         _2d3dgeometry: "2D",
         structure: "Cross-point",
         cellareanm2: 100,
-        heaterpitchnm: "??",
+
         filmthicknessnm: 10,
         resetpulsewidthns: 50,
-        setpulsewidthns: "??",
+
         thresholdvoltagev: 6,
         resetcurrentuaorvoltage: 1,
         setcurrentuaorvoltage: "V = 3.7",
         hrslrsratiominimum: 100,
         rhigh: "108",
-        rlow: "2x103",
+        rlow: "2x10^3",
         endurance: 100,
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2014,
         citation: "Chiyui Ahn; Zizhen Jiang; Chi-Shuen Lee; Hong-Yu Chen; Jiale Liang; Liyanage, L.S.; Wong, H.-S.P., \"A 1TnR array architecture using a one-dimensional selection device,\" VLSI Technology (VLSI-Technology): Digest of Technical Papers, 2014 Symposium on , vol., no., pp.1,2, 9-12 June 2014",
         title: "A 1TnR array architecture using a one-dimensional selection device",
@@ -1803,21 +1799,21 @@ async function run() {
         pcmmaterial: "GeTe/Sb2Te3  SuperLattice",
         _2d3dgeometry: "2D",
         structure: "Pillar",
-        cellareanm2: "??",
+
         heaterpitchnm: 100,
         filmthicknessnm: 40,
         resetpulsewidthns: 100,
         setpulsewidthns: 100,
-        thresholdvoltagev: "??",
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
+
+
+
         hrslrsratiominimum: 100,
         rhigh: "106",
         rlow: "103",
-        endurance: "??",
-        retention: "1000s@ 200℃",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+        retention: "1000s@ 200degC",
+
+
         year: 2014,
         citation: "Tai, M.; Ohyanagi, T.; Kinoshita, M.; Morikawa, T.; Akita, K.; Kato, S.; Shirakawa, H.; Araidai, M.; Shiraishi, K.; Takaura, N., \"1T-1R pillar-type topological-switching random access memory (TRAM) and data retention of GeTe/Sb2Te3 super-lattice films,\" VLSI Technology (VLSI-Technology): Digest of Technical Papers, 2014 Symposium on , vol., no., pp.1,2, 9-12 June 2014",
         title: "1T-1R pillar-type topological-switching random access memory (TRAM) and data retention of GeTe/Sb2Te3 super-lattice films",
@@ -1836,18 +1832,18 @@ async function run() {
         cellareanm2: 540,
         heaterpitchnm: "D = 9 x 60",
         filmthicknessnm: 60,
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
+
         resetcurrentuaorvoltage: 750,
-        setcurrentuaorvoltage: "??",
-        hrslrsratiominimum: "??",
-        rhigh: "2x107",
-        rlow: "4x103",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+        rhigh: "2x10^7",
+        rlow: "4x10^3",
+
+
+
+
         year: 2014,
         citation: "M. Boniardi et al., \"Optimization metrics for Phase Change Memory (PCM) cell architectures,\" 2014 IEEE International Electron Devices Meeting, San Francisco, CA, 2014, pp. 29.1.1-29.1.4.",
         title: "Optimization metrics for Phase Change Memory (PCM) cell architectures",
@@ -1863,18 +1859,18 @@ async function run() {
         cellareanm2: 1960,
         heaterpitchnm: 50,
         filmthicknessnm: 60,
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
+
         resetcurrentuaorvoltage: 3000,
-        setcurrentuaorvoltage: "??",
-        hrslrsratiominimum: "??",
-        rhigh: "1x106",
-        rlow: "2x103",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+        rhigh: "1x10^6",
+        rlow: "2x10^3",
+
+
+
+
         year: 2014,
         citation: "M. Boniardi et al., \"Optimization metrics for Phase Change Memory (PCM) cell architectures,\" 2014 IEEE International Electron Devices Meeting, San Francisco, CA, 2014, pp. 29.1.1-29.1.4.",
         title: "Optimization metrics for Phase Change Memory (PCM) cell architectures",
@@ -1889,19 +1885,19 @@ async function run() {
         structure: "Wall",
         cellareanm2: 150,
         heaterpitchnm: "D = 5 x 30",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
+
+
         resetcurrentuaorvoltage: 80,
-        setcurrentuaorvoltage: "??",
-        hrslrsratiominimum: "??",
-        rhigh: "2x106",
-        rlow: "2x104",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+        rhigh: "2x10^6",
+        rlow: "2x10^4",
+
+
+
+
         year: 2014,
         citation: "M. Boniardi et al., \"Optimization metrics for Phase Change Memory (PCM) cell architectures,\" 2014 IEEE International Electron Devices Meeting, San Francisco, CA, 2014, pp. 29.1.1-29.1.4.",
         title: "Optimization metrics for Phase Change Memory (PCM) cell architectures",
@@ -1917,18 +1913,18 @@ async function run() {
         cellareanm2: 1400,
         heaterpitchnm: "D = 70 x 400",
         filmthicknessnm: 20,
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
+
         resetcurrentuaorvoltage: 300,
-        setcurrentuaorvoltage: "??",
-        hrslrsratiominimum: "??",
-        rhigh: "5x107",
-        rlow: "1x104",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+        rhigh: "5x10^7",
+        rlow: "1x10^4",
+
+
+
+
         year: 2014,
         citation: "M. Boniardi et al., \"Optimization metrics for Phase Change Memory (PCM) cell architectures,\" 2014 IEEE International Electron Devices Meeting, San Francisco, CA, 2014, pp. 29.1.1-29.1.4.",
         title: "Optimization metrics for Phase Change Memory (PCM) cell architectures",
@@ -1943,19 +1939,19 @@ async function run() {
         structure: "Mushroom",
         cellareanm2: 15000,
         heaterpitchnm: "F = 45",
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 160,
         setpulsewidthns: 500,
         thresholdvoltagev: 1.1,
         resetcurrentuaorvoltage: "V = 0.75 V",
         setcurrentuaorvoltage: "V = 0.85 V",
         hrslrsratiominimum: 40,
-        rhigh: "8x105",
-        rlow: "2x104",
+        rhigh: "8x10^5",
+        rlow: "2x10^4",
         endurance: "108",
-        retention: "1h@ 160℃",
-        retentionextrapolation: "10y@ 85℃",
-        resetenergypj: "??",
+        retention: "1h@ 160degC",
+        retentionextrapolation: "10y@ 85degC",
+
         year: 2014,
         citation: "M. Rizzi, N. Ciocchini, S. Caravati, M. Bernasconi, P. Fantini and D. Ielmini, \"Statistics of set transition in phase change memory (PCM) arrays,\" 2014 IEEE International Electron Devices Meeting, San Francisco, CA, 2014, pp. 29.6.1-29.6.4.",
         title: "Statistics of set transition in phase change memory (PCM) arrays",
@@ -1972,17 +1968,17 @@ async function run() {
         heaterpitchnm: 30,
         filmthicknessnm: "~60",
         resetpulsewidthns: 50,
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
+
+
         resetcurrentuaorvoltage: 120,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 50,
-        rhigh: "1x106",
-        rlow: "1x104",
-        endurance: ">8x108",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+        rhigh: "1x10^6",
+        rlow: "1x10^4",
+        endurance: ">8x10^8",
+
+
+
         year: 2014,
         citation: "W. S. Khwa et al., \"A novel inspection and annealing procedure to rejuvenate phase change memory from cycling-induced degradations for storage class memory applications,\" 2014 IEEE International Electron Devices Meeting, San Francisco, CA, 2014, pp. 29.8.1-29.8.4.",
         title: "A novel inspection and annealing procedure to rejuvenate phase change memory from cycling-induced degradations for storage class memory applications",
@@ -2004,11 +2000,11 @@ async function run() {
         resetcurrentuaorvoltage: 55,
         setcurrentuaorvoltage: 55,
         hrslrsratiominimum: 200,
-        rhigh: "2x106",
-        rlow: "2x103",
+        rhigh: "2x10^6",
+        rlow: "2x10^3",
         endurance: "108",
         retention: "200C for 2000s",
-        retentionextrapolation: "??",
+
         resetenergypj: 5.8,
         year: 2014,
         citation: "N. Takaura et al., \"55-µA GexTe1−x/Sb2Te3 superlattice topological-switching random access memory (TRAM) and study of atomic arrangement in Ge-Te and Sb-Te structures,\" 2014 IEEE International Electron Devices Meeting, San Francisco, CA, 2014, pp. 29.2.1-29.2.4.",
@@ -2024,19 +2020,19 @@ async function run() {
         structure: "VCC",
         cellareanm2: 800,
         heaterpitchnm: 32,
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 10,
         setpulsewidthns: 50,
-        thresholdvoltagev: "??",
-        resetcurrentuaorvoltage: "??",
+
+
         setcurrentuaorvoltage: "V = 6.25 V",
         hrslrsratiominimum: 100,
-        rhigh: "??",
-        rlow: "??",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
+
+
+
         year: 2015,
         citation: "K. Kurotsuchi et al., \"2.8-GB/s-write and 670-MB/s-erase operations of a 3D vertical chain-cell-type phase-change-memory array,\" VLSI Technology (VLSI Technology), 2015 Symposium on, Kyoto, 2015, pp. T92-T93.",
         title: "2.8-GB/s-write and 670-MB/s-erase operations of a 3D vertical chain-cell-type phase-change-memory array",
@@ -2052,18 +2048,18 @@ async function run() {
         cellareanm2: 2000,
         heaterpitchnm: 50,
         filmthicknessnm: 50,
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
+
+
         thresholdvoltagev: 1,
         resetcurrentuaorvoltage: "V = 1 V",
         setcurrentuaorvoltage: "V = 0.4 V",
         hrslrsratiominimum: 1000,
-        rhigh: "3x105",
-        rlow: "3x102",
+        rhigh: "3x10^5",
+        rlow: "3x10^2",
         endurance: "106",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2015,
         citation: "M. Tai et al., \"A 50-nm 1.2-V GexTe1−x/Sb2Te3 superlattice topological-switching random-access memory (TRAM),\" VLSI Technology (VLSI Technology), 2015 Symposium on, Kyoto, 2015, pp. T96-T97.",
         title: "A 50-nm 1.2-V GexTe1−x/Sb2Te3 superlattice topological-switching random-access memory (TRAM)",
@@ -2076,20 +2072,20 @@ async function run() {
         pcmmaterial: "Ge Rich GST",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
-        heaterpitchnm: "??",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
+
+
+
+
         setpulsewidthns: 700,
-        thresholdvoltagev: "??",
-        resetcurrentuaorvoltage: "??",
+
+
         setcurrentuaorvoltage: 220,
         hrslrsratiominimum: 200,
-        rhigh: "2x106",
-        rlow: "1x104",
+        rhigh: "2x10^6",
+        rlow: "1x10^4",
         endurance: "108",
-        retention: "1h@ 240℃",
-        resetenergypj: "??",
+        retention: "1h@ 240degC",
+
         year: 2015,
         citation: "V. Sousa et al., \"Operation fundamentals in 12Mb Phase Change Memory based on innovative Ge-rich GST materials featuring high reliability performance,\" VLSI Technology (VLSI Technology), 2015 Symposium on, Kyoto, 2015, pp. T98-T99.",
         title: "Operation fundamentals in 12Mb Phase Change Memory based on innovative Ge-rich GST materials featuring high reliability performance",
@@ -2102,21 +2098,21 @@ async function run() {
         pcmmaterial: "Doped GST",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
-        heaterpitchnm: "??",
-        filmthicknessnm: "??",
+
+
+
         resetpulsewidthns: 40,
         setpulsewidthns: 160,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: "Var",
         setcurrentuaorvoltage: 40,
         hrslrsratiominimum: 10,
-        rhigh: "??",
-        rlow: "??",
-        endurance: "??",
-        retention: "??",
-        retentionextrapolation: "1y@ 70℃",
-        resetenergypj: "??",
+
+
+
+
+        retentionextrapolation: "1y@ 70degC",
+
         year: 2015,
         citation: "W. C. Chien et al., \"A novel self-converging write scheme for 2-bits/cell phase change memory for Storage Class Memory (SCM) application,\" VLSI Technology (VLSI Technology), 2015 Symposium on, Kyoto, 2015, pp. T100-T101.",
         title: "A novel self-converging write scheme for 2-bits/cell phase change memory for Storage Class Memory (SCM) application",
@@ -2129,21 +2125,21 @@ async function run() {
         pcmmaterial: "GST",
         _2d3dgeometry: "2D",
         structure: "Pore",
-        cellareanm2: "??",
+
         heaterpitchnm: 33,
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
+
+
         setpulsewidthns: 80,
-        thresholdvoltagev: "??",
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
-        hrslrsratiominimum: "??",
-        rhigh: "5x106",
-        rlow: "5x105",
-        endurance: "2.8x1010",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
+
+        rhigh: "5x10^6",
+        rlow: "5x10^5",
+        endurance: "2.8x10^10",
+
+
+
         year: 2015,
         citation: "M. B. Sky et al., \"Crystalline-as-deposited ALD phase change material confined PCM cell for high density storage class memory,\" 2015 IEEE International Electron Devices Meeting (IEDM), Washington, DC, 2015, pp. 3.6.1-3.6.4.",
         title: "Crystalline-as-deposited ALD phase change material confined PCM cell for high density storage class memory",
@@ -2156,21 +2152,21 @@ async function run() {
         pcmmaterial: "GaSbGe",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: 20,
-        filmthicknessnm: "??",
+
         resetpulsewidthns: 80,
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
+
+
+
+
         hrslrsratiominimum: 20,
-        rhigh: "2x105",
-        rlow: "1x104",
+        rhigh: "2x10^5",
+        rlow: "1x10^4",
         endurance: "109",
-        retention: "1h@ 285℃",
-        retentionextrapolation: "10y@ 220℃",
-        resetenergypj: "??",
+        retention: "1h@ 285degC",
+        retentionextrapolation: "10y@ 220degC",
+
         year: 2015,
         citation: "H. Y. Cheng et al., \"Novel fast-switching and high-data retention phase-change memory based on new Ga-Sb-Ge material,\" 2015 IEEE International Electron Devices Meeting (IEDM), Washington, DC, 2015, pp. 3.5.1-3.5.4.",
         title: "Novel fast-switching and high-data retention phase-change memory based on new Ga-Sb-Ge material",
@@ -2190,14 +2186,14 @@ async function run() {
         setpulsewidthns: 100,
         thresholdvoltagev: 5,
         resetcurrentuaorvoltage: 1200,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 30,
-        rhigh: "2x106",
-        rlow: "7x104",
+        rhigh: "2x10^6",
+        rlow: "7x10^4",
         endurance: "105",
-        retention: "??",
-        retentionextrapolation: "??",
-        resetenergypj: "??",
+
+
+
         year: 2015,
         citation: "Chiyui Ahn, et al., \"Energy-Efficient Phase-Change Memory with Graphene as a Thermal Barrier,\" Nano Letters 2015 15 (10), 6809-6814",
         title: "Energy-Efficient Phase-Change Memory with Graphene as a Thermal Barrier",
@@ -2210,20 +2206,20 @@ async function run() {
         pcmmaterial: "Doped GST",
         _2d3dgeometry: "2D",
         structure: "Mushroom",
-        cellareanm2: "??",
+
         heaterpitchnm: "F = 90 nm",
-        filmthicknessnm: "??",
-        resetpulsewidthns: "??",
-        setpulsewidthns: "??",
-        thresholdvoltagev: "??",
-        resetcurrentuaorvoltage: "??",
-        setcurrentuaorvoltage: "??",
+
+
+
+
+
+
         hrslrsratiominimum: 20,
-        rhigh: "??",
-        rlow: "??",
-        endurance: "??",
-        retention: "50h@ 85℃",
-        retentionextrapolation: "??",
+
+
+
+        retention: "50h@ 85degC",
+
         resetenergypj: 27,
         year: 2016,
         citation: "W. S. Khwa et al., \"7.3 A resistance-drift compensation scheme to reduce MLC PCM raw BER by over 100x for storage-class memory applications,\" 2016 IEEE International Solid-State Circuits Conference (ISSCC), San Francisco, CA, 2016, pp. 134-135.",
@@ -2240,18 +2236,18 @@ async function run() {
         cellareanm2: "D = 35 nm",
         heaterpitchnm: "D = 35 nm",
         filmthicknessnm: 1.5,
-        resetpulsewidthns: "??",
+
         setpulsewidthns: 80,
-        thresholdvoltagev: "??",
+
         resetcurrentuaorvoltage: 20,
-        setcurrentuaorvoltage: "??",
+
         hrslrsratiominimum: 10,
-        rhigh: "2x108",
-        rlow: "1x106",
+        rhigh: "2x10^8",
+        rlow: "1x10^6",
         endurance: "1011",
-        retention: "8000s@ 120℃",
-        retentionextrapolation: "8y@ 70℃",
-        resetenergypj: "??",
+        retention: "8000s@ 120degC",
+        retentionextrapolation: "8y@ 70degC",
+
         year: 2016,
         citation: "H. L. Lung, et al., \"A Novel Low Power Phase Change Memory Using Inter-Granular Switching,\" VLSI Technology (VLSI Technology), 2016 Symposium on, Honolulu, HI, 2016, pp. 128-129.",
         title: "A Novel Low Power Phase Change Memory Using Inter-Granular Switching",
@@ -2437,7 +2433,7 @@ async function run() {
         rhigh: "1e6",
         rlow: "1e4",
         endurance: 10000000,
-        retention: "265°C/~210s",
+        retention: "265degC/~210s",
         year: 2020,
         citation: "F.Arnaud et al. \"High Density Embedded PCM Cell in 28nm FDSOI Technology for Automotive Micro-Controller Applications\", IEDM 2020",
         comments: "ST Microelectronics",
@@ -2455,7 +2451,7 @@ async function run() {
         rhigh: "~1e6",
         rlow: "~1e4",
         endurance: 10000000,
-        retention: "240°C 1h",
+        retention: "240degC 1h",
         year: 2021,
         citation: "O. Weber et al., \"A New BJT Selector for sub-0.02µm2 High Density Embedded PCM Memory in FDSOI CMOS Technology\", VLSI 2021",
         comments: "ST Microelectronics",
@@ -2516,7 +2512,7 @@ async function run() {
         rhigh: "108~1011",
         rlow: "103~106",
         endurance: "106",
-        retention: "10y@ 70℃ ",
+        retention: "10y@ 70degC ",
         citation: "M. Kund, et al. Conductive bridging RAM (CBRAM): an emerging non-volatile memory technology scalable to sub 20nm. IEDM 2005, pp. 754-757.",
         comments: "2Mb chip",
         doi: "doi: 10.1109/IEDM.2005.1609463",
@@ -2537,7 +2533,7 @@ async function run() {
         rhigh: "1011",
         rlow: "104",
         endurance: "106",
-        retention: "10y@ 70℃ ",
+        retention: "10y@ 70degC ",
         citation: "H. Hönigschmid, et al. A Non-Volatile 2Mbit CBRAM Memory Core Featuring Advanced Read and Program Control. VLSI Circuits 2006, pp. 110-111.",
         doi: "doi 10.1109/VLSIC.2006.1705334",
         citationheader: "[doi 10.1109/VLSIC.2006.1705334] 104_x000D_",
@@ -2557,7 +2553,7 @@ async function run() {
         rhigh: "107",
         rlow: "104",
         endurance: "105",
-        retention: "100h@ 100℃(~10y) ",
+        retention: "100h@ 100degC(~10y) ",
         citation: "K. Aratani, et al. A Novel Resistance Memory with High Scalability and Nanosecond Switching. IEDM 2007, pp. 783-786.",
         doi: "doi: 10.1109/IEDM.2007.4419064",
         citationheader: "[doi: 10.1109/IEDM.2007.4419064] 104_x000D_",
@@ -2637,7 +2633,7 @@ async function run() {
         rhigh: "107",
         rlow: "2×104",
         endurance: ">2×105 ",
-        retention: "200h@ 150℃ ",
+        retention: "200h@ 150degC ",
         citation: "Y. Lin, et al. A Novel TiTe Buffered Cu-GeSbTe/SiO2 Electrochemical Resistive Memory (ReRAM). VLSI Tech. 2010, pp. 91-92. ",
         doi: "doi: 10.1109/VLSIT.2010.5556183",
         citationheader: "[doi: 10.1109/VLSIT.2010.5556183] 2×104_x000D_",
@@ -2657,7 +2653,7 @@ async function run() {
         rhigh: "109",
         rlow: "800",
         endurance: "N/A ",
-        retention: "10y@ 150℃ ",
+        retention: "10y@ 150degC ",
         citation: "N. Banno, et al. Reliable solid-electrolyte crossbar switch for programmable logic device. VLSI Tech. 2010, pp. 115-116.",
         doi: "doi: 10.1109/VLSIT.2010.5556192",
         citationheader: "[doi: 10.1109/VLSIT.2010.5556192] 800_x000D_",
@@ -2717,7 +2713,7 @@ async function run() {
         rhigh: "108",
         rlow: "400",
         endurance: "N/A ",
-        retention: "10y@ 105℃ ",
+        retention: "10y@ 105degC ",
         citation: "K. Okamoto, et al. Conducting Mechanism of Atom Switch with Polymer Solid-electrolyte. IEDM 2011, pp. 12.2.1-12.2.4. ",
         comments: "polymer",
         doi: "doi: 10.1109/IEDM.2011.6131538",
@@ -2779,7 +2775,7 @@ async function run() {
         rhigh: "107",
         rlow: "<104",
         endurance: ">105 ",
-        retention: "10y@ 125℃ ",
+        retention: "10y@ 125degC ",
         citation: "E. Vianello, et al. Sb-doped GeS2 as performance and reliability booster in Conductive Bridge RAM. IEDM 2012, pp. 31.5.1-31.5.4.",
         doi: "doi: 10.1109/IEDM.2012.6479145",
         citationheader: "[doi: 10.1109/IEDM.2012.6479145] <104_x000D_",
@@ -2799,7 +2795,7 @@ async function run() {
         rhigh: "> 1010",
         rlow: "105",
         endurance: "~103 ",
-        retention: "~28h@ 85℃ ",
+        retention: "~28h@ 85degC ",
         citation: "L. Goux, et al. Field-driven ultrafast sub-ns programming in W\Al2O3\Ti\CuTe-based 1T1R CBRAM system. VLSI Tech. 2012, pp. 69-70. ",
         doi: "doi: 10.1109/VLSIT.2012.6242465",
         citationheader: "[doi: 10.1109/VLSIT.2012.6242465] 105_x000D_",
@@ -2838,7 +2834,7 @@ async function run() {
         rhigh: "105",
         rlow: "103",
         endurance: "N/A ",
-        retention: "28h@ 130℃ ",
+        retention: "28h@ 130degC ",
         citation: "J. Guy, et al. Investigation of the physical mechanisms governing data-retention in down to 10nm Nano-trench Al2O3/CuTeGe Conductive Bridge RAM (CBRAM). IEDM 2013, pp. 30.2.1-30.2.4. ",
         doi: "doi: 10.1109/IEDM.2013.6724722",
         citationheader: "[doi: 10.1109/IEDM.2013.6724722] 103_x000D_",
@@ -2857,7 +2853,7 @@ async function run() {
         rhigh: "1011",
         rlow: "104",
         endurance: "104",
-        retention: "10y@ 70℃ ",
+        retention: "10y@ 70degC ",
         citation: "F. Lee, et al. A Novel Conducting Bridge Resistive Memory Using a Semiconducting Dynamic E-field Moderating Layer. VLSI Tech. 2013, pp. T104-T105.",
         doi: "doi not available",
         citationheader: "[doi not available] 104_x000D_",
@@ -2876,7 +2872,7 @@ async function run() {
         rhigh: "106",
         rlow: "104",
         endurance: "103",
-        retention: "~28h@ 130℃ ",
+        retention: "~28h@ 130degC ",
         citation: "G. Molas, et al. Controlling oxygen vacancies in doped oxide based CBRAM for improved memory Performances. IEDM 2014, pp. 6.1.1-6.1.4. ",
         doi: "doi: 10.1109/IEDM.2014.7046993",
         citationheader: "[doi: 10.1109/IEDM.2014.7046993] 104_x000D_",
@@ -2935,7 +2931,7 @@ async function run() {
         hrslrsratio: "~103 ",
         rlow: "104~106",
         endurance: ">106 ",
-        retention: "10y@ 70℃ ",
+        retention: "10y@ 70degC ",
         citation: "S. Sills, et al. A Copper ReRAM Cell for Storage Class Memory Applications. VLSI Tech. 2014. ",
         doi: "doi: 10.1109/VLSIT.2014.6894368",
         citationheader: "[doi: 10.1109/VLSIT.2014.6894368] 104~106_x000D_",
@@ -2955,7 +2951,7 @@ async function run() {
         rhigh: "106~108",
         rlow: "103",
         endurance: ">103 ",
-        retention: ">3000h@ 150℃ ",
+        retention: ">3000h@ 150degC ",
         citation: "N. Banno, et al. A Fast and Low-Voltage Cu Complementary-Atom-Switch 1Mb Array with High-Temperature Retention. VLSI Tech. 2014.",
         doi: "doi: 10.1109/VLSIT.2014.6894437",
         citationheader: "[doi: 10.1109/VLSIT.2014.6894437] 103_x000D_",
@@ -3009,7 +3005,7 @@ async function run() {
         hrslrsratio: "> 107",
         rhigh: "> 1010",
         rlow: "103",
-        retention: "4x104 s",
+        retention: "4x10^4 s",
         citation: "A. Redolfi, et al., A novel CBRAM integration using subtractive dry-etching process of Cu enabling high-performance memory scaling down to 10nm node. VLSI 2015, pp. T134 - T135",
         doi: "doi: 10.1109/VSLIT.2015.7223718",
         citationheader: "[doi: 10.1109/VSLIT.2015.7223718] 103_x000D_",
@@ -3028,12 +3024,12 @@ async function run() {
         dcpeakcurrentua: "Co/Al2O3/TiN: 50 Co/LaSiO/TiN: 50 Co/Ta/GeSe/TiN: 50",
         hrslrsratio: "Co/Al2O3/TiN: >103 Co/LaSiO/TiN: >100 Co/Ta/GeSe/TiN: >600",
         rhigh: "Co/Al2O3/TiN: > 107  Co/LaSiO/TiN: 107 Co/Ta/GeSe/TiN: 1010",
-        rlow: "Co/Al2O3/TiN: 2x104 Co/LaSiO/TiN: >104 Co/Ta/GeSe/TiN: > 105",
+        rlow: "Co/Al2O3/TiN: 2x10^4 Co/LaSiO/TiN: >104 Co/Ta/GeSe/TiN: > 105",
         endurance: "Co/Al2O3/TiN: 107 Co/LaSiO/TiN: 107 Co/Ta/GeSe/TiN:108",
-        retention: "Co/Al2O3/TiN: 1d@85 ℃ 25% Co/LaSiO/TiN:1hr@85 ℃ Co/Ta/GeSe/TiN:5d@85 ℃",
+        retention: "Co/Al2O3/TiN: 1d@85 degC 25% Co/LaSiO/TiN:1hr@85 degC Co/Ta/GeSe/TiN:5d@85 degC",
         citation: "L. Goux, et al., Retention, disturb and variability improvements enabled by local chemical-potential tuning and controlled Hour-Glass filament shape in a novel W\WO3\Al2O3\Cu CBRAM. VLSI 2016, pp. T126 - T127.",
         doi: "doi not available",
-        citationheader: "[doi not available] Co/Al2O3/TiN: 2x104 Co/LaSiO/TiN: >104 Co/Ta/GeSe/TiN: > 105_x000D_",
+        citationheader: "[doi not available] Co/Al2O3/TiN: 2x10^4 Co/LaSiO/TiN: >104 Co/Ta/GeSe/TiN: > 105_x000D_",
         writeenergyj: 3e-10,
         energyj: 3e-10,
     },
@@ -3050,7 +3046,7 @@ async function run() {
         hrslrsratio: ">103 ",
         rhigh: "1010",
         rlow: "107",
-        retention: "3h@ 85 ℃ ",
+        retention: "3h@ 85 degC ",
         citation: "B. Chen, et al., Efficient in-memory computing architecture based on crossbar arrays. IEDM 2015, pp. 17.5.1 - 17.5.4.",
         doi: "doi: 10.1109/IEDM.2015.7409720",
         citationheader: "[doi: 10.1109/IEDM.2015.7409720] 107_x000D_",
@@ -3068,7 +3064,7 @@ async function run() {
         dcpeakcurrentua: "~ 40",
         hrslrsratio: "> 100",
         endurance: "104",
-        retention: "1y@ 55 ℃ ",
+        retention: "1y@ 55 degC ",
         citation: "S. Sills, et al., Challenges for high-density 16Gb ReRAM with 27nm technology. VLSI 2015, pp. T108 -T109.",
         doi: "doi: 10.1109/VLSIT.2015.7223639",
         citationheader: "[doi: 10.1109/VLSIT.2015.7223639] N/A_x000D_",
@@ -3089,7 +3085,7 @@ async function run() {
         rhigh: "106~109",
         rlow: "104~106",
         endurance: ">106 ",
-        retention: "5d@ 150 ℃ (10 y @ RT)",
+        retention: "5d@ 150 degC (10 y @ RT)",
         citation: "A. Redolfi, et al., A novel CBRAM integration using subtractive dry-etching process of Cu enabling high-performance memory scaling down to 10nm node. VLSI 2015, pp. T134 - T135",
         doi: "doi: 10.1109/VSLIT.2015.7223718",
         citationheader: "[doi: 10.1109/VSLIT.2015.7223718] 104~106_x000D_",
@@ -3110,7 +3106,7 @@ async function run() {
         rhigh: "108~109",
         rlow: "105~106",
         endurance: "106",
-        retention: "5d@ 150 ℃",
+        retention: "5d@ 150 degC",
         citation: "L. Goux, et al., Retention, disturb and variability improvements enabled by local chemical-potential tuning and controlled Hour-Glass filament shape in a novel W\WO3\Al2O3\Cu CBRAM. VLSI 2016, pp. T126 - T127.",
         doi: "doi not available",
         citationheader: "[doi not available] 105~106_x000D_",
@@ -3130,7 +3126,7 @@ async function run() {
         hrslrsratio: "~ 105 ",
         rhigh: "108",
         rlow: "103 ",
-        retention: "1000h@ 150 ℃",
+        retention: "1000h@ 150 degC",
         citation: "K. Okamoto, et al., Robust Cu atom switch with over 400C thermally tolerant polymer-solid electrolyte (TT-PSE) for nonvolatile programmable logic. VLSI 2016, pp. T124 - T125.",
         doi: "doi not available",
         citationheader: "[doi not available] 103 _x000D_",
@@ -3151,7 +3147,7 @@ async function run() {
         rhigh: "1011",
         rlow: "104",
         endurance: "106",
-        retention: "10y@ 70℃ ",
+        retention: "10y@ 70degC ",
         citation: "H. Hönigschmid, et al. A Non-Volatile 2Mbit CBRAM Memory Core Featuring Advanced Read and Program Control. VLSI Circuits 2006, pp. 110-111.",
         doi: "doi 10.1109/VLSIC.2006.1705334",
         citationheader: "[doi 10.1109/VLSIC.2006.1705334] 104_x000D_",
@@ -3170,7 +3166,7 @@ async function run() {
         rhigh: "107",
         rlow: "104",
         endurance: "105",
-        retention: "100h@ 100℃(~10y) ",
+        retention: "100h@ 100degC(~10y) ",
         citation: "K. Aratani, et al. A Novel Resistance Memory with High Scalability and Nanosecond Switching. IEDM 2007, pp. 783-786.",
         doi: "doi: 10.1109/IEDM.2007.4419064",
         citationheader: "[doi: 10.1109/IEDM.2007.4419064] 104_x000D_",
@@ -3226,7 +3222,7 @@ async function run() {
         rhigh: "109",
         rlow: "800",
         endurance: "N/A ",
-        retention: "10y@ 150℃ ",
+        retention: "10y@ 150degC ",
         citation: "N. Banno, et al. Reliable solid-electrolyte crossbar switch for programmable logic device. VLSI Tech. 2010, pp. 115-116.",
         doi: "doi: 10.1109/VLSIT.2010.5556192",
         citationheader: "[doi: 10.1109/VLSIT.2010.5556192] 800_x000D_",
@@ -3283,7 +3279,7 @@ async function run() {
         rhigh: "108",
         rlow: "400",
         endurance: "N/A ",
-        retention: "10y@ 105℃ ",
+        retention: "10y@ 105degC ",
         citation: "K. Okamoto, et al. Conducting Mechanism of Atom Switch with Polymer Solid-electrolyte. IEDM 2011, pp. 12.2.1-12.2.4. ",
         comments: "polymer",
         doi: "doi: 10.1109/IEDM.2011.6131538",
@@ -3357,7 +3353,7 @@ async function run() {
         rhigh: "1011",
         rlow: "104",
         endurance: "104",
-        retention: "10y@ 70℃ ",
+        retention: "10y@ 70degC ",
         citation: "F. Lee, et al. A Novel Conducting Bridge Resistive Memory Using a Semiconducting Dynamic E-field Moderating Layer. VLSI Tech. 2013, pp. T104-T105.",
         doi: "doi not available",
     },
@@ -3375,7 +3371,7 @@ async function run() {
         rhigh: "106~108",
         rlow: "103",
         endurance: ">103 ",
-        retention: ">3000h@ 150℃ ",
+        retention: ">3000h@ 150degC ",
         citation: "N. Banno, et al. A Fast and Low-Voltage Cu Complementary-Atom-Switch 1Mb Array with High-Temperature Retention. VLSI Tech. 2014.",
         doi: "doi: 10.1109/VLSIT.2014.6894437",
     },
@@ -3392,7 +3388,7 @@ async function run() {
         hrslrsratio: ">103 ",
         rhigh: "1010",
         rlow: "107",
-        retention: "3h@ 85 ℃ ",
+        retention: "3h@ 85 degC ",
         citation: "B. Chen, et al., Efficient in-memory computing architecture based on crossbar arrays. IEDM 2015, pp. 17.5.1 - 17.5.4.",
         doi: "doi: 10.1109/IEDM.2015.7409720",
     },
@@ -3403,11 +3399,11 @@ async function run() {
         orientationsofmagnetization: "IMA",
         mtjdiameternmforpmaortotalcellareaum2forima: 0.017825,
         pulsewidthns: 2,
-        writecurrentdensityforparallelwriteam2: "3.39x1010",
+        writecurrentdensityforparallelwriteam2: "3.39x10^10",
         writecurrentforparallelwriteua: 700,
-        rpohms: "1.12x103",
+        rpohms: "1.12x10^3",
         rainparallelstateohmsum2: 20,
-        writeenergycalculatedfrommeasuredivrandtj: "1.10x10-12",
+        writeenergycalculatedfrommeasuredivrandtj: "1.10x10^-12",
         tmr: 100,
         endurance: ">1012",
         citation: "M. Hosomi et al., A Novel Nonvolatile Memory with Spin Torque Transfer Magnetization Switching: Spin-RAM, IEDM Tech. Dig., 2005",
@@ -3426,7 +3422,7 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 0.010799999999999999,
         pulsewidthns: 0.5,
         writevoltagev: 0.7,
-        writeenergycalculatedfrommeasuredivrandtj: "4.50x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "4.50x10^-13",
         tmr: ">100",
         thermalstabilityfactorrtdelta: 40,
         citation: "H. Liu et al., Ultrafast switching in magnetic tunnel junction based orthogonal spin transfer devices, Appl. Phys. Lett. 97, 242510, 2010",
@@ -3445,9 +3441,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 0.008775000000000002,
         pulsewidthns: 0.6,
         writevoltagev: 0.83,
-        rpohms: "5.58x102",
+        rpohms: "5.58x10^2",
         rainparallelstateohmsum2: 4.9,
-        writeenergycalculatedfrommeasuredivrandtj: "7.40x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "7.40x10^-13",
         tmr: ">140",
         thermalstabilityfactorrtdelta: 90,
         citation: "Z.M. Zeng et al., Effect of resistance-area product on spin-transfer switching in MgO-based magnetic tunnel junction memory cells, J. Appl. Phys. 98, 072512,2011",
@@ -3466,7 +3462,7 @@ async function run() {
         pulsewidthns: 2,
         writevoltagev: 0.46,
         rainparallelstateohmsum2: 4.9,
-        writeenergycalculatedfrommeasuredivrandtj: "6.10x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "6.10x10^-13",
         tmr: ">140",
         thermalstabilityfactorrtdelta: 90,
         citation: "Z.M. Zeng et al., Effect of resistance-area product on spin-transfer switching in MgO-based magnetic tunnel junction memory cells, J. Appl. Phys. 98, 072512,2011",
@@ -3485,7 +3481,7 @@ async function run() {
         pulsewidthns: 1.2,
         writevoltagev: 0.56,
         rainparallelstateohmsum2: 4.9,
-        writeenergycalculatedfrommeasuredivrandtj: "5.20x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "5.20x10^-13",
         tmr: ">140",
         thermalstabilityfactorrtdelta: 90,
         citation: "Z.M. Zeng et al., Effect of resistance-area product on spin-transfer switching in MgO-based magnetic tunnel junction memory cells, J. Appl. Phys. 98, 072512,2011",
@@ -3504,7 +3500,7 @@ async function run() {
         pulsewidthns: 1,
         writevoltagev: 0.65,
         rainparallelstateohmsum2: 4.9,
-        writeenergycalculatedfrommeasuredivrandtj: "5.80x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "5.80x10^-13",
         tmr: ">140",
         thermalstabilityfactorrtdelta: 90,
         citation: "Z.M. Zeng et al., Effect of resistance-area product on spin-transfer switching in MgO-based magnetic tunnel junction memory cells, J. Appl. Phys. 98, 072512,2011",
@@ -3523,7 +3519,7 @@ async function run() {
         pulsewidthns: 0.7,
         writevoltagev: 0.74,
         rainparallelstateohmsum2: 4.9,
-        writeenergycalculatedfrommeasuredivrandtj: "5.40x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "5.40x10^-13",
         tmr: ">140",
         thermalstabilityfactorrtdelta: 90,
         citation: "Z.M. Zeng et al., Effect of resistance-area product on spin-transfer switching in MgO-based magnetic tunnel junction memory cells, J. Appl. Phys. 98, 072512,2011",
@@ -3542,7 +3538,7 @@ async function run() {
         pulsewidthns: 0.6,
         writevoltagev: 0.83,
         rainparallelstateohmsum2: 4.9,
-        writeenergycalculatedfrommeasuredivrandtj: "6.10x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "6.10x10^-13",
         tmr: ">140",
         thermalstabilityfactorrtdelta: 90,
         citation: "Z.M. Zeng et al., Effect of resistance-area product on spin-transfer switching in MgO-based magnetic tunnel junction memory cells, J. Appl. Phys. 98, 072512,2011",
@@ -3561,9 +3557,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 110,
         pulsewidthns: 50,
         writevoltagev: 0.29,
-        rpohms: "1.50x103",
+        rpohms: "1.50x10^3",
         rainparallelstateohmsum2: 14.24775,
-        writeenergycalculatedfrommeasuredivrandtj: "2.80x10-12",
+        writeenergycalculatedfrommeasuredivrandtj: "2.80x10^-12",
         tmr: 46,
         thermalstabilityfactorrtdelta: 45,
         citation: "D. C. Worledge et al., Spin torque switching of perpendicular Ta ∣ CoFeB ∣ MgO -based magnetic tunnel Junctions, Appl. Phys.  Lett. 98, 02250, 2011",
@@ -3582,9 +3578,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 30,
         pulsewidthns: 20,
         writecurrentforparallelwriteua: 48,
-        rpohms: "1.42x103",
+        rpohms: "1.42x10^3",
         rainparallelstateohmsum2: 10,
-        writeenergycalculatedfrommeasuredivrandtj: "6.54x10-14",
+        writeenergycalculatedfrommeasuredivrandtj: "6.54x10^-14",
         tmr: 50,
         thermalstabilityfactorrtdelta: 25,
         citation: "M.Gajek et al., Spin torque switching of 20 nm magnetic tunnel junctions with perpendicular anisotropy, J. Appl. Phys. 100, 132408 , 2012",
@@ -3603,9 +3599,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 30,
         pulsewidthns: 30,
         writecurrentforparallelwriteua: 46,
-        rpohms: "1.42x103",
+        rpohms: "1.42x10^3",
         rainparallelstateohmsum2: 10,
-        writeenergycalculatedfrommeasuredivrandtj: "9.01x10-14",
+        writeenergycalculatedfrommeasuredivrandtj: "9.01x10^-14",
         tmr: 50,
         thermalstabilityfactorrtdelta: 25,
         citation: "M.Gajek et al., Spin torque switching of 20 nm magnetic tunnel junctions with perpendicular anisotropy, J. Appl. Phys. 100, 132408 , 2012",
@@ -3624,9 +3620,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 30,
         pulsewidthns: 50,
         writecurrentforparallelwriteua: 44,
-        rpohms: "1.42x103",
+        rpohms: "1.42x10^3",
         rainparallelstateohmsum2: 10,
-        writeenergycalculatedfrommeasuredivrandtj: "1.37x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "1.37x10^-13",
         tmr: 50,
         thermalstabilityfactorrtdelta: 25,
         citation: "M.Gajek et al., Spin torque switching of 20 nm magnetic tunnel junctions with perpendicular anisotropy, J. Appl. Phys. 100, 132408 , 2012",
@@ -3646,7 +3642,7 @@ async function run() {
         pulsewidthns: 100,
         writevoltagev: 0.34,
         rainparallelstateohmsum2: 7,
-        writeenergycalculatedfrommeasuredivrandtj: "1.17x10-12",
+        writeenergycalculatedfrommeasuredivrandtj: "1.17x10^-12",
         tmr: 60,
         thermalstabilityfactorrtdelta: 52,
         citation: "K. Tsunoda et al., A Novel MTJ for STT-MRAM with a Dummy Free Layer and Dual Tunnel Junctions, IEDM 2012",
@@ -3665,9 +3661,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 80,
         pulsewidthns: 20,
         writevoltagev: 1.6,
-        rpohms: "2.59x104",
+        rpohms: "2.59x10^4",
         rainparallelstateohmsum2: 130,
-        writeenergycalculatedfrommeasuredivrandtj: "1.98x10-12",
+        writeenergycalculatedfrommeasuredivrandtj: "1.98x10^-12",
         tmr: 80,
         thermalstabilityfactorrtdelta: 33.4,
         citation: "Y.H. Wang, Impact of Stray Field on the Switching Properties of Perpendicular MTJ for Scaled MRAM, IEDM 2012",
@@ -3687,7 +3683,7 @@ async function run() {
         pulsewidthns: 3,
         writevoltagev: 0.6,
         writecurrentforparallelwriteua: 50,
-        writeenergycalculatedfrommeasuredivrandtj: "9.00x10-14",
+        writeenergycalculatedfrommeasuredivrandtj: "9.00x10^-14",
         tmr: 73,
         thermalstabilityfactorrtdelta: 61,
         citation: "E. Kitagawa et al., Impact of ultra low power and fast write operation of advanced perpendicular MTJ on power reduction for high-performance mobile CPU, IEDM 2012",
@@ -3707,9 +3703,9 @@ async function run() {
         pulsewidthns: 50,
         writevoltagev: 0.3,
         writecurrentforparallelwriteua: 50,
-        rpohms: "6.14x103",
+        rpohms: "6.14x10^3",
         rainparallelstateohmsum2: 6.6,
-        writeenergycalculatedfrommeasuredivrandtj: "7.50x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "7.50x10^-13",
         tmr: 102,
         thermalstabilityfactorrtdelta: 74,
         citation: "G. Jan et al., High Spin Torque Efficiency of Magnetic Tunnel Junctions with MgO/CoFeB/MgO Free Layer, Applied Physics Express 5 093008, 2012",
@@ -3728,7 +3724,7 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 0.0075,
         pulsewidthns: 0.2,
         writevoltagev: 1.89,
-        writeenergycalculatedfrommeasuredivrandtj: "2.10x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "2.10x10^-13",
         tmr: 100,
         endurance: "103~104",
         thermalstabilityfactorrtdelta: 65,
@@ -3748,9 +3744,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 45,
         pulsewidthns: 2,
         writecurrentforparallelwriteua: 250,
-        rpohms: "7.55x103",
+        rpohms: "7.55x10^3",
         rainparallelstateohmsum2: 12,
-        writeenergycalculatedfrommeasuredivrandtj: "9.44x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "9.44x10^-13",
         tmr: 150,
         thermalstabilityfactorrtdelta: 120,
         citation: "L. Thomas et al., Perpendicular spin transfer torque magnetic random access memories with high spin torque efficiency and thermal stability for embedded applications (invited), J. Appl. Phys. 115, 172615, 2014",
@@ -3769,9 +3765,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 45,
         pulsewidthns: 3,
         writecurrentforparallelwriteua: 184,
-        rpohms: "7.55x103",
+        rpohms: "7.55x10^3",
         rainparallelstateohmsum2: 12,
-        writeenergycalculatedfrommeasuredivrandtj: "7.66x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "7.66x10^-13",
         tmr: 150,
         thermalstabilityfactorrtdelta: 120,
         citation: "L. Thomas et al., Perpendicular spin transfer torque magnetic random access memories with high spin torque efficiency and thermal stability for embedded applications (invited), J. Appl. Phys. 115, 172615, 2014",
@@ -3790,9 +3786,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 45,
         pulsewidthns: 4,
         writecurrentforparallelwriteua: 145,
-        rpohms: "7.55x103",
+        rpohms: "7.55x10^3",
         rainparallelstateohmsum2: 12,
-        writeenergycalculatedfrommeasuredivrandtj: "6.34x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "6.34x10^-13",
         tmr: 150,
         thermalstabilityfactorrtdelta: 120,
         citation: "L. Thomas et al., Perpendicular spin transfer torque magnetic random access memories with high spin torque efficiency and thermal stability for embedded applications (invited), J. Appl. Phys. 115, 172615, 2014",
@@ -3811,9 +3807,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 45,
         pulsewidthns: 5,
         writecurrentforparallelwriteua: 125,
-        rpohms: "7.55x103",
+        rpohms: "7.55x10^3",
         rainparallelstateohmsum2: 12,
-        writeenergycalculatedfrommeasuredivrandtj: "5.89x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "5.89x10^-13",
         tmr: 150,
         thermalstabilityfactorrtdelta: 120,
         citation: "L. Thomas et al., Perpendicular spin transfer torque magnetic random access memories with high spin torque efficiency and thermal stability for embedded applications (invited), J. Appl. Phys. 115, 172615, 2014",
@@ -3832,9 +3828,9 @@ async function run() {
         mtjdiameternmforpmaortotalcellareaum2forima: 45,
         pulsewidthns: 10,
         writecurrentforparallelwriteua: 66,
-        rpohms: "7.55x103",
+        rpohms: "7.55x10^3",
         rainparallelstateohmsum2: 12,
-        writeenergycalculatedfrommeasuredivrandtj: "3.29x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "3.29x10^-13",
         tmr: 150,
         thermalstabilityfactorrtdelta: 120,
         citation: "L. Thomas et al., Perpendicular spin transfer torque magnetic random access memories with high spin torque efficiency and thermal stability for embedded applications (invited), J. Appl. Phys. 115, 172615, 2014",
@@ -3854,10 +3850,10 @@ async function run() {
         pulsewidthns: 1,
         writevoltagev: 2.4,
         readvoltagev: 1.2,
-        writecurrentdensityforparallelwriteam2: "4.50x1010",
+        writecurrentdensityforparallelwriteam2: "4.50x10^10",
         writecurrentdensityforparallelwriteandshortesttimepulseam2: 44981012822.472046,
         writecurrentforparallelwriteua: 78,
-        writeenergycalculatedfrommeasuredivrandtj: "1.87x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "1.87x10^-13",
         citation: "Noguchi, H. et al, 2015, 2015 IEEE International Solid-State Circuits Conference-(ISSCC) Digest of Technical Papers, 7.5 A 3.3 ns-access-time 71.2μW/MHz 1Mb embedded STT-MRAM using physically eliminated read-disturb scheme and normally-off memory architecture. pp. 1-3",
         doi: "doi:  10.1109/IEDM.2014.7047131",
         highlights: "x",
@@ -3875,9 +3871,9 @@ async function run() {
         pulsewidthns: 4.5,
         writevoltagev: 0.6,
         readvoltagev: 0.135,
-        rpohms: "5.0x103",
+        rpohms: "5.0x10^3",
         rainparallelstateohmsum2: 12.723479999999999,
-        writeenergycalculatedfrommeasuredivrandtj: "8.1x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "8.1x10^-13",
         tmr: 120,
         citation: "DeBrosse, J. et al, 2015, Custom Integrated Circuits Conference (CICC), 2015 IEEE, A fully-functional 90nm 8Mb STT MRAM demonstrator featuring trimmed, reference cell-based sensing. pp. 1-3",
         doi: "doi: 10.1109/CICC.2015.7338359",
@@ -3895,9 +3891,9 @@ async function run() {
         totalcellareaum2: 0.017,
         pulsewidthns: 10,
         writevoltagev: 0.5,
-        rpohms: "5.0x103",
+        rpohms: "5.0x10^3",
         rainparallelstateohmsum2: 10.5,
-        writeenergycalculatedfrommeasuredivrandtj: "5.0x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "5.0x10^-13",
         tmr: 150,
         endurance: ">1012",
         thermalstabilityfactorrtdelta: "85",
@@ -3918,9 +3914,9 @@ async function run() {
         pulsewidthns: 35,
         writevoltagev: 0.5,
         writecurrentforparallelwriteua: 94,
-        rpohms: "5.0x103",
+        rpohms: "5.0x10^3",
         rainparallelstateohmsum2: 10.5,
-        writeenergycalculatedfrommeasuredivrandtj: "1.75x10-12",
+        writeenergycalculatedfrommeasuredivrandtj: "1.75x10^-12",
         tmr: 150,
         endurance: ">1012",
         thermalstabilityfactorrtdelta: "85",
@@ -3939,12 +3935,12 @@ async function run() {
         mtjdiameternm: 10,
         rainparallelstateohmsum2: 8,
         tmr: 120,
-        citation: "Honjo, H. et al, 2015, VLSI Technology (VLSI Technology), 2015 Symposium on, 10 nmf perpendicular-anisotropy CoFeB-MgO magnetic tunnel junction with over 400° C high thermal tolerance by boron diffusion control. pp. T160-1",
+        citation: "Honjo, H. et al, 2015, VLSI Technology (VLSI Technology), 2015 Symposium on, 10 nmf perpendicular-anisotropy CoFeB-MgO magnetic tunnel junction with over 400deg C high thermal tolerance by boron diffusion control. pp. T160-1",
         comments: "Not integrated, just single devices, but very small. No switching time given, so hard to calculate energy",
         doi: "doi: 10.1109/VLSIT.2015.7223661",
         header: " VLSI 2015 [5]",
         counter: 5,
-        citationheader: "[5] Honjo, H. et al, 2015, VLSI Technology (VLSI Technology), 2015 Symposium on, 10 nmf perpendicular-anisotropy CoFeB-MgO magnetic tunnel junction with over 400° C high thermal tolerance by boron diffusion control. pp. T160-1_x000D_",
+        citationheader: "[5] Honjo, H. et al, 2015, VLSI Technology (VLSI Technology), 2015 Symposium on, 10 nmf perpendicular-anisotropy CoFeB-MgO magnetic tunnel junction with over 400deg C high thermal tolerance by boron diffusion control. pp. T160-1_x000D_",
     },
     {
         name: "STT-MRAM",
@@ -3953,10 +3949,10 @@ async function run() {
         orientationsofmagnetization: "PMA",
         mtjdiameternm: 55,
         writevoltagev: 0.5,
-        writecurrentdensityforparallelwriteam2: "25.00x109",
+        writecurrentdensityforparallelwriteam2: "25.00x10^9",
         writecurrentdensityforparallelwriteandshortesttimepulseam2: 25000000000,
         writecurrentforparallelwriteua: 59.36562500000001,
-        rpohms: "4.20x103",
+        rpohms: "4.20x10^3",
         rainparallelstateohmsum2: 10,
         tmr: 150,
         endurance: "1015",
@@ -3976,9 +3972,9 @@ async function run() {
         mtjdiameternm: 45,
         pulsewidthns: 10,
         writevoltagev: 0.6,
-        rpohms: "1.40x104",
+        rpohms: "1.40x10^4",
         rainparallelstateohmsum2: 20,
-        writeenergycalculatedfrommeasuredivrandtj: "2.57x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "2.57x10^-13",
         tmr: 100,
         citation: "Hu, G. et al, 2015, 2015 IEEE International Electron Devices Meeting (IEDM), STT-MRAM with double magnetic tunnel junctions. pp. 26-3",
         comments: "2 reference layers set antiparallel to each other to have addition of spin torque on free layer. Not integrated with CMOS.",
@@ -3996,9 +3992,9 @@ async function run() {
         mtjdiameternm: 45,
         pulsewidthns: 104,
         writevoltagev: 0.27,
-        rpohms: "1.40x104",
+        rpohms: "1.40x10^4",
         rainparallelstateohmsum2: 20,
-        writeenergycalculatedfrommeasuredivrandtj: "2.42x10-13",
+        writeenergycalculatedfrommeasuredivrandtj: "2.42x10^-13",
         tmr: 100,
         citation: "Hu, G. et al, 2015, 2015 IEEE International Electron Devices Meeting (IEDM), STT-MRAM with double magnetic tunnel junctions. pp. 26-3",
         comments: "2 reference layers set antiparallel to each other to have addition of spin torque on free layer. Not integrated with CMOS.",
@@ -4027,9 +4023,9 @@ async function run() {
         switchingmechanism: "STT",
         orientationsofmagnetization: "PMA",
         mtjdiameternm: 11,
-        writecurrentdensityforparallelwriteam2: "78.96x109",
+        writecurrentdensityforparallelwriteam2: "78.96x10^9",
         writecurrentforparallelwriteua: 7.5,
-        rpohms: "1.0x105",
+        rpohms: "1.0x10^5",
         rainparallelstateohmsum2: 9.498499999999998,
         tmr: 53,
         citation: "Nowak, J. J., Robertazzi, R. P., Sun, J. Z., Hu, G., et al. Dependence of Voltage and Size on Write Error Rates in Spin-Transfer Torque Magnetic Random-Access Memory. IEEE Magnetics Letters 7, 1-4 (2016).",
@@ -4048,11 +4044,11 @@ async function run() {
         mtjdiameternm: 50,
         pulsewidthns: 0.5,
         writevoltagev: 2.1,
-        writecurrentdensityforparallelwriteam2: "3.10x109",
+        writecurrentdensityforparallelwriteam2: "3.10x10^9",
         writecurrentforparallelwriteua: 6,
-        rpohms: "3.20x105",
+        rpohms: "3.20x10^5",
         rainparallelstateohmsum2: 628.3200000000002,
-        writeenergycalculatedfrommeasuredivrandtj: "6.89x10-15",
+        writeenergycalculatedfrommeasuredivrandtj: "6.89x10^-15",
         tmr: 52,
         thermalstabilityfactorrtdelta: 30,
         citation: "Grezes, C., Ebrahimi, F., Alzate, J. G., Cai, X., et al. Ultra-low switching energy and scaling in electric-field-controlled nanoscale magnetic tunnel junctions with high resistance-area product. Appl. Phys. Lett. 108, 012403 (2016).",
@@ -4071,9 +4067,9 @@ async function run() {
         mtjdiameternm: 50,
         pulsewidthns: 0.52,
         writevoltagev: 1.96,
-        rpohms: "3.20x105",
+        rpohms: "3.20x10^5",
         rainparallelstateohmsum2: 628.3200000000002,
-        writeenergycalculatedfrommeasuredivrandtj: "6.24x10-15",
+        writeenergycalculatedfrommeasuredivrandtj: "6.24x10^-15",
         tmr: 52,
         thermalstabilityfactorrtdelta: 30,
         citation: "Grezes, C., Ebrahimi, F., Alzate, J. G., Cai, X., et al. Ultra-low switching energy and scaling in electric-field-controlled nanoscale magnetic tunnel junctions with high resistance-area product. Appl. Phys. Lett. 108, 012403 (2016).",
@@ -4091,9 +4087,9 @@ async function run() {
         orientationsofmagnetization: "PMA",
         mtjdiameternm: 20,
         pulsewidthns: 50,
-        writecurrentdensityforparallelwriteam2: "5.73x1010",
+        writecurrentdensityforparallelwriteam2: "5.73x10^10",
         writecurrentforparallelwriteua: 18,
-        rpohms: "2.75x104",
+        rpohms: "2.75x10^4",
         rainparallelstateohmsum2: 8.63374512,
         tmr: 160,
         thermalstabilityfactorrtdelta: 50,
@@ -4113,11 +4109,11 @@ async function run() {
         mtjdiameternm: 55,
         pulsewidthns: 50,
         writevoltagev: 0.55,
-        writecurrentdensityforparallelwriteam2: "3.16x1010",
+        writecurrentdensityforparallelwriteam2: "3.16x10^10",
         writecurrentforparallelwriteua: 75,
-        rpohms: "5.00x103",
+        rpohms: "5.00x10^3",
         rainparallelstateohmsum2: 11.879175,
-        writeenergycalculatedfrommeasuredivrandtj: "3.03x10-12",
+        writeenergycalculatedfrommeasuredivrandtj: "3.03x10^-12",
         tmr: 140,
         thermalstabilityfactorrtdelta: 65,
         citation: "Xue, L., Kontos, A., Lazik, C., Liang, S. & Pakala, M. Scalability of Magnetic Tunnel Junctions Patterned by a Novel Plasma Ribbon Beam Etching Process on 300 mm Wafers. IEEE Trans. Magn. 51, 1-3 (2015)",
@@ -4241,13 +4237,13 @@ async function run() {
         writevoltagev: 1.2,
         endurance: "> 1e10",
         retention: "10yr @ 85C",
-        citation: "H. Sato et al., \"14ns write speed 128Mb density Embedded STT-MRAM with endurance>1010 and 10yrs retention@85°C using novel low damage MTJ integration process,\" IEDM 2018",
+        citation: "H. Sato et al., \"14ns write speed 128Mb density Embedded STT-MRAM with endurance>1010 and 10yrs retention@85degC using novel low damage MTJ integration process,\" IEDM 2018",
         comments: "Tohoku Univ",
         doi: "10.1109/IEDM.2018.8614606",
         highlights: "x",
         header: "Novel Damage control integration of Embedded STT-MRAM IEDM 2018 [6]",
         counter: 6,
-        citationheader: "[6] H. Sato et al., \"14ns write speed 128Mb density Embedded STT-MRAM with endurance>1010 and 10yrs retention@85°C using novel low damage MTJ integration process,\" IEDM 2018_x000D_",
+        citationheader: "[6] H. Sato et al., \"14ns write speed 128Mb density Embedded STT-MRAM with endurance>1010 and 10yrs retention@85degC using novel low damage MTJ integration process,\" IEDM 2018_x000D_",
     },
     {
         name: "STT-MRAM",
@@ -4402,7 +4398,7 @@ async function run() {
         rpohms: "20k",
         tmr: 167,
         thermalstabilityfactorrtdelta: 70,
-        citation: ". Honjo et al., \"First demonstration of field-free SOT-MRAM with 0.35 ns write speed and 70 thermal stability under 400°C thermal tolerance by canted SOT structure and its advanced patterning/SOT channel technology,\" IEDM 2019",
+        citation: ". Honjo et al., \"First demonstration of field-free SOT-MRAM with 0.35 ns write speed and 70 thermal stability under 400degC thermal tolerance by canted SOT structure and its advanced patterning/SOT channel technology,\" IEDM 2019",
         comments: "Tohoku U.",
         doi: "10.1109/IEDM19573.2019.8993443",
     },
@@ -4429,7 +4425,7 @@ async function run() {
         arrayinformation: "8Mb",
         accesslatencyns: "30 to 50",
         endurance: ">1e10",
-        retention: ">few min. @ 85°C",
+        retention: ">few min. @ 85degC",
         citation: "S. H. Han et al., \"28-nm 0.08 mm2/Mb Embedded MRAM for Frame Buffer Memory,\" 2020 IEEE International Electron Devices Meeting (IEDM), 2020, pp. 11.2.1-11.2.4",
         comments: "0.08 mm2/Mb",
         doi: "doi: 10.1109/IEDM13553.2020.9372040",
@@ -4443,7 +4439,7 @@ async function run() {
         accesslatencyns: "19 to 200",
         endurance: ">1e5 to 1e6",
         retention: ">20 years @ 0.1 PPM",
-        thermalstabilityfactor: "57.1 @ ~250 °C",
+        thermalstabilityfactor: "57.1 @ ~250 degC",
         citation: "V. B. Naik et al., \"JEDEC-Qualified Highly Reliable 22nm FD-SOI Embedded MRAM For Low-Power Industrial-Grade, and Extended Performance Towards Automotive-Grade-1 Applications,\" 2020 IEEE International Electron Devices Meeting (IEDM), 2020, pp. 11.3.1-11.3.4",
         doi: "doi: 10.1109/IEDM13553.2020.9371935",
     },
@@ -4469,7 +4465,7 @@ async function run() {
         rpohms: "~8k",
         tmr: "~125 to ~140",
         endurance: ">1e10 (cell)",
-        retention: ">few min. @ 85°C",
+        retention: ">few min. @ 85degC",
         citation: "D. Edelstein et al., \"A 14 nm Embedded STT-MRAM CMOS Technology,\" 2020 IEEE International Electron Devices Meeting (IEDM), 2020, pp. 11.5.1-11.5.4",
         doi: "doi: 10.1109/IEDM13553.2020.9371922",
     },
@@ -4480,7 +4476,7 @@ async function run() {
         arrayinformation: "40Mb",
         accesslatencyns: 10,
         endurance: ">1e12",
-        retention: ">1 month @ 125°C",
+        retention: ">1 month @ 125degC",
         citation: "T. Y. Lee et al., \"Advanced MTJ Stack Engineering of STT-MRAM to Realize High Speed Applications,\" 2020 IEEE International Electron Devices Meeting (IEDM), 2020, pp. 11.6.1-11.6.4",
         doi: "doi: 10.1109/IEDM13553.2020.9372015",
     },
@@ -4531,7 +4527,7 @@ async function run() {
         arrayinformation: "176Mb",
         accesslatencyns: "< 50",
         endurance: ">1e10",
-        retention: ">1 sec. @ 85°C",
+        retention: ">1 sec. @ 85degC",
         citation: "K. Lee et al., \"28nm CIS-Compatible Embedded STT-MRAM for Frame Buffer Memory,\" 2021 IEEE International Electron Devices Meeting (IEDM), 2021, pp. 2.1.1-2.1.4",
         comments: "13.9 Mb/mm2",
         doi: "doi: 10.1109/IEDM19574.2021.9720537",
@@ -4602,7 +4598,7 @@ async function run() {
         arrayinformation: "1Gb",
         accesslatencyns: "< 10",
         endurance: ">1e10",
-        retention: "20 years @ 105°C",
+        retention: "20 years @ 105degC",
         citation: "J. J. Sun et al., \"Commercialization of 1Gb Standalone Spin-Transfer Torque MRAM,\" 2021 IEEE International Memory Workshop (IMW), 2021, pp. 1-4",
         doi: "doi: 10.1109/IMW51353.2021.9439616",
     },
@@ -4655,7 +4651,7 @@ async function run() {
         arrayinformation: "64Mb",
         accesslatencyns: 5,
         endurance: ">10 year use",
-        retention: "10 years @ 85°C",
+        retention: "10 years @ 85degC",
         citation: "S. M. Alam et al., \"Persistent xSPI STT-MRAM with up to 400MB/s Read and Write Throughput,\" 2022 IEEE International Memory Workshop (IMW), 2022, pp. 1-4",
         doi: "doi: 10.1109/IMW52921.2022.9779276",
     },
@@ -4687,7 +4683,7 @@ async function run() {
         arrayinformation: "3Mb",
         accesslatencyns: 10,
         endurance: ">1e14",
-        retention: "10 years @ 125°C",
+        retention: "10 years @ 125degC",
         citation: "C. -J. Liu, C. -H. Lin, K. -Y. Chen and L. -C. Chen, \"Novel Bit-by-bit Repair to Demonstrate STT-MRAM as NV-RAM,\" 2022 International Symposium on VLSI Technology, Systems and Applications (VLSI-TSA), 2022, pp. 1-2",
         doi: "doi: 10.1109/VLSI-TSA54299.2022.9770971",
     },
@@ -4716,7 +4712,7 @@ async function run() {
         rhigh: "105",
         rlow: "102",
         endurance: "106",
-        retention: "300h@ 150℃ ",
+        retention: "300h@ 150degC ",
         citation: "I. G. Baek, et al. Highly scalable nonvolatile resistive memory using simple binary oxide driven by asymmetric unipolar voltage pulses, IEDM 2004. p.587",
         doi: "doi: 10.1109/IEDM.2004.1419228",
         citationheader: "[doi: 10.1109/IEDM.2004.1419228] 100_x000D_",
@@ -4734,9 +4730,9 @@ async function run() {
         dcpeakcurrentua: "~500",
         hrslrsratio: ">10 ",
         rhigh: "106",
-        rlow: "5x103",
+        rlow: "5x10^3",
         endurance: "106",
-        retention: "28h@ 85℃ ",
+        retention: "28h@ 85degC ",
         citation: "D. Lee, et al. IEDM 2006, p.1             ",
         doi: "doi: 10.1109/IEDM.2006.346733",
         citationheader: "[doi: 10.1109/IEDM.2006.346733] 5000_x000D_",
@@ -4754,9 +4750,9 @@ async function run() {
         dcpeakcurrentua: "~100",
         hrslrsratio: ">90 ",
         rhigh: "106",
-        rlow: "5x103",
+        rlow: "5x10^3",
         endurance: "100",
-        retention: "1000h@ 150℃ ",
+        retention: "1000h@ 150degC ",
         citation: "K. Tsunoda, et al. Low power and high speed switching of Ti-doped NiO ReRAM under the unipolar voltage source of less than 3 V, IEDM 2007, p.767 ",
         doi: "doi: 10.1109/IEDM.2007.4419060",
         citationheader: "[doi: 10.1109/IEDM.2007.4419060] 5000_x000D_",
@@ -4773,10 +4769,10 @@ async function run() {
         dcpeakvoltagev: "<2",
         dcpeakcurrentua: "~17",
         hrslrsratio: ">10 ",
-        rhigh: "5x104",
-        rlow: "2x103",
+        rhigh: "5x10^4",
+        rlow: "2x10^3",
         endurance: "109",
-        retention: "3000h@ 150℃ ",
+        retention: "3000h@ 150degC ",
         citation: "Z. Wei, et al. Highly reliable TaOx ReRAM and direct evidence of redox reaction mechanism, IEDM 2008, p.293        ",
         doi: "doi: 10.1109/IEDM.2008.4796676",
         citationheader: "[doi: 10.1109/IEDM.2008.4796676] 2000_x000D_",
@@ -4796,7 +4792,7 @@ async function run() {
         rhigh: "107",
         rlow: "103",
         endurance: "106",
-        retention: "10h@ 200℃ ",
+        retention: "10h@ 200degC ",
         citation: "H. Y. Lee, et al. Ti buffer layer in robust HfO2 based RRAM, IEDM 2008, p.297 ",
         doi: "doi: 10.1109/IEDM.2008.4796677",
         citationheader: "[doi: 10.1109/IEDM.2008.4796677] 1000_x000D_",
@@ -4814,8 +4810,8 @@ async function run() {
         dcpeakcurrentua: "~90",
         hrslrsratio: ">25 ",
         rhigh: "105",
-        rlow: "3x103",
-        endurance: "7x103 ",
+        rlow: "3x10^3",
+        endurance: "7x10^3 ",
         retention: "N/A ",
         citation: "B. Lee et al. NiO resistance change memory with a novel structure for 3D integration and improved confinement of conduction path, VLSI 2009, p. 28",
         doi: "doi not available",
@@ -4833,10 +4829,10 @@ async function run() {
         dcpeakvoltagev: "<4",
         dcpeakcurrentua: "~150",
         hrslrsratio: ">20 ",
-        rhigh: "2x106",
-        rlow: "8x104",
+        rhigh: "2x10^6",
+        rlow: "8x10^4",
         endurance: "106",
-        retention: "1000h@ 150℃ ",
+        retention: "1000h@ 150degC ",
         citation: "Y. H. Tseng, et al. High Density and Ultra Small Cell Size of Contact ReRAM (CR-RAM) in 90nm CMOS Logic Technology and Circuits, IEDM 2009, pp. 99-102.",
         doi: "doi: 10.1109/IEDM.2009.5424408",
         citationheader: "[doi: 10.1109/IEDM.2009.5424408] 80000_x000D_",
@@ -4853,8 +4849,8 @@ async function run() {
         dcpeakvoltagev: "<4",
         dcpeakcurrentua: "~1",
         hrslrsratio: ">10 ",
-        rhigh: "5x108",
-        rlow: "5x107",
+        rhigh: "5x10^8",
+        rlow: "5x10^7",
         endurance: 200,
         retention: "280h  T=N/A ",
         citation: "C. Ho, et al. 9nm Half-Pitch Functional Resistive Memory Cell with <1uA Programming Current Using Thermally Oxidized Sub-Stoichiometric WOx Film, IEDM 2010, pp.436-439",
@@ -4876,7 +4872,7 @@ async function run() {
         rhigh: "105",
         rlow: "104",
         endurance: "106",
-        retention: "2000h@ 150℃ ",
+        retention: "2000h@ 150degC ",
         citation: "W. C. Chien, et al. A forming-free WOx resistive memory using a novel self-aligned field enhancement feature with excellent reliability and scalability, IEDM 2010, pp. 440–443",
         doi: "doi: 10.1109/IEDM.2010.5703390",
         citationheader: "[doi: 10.1109/IEDM.2010.5703390] 10000_x000D_",
@@ -4896,7 +4892,7 @@ async function run() {
         rhigh: "1011",
         rlow: "108",
         endurance: "106",
-        retention: "3h@ 125℃ ",
+        retention: "3h@ 125degC ",
         citation: "C.-H. Chang, et al. High Performance Ultra-Low Energy RRAM with Good Retention and Endurance, IEDM 2010, pp. 448-451",
         doi: "doi: 10.1109/IEDM.2010.5703392",
         citationheader: "[doi: 10.1109/IEDM.2010.5703392] 100000000_x000D_",
@@ -4916,7 +4912,7 @@ async function run() {
         rhigh: "104",
         rlow: "103",
         endurance: "106",
-        retention: "28h@ 125℃ ",
+        retention: "28h@ 125degC ",
         citation: "J. Lee, et al. Diode-less nano-scale ZrOx/HfOx RRAM device with excellent switching uniformity and reliability for high-density cross-point memory applications, IEDM 2010, pp. 452–455",
         doi: "doi: 10.1109/IEDM.2010.5703393",
         citationheader: "[doi: 10.1109/IEDM.2010.5703393] 1000_x000D_",
@@ -4936,7 +4932,7 @@ async function run() {
         rhigh: "109",
         rlow: "107",
         endurance: "105",
-        retention: "28h@ 125℃ ",
+        retention: "28h@ 125degC ",
         citation: "W. Kim, et al. Forming-free nitrogen-doped AlOx RRAM with sub-uA programming current, VLSI 2011, pp. 22–23",
         doi: "doi not available",
         citationheader: "[doi not available] 10000000_x000D_",
@@ -4956,7 +4952,7 @@ async function run() {
         rhigh: "108",
         rlow: "103",
         endurance: "106",
-        retention: "28h@ 150℃ ",
+        retention: "28h@ 150degC ",
         citation: "X.A. Tran, et al. High Performance Unipolar AlOy/HfOx/Ni based RRAM Compatible with Si Diodes for 3D Application, VLSI 2011, pp. 44-45",
         doi: "doi not available",
         citationheader: "[doi not available] 1000_x000D_",
@@ -4974,9 +4970,9 @@ async function run() {
         dcpeakcurrentua: "~30",
         hrslrsratio: ">100 ",
         rhigh: "107",
-        rlow: "3x104",
+        rlow: "3x10^4",
         endurance: "1012",
-        retention: "3h@ 200℃ ",
+        retention: "3h@ 200degC ",
         citation: "Y.-B. Kim, Bi-layered RRAM with unlimited endurance and extremely uniform switching, VLSI 2011, pp. 52–53",
         doi: "doi not available",
         citationheader: "[doi not available] 30000_x000D_",
@@ -4995,8 +4991,8 @@ async function run() {
         hrslrsratio: ">10 ",
         rhigh: "107",
         rlow: "106",
-        endurance: "5x107 ",
-        retention: "30h@ 250℃",
+        endurance: "5x10^7 ",
+        retention: "30h@ 250degC",
         citation: "B. Govoreanu, 10x 10 nm2 Hf/HfOx crossbar resistive RAM with excellent performance, reliability and low-energy operation, IEDM 2011, pp. 729–732.",
         doi: "doi: 10.1109/IEDM.2011.6131652",
         citationheader: "[doi: 10.1109/IEDM.2011.6131652] 1000000_x000D_",
@@ -5013,7 +5009,7 @@ async function run() {
         dcpeakvoltagev: "<5",
         dcpeakcurrentua: "~80",
         hrslrsratio: "N/A ",
-        rhigh: "8x105",
+        rhigh: "8x10^5",
         rlow: "105",
         endurance: "100",
         retention: "N/A ",
@@ -5036,7 +5032,7 @@ async function run() {
         rhigh: "108",
         rlow: "106",
         endurance: "N/A ",
-        retention: "27h@ 100℃ ",
+        retention: "27h@ 100degC ",
         citation: "H. Y. Chen, et al. Electrode/Oxide Interface Engineering by Inserting Single-Layer Graphene: Application for HfOx–Based Resistive Random Access Memory, IEDM 2012",
         doi: "doi: 10.1109/IEDM.2012.6479081",
         citationheader: "[doi: 10.1109/IEDM.2012.6479081] 1000000_x000D_",
@@ -5056,7 +5052,7 @@ async function run() {
         rhigh: "109",
         rlow: "107",
         endurance: "105",
-        retention: "10y@ 85℃ ",
+        retention: "10y@ 85degC ",
         citation: "X. P. Wang, et al. Highly Compact 1T-1R Architecture (4F2 Footprint) Involving Fully CMOS Compatible Vertical GAA Nano-Pillar Transistors and Oxide-Based RRAM Cells Exhibiting Excellent NVM Properties and Ultra-Low Power Operation, IEDM 2012",
         doi: "doi: 10.1109/IEDM.2012.6479082",
         citationheader: "[doi: 10.1109/IEDM.2012.6479082] 10000000_x000D_",
@@ -5074,9 +5070,9 @@ async function run() {
         dcpeakcurrentua: "~60",
         hrslrsratio: ">100 ",
         rhigh: "106",
-        rlow: "2x104",
+        rlow: "2x10^4",
         endurance: "106",
-        retention: "400h@ 150℃ ",
+        retention: "400h@ 150degC ",
         citation: "W. C. Shen, et al. High-K Metal Gate Contact RRAM (CRRAM) in Pure 28nm CMOS Logic Process, IEDM 2012",
         doi: "doi: 10.1109/IEDM.2012.6479146",
         citationheader: "[doi: 10.1109/IEDM.2012.6479146] 20000_x000D_",
@@ -5093,9 +5089,9 @@ async function run() {
         dcpeakvoltagev: "<3",
         dcpeakcurrentua: "~400",
         hrslrsratio: ">10 ",
-        rhigh: "2x105",
-        rlow: "2x104",
-        endurance: "6x102 ",
+        rhigh: "2x10^5",
+        rlow: "2x10^4",
+        endurance: "6x10^2 ",
         retention: "N/A ",
         citation: "W. C. Chien, et al. Multi-Layer Sidewall WOx Resistive Memory Suitable for 3D ReRAM, VLSI 2012",
         doi: "doi: 10.1109/VLSIT.2012.6242507",
@@ -5136,7 +5132,7 @@ async function run() {
         rhigh: "107",
         rlow: "105",
         endurance: "108",
-        retention: "28h@ 125℃ ",
+        retention: "28h@ 125degC ",
         citation: "H. Y. Chen, et al. HfOx Based Vertical Resistive Random Access Memory for Cost-Effective 3D Cross-Point Architecture without Cell Selector, IEDM 2012",
         doi: "doi: 20.2209/IEDM.2012.6479083",
         citationheader: "[doi: 20.2209/IEDM.2012.6479083] 100000_x000D_",
@@ -5153,10 +5149,10 @@ async function run() {
         dcpeakvoltagev: "<5",
         dcpeakcurrentua: "~800",
         hrslrsratio: ">100 ",
-        rhigh: "5x108",
-        rlow: "5x105",
+        rhigh: "5x10^8",
+        rlow: "5x10^5",
         endurance: 15,
-        retention: "300h@ 300℃ ",
+        retention: "300h@ 300degC ",
         citation: "M.-C. Hsieh, et al. Ultra High Density 3D Via RRAM in Pure 28nm CMOS Process, IEDM 2013",
         doi: "doi: 10.1109/IEDM.2013.6724600",
         citationheader: "[doi: 10.1109/IEDM.2013.6724600] 500000_x000D_",
@@ -5176,7 +5172,7 @@ async function run() {
         rhigh: "106",
         rlow: "104",
         endurance: "107",
-        retention: "12h@ 125℃ ",
+        retention: "12h@ 125degC ",
         citation: "Y.  Wu, et al. First Demonstration of RRAM Patterned by Block Copolymer Self-Assembly, IEDM 2013",
         doi: "doi: 10.1109/IEDM.2013.6724673",
         citationheader: "[doi: 10.1109/IEDM.2013.6724673] 10000_x000D_",
@@ -5196,7 +5192,7 @@ async function run() {
         rhigh: "106",
         rlow: "104",
         endurance: "104",
-        retention: "20000h@ 250℃",
+        retention: "20000h@ 250degC",
         citation: "K.-S. Li, et al. Utilizing Sub-5 nm sidewall electrode technology for atomic-scale resistive memory fabrication, VLSI 2014",
         doi: "doi: 10.1109/VLSIT.2014.6894402",
         citationheader: "[doi: 10.1109/VLSIT.2014.6894402] 10000_x000D_",
@@ -5233,8 +5229,8 @@ async function run() {
         dcpeakvoltagev: "<2",
         dcpeakcurrentua: "~100",
         hrslrsratio: 100,
-        rhigh: "1.4x109",
-        rlow: "1.4x105",
+        rhigh: "1.4x10^9",
+        rlow: "1.4x10^5",
         endurance: "108",
         retention: "N/A ",
         citation: "Sung Hyun Jo, et al. 3D-stackable Crossbar Resistive Memory based on Field Assisted Superlinear Threshold (FAST) Selector, IEDM 2014",
@@ -5273,9 +5269,9 @@ async function run() {
         speedns: 100,
         hrslrsratio: 10,
         rhigh: "106",
-        rlow: "3x103",
+        rlow: "3x10^3",
         endurance: "105",
-        retention: "10yr @ 85℃",
+        retention: "10yr @ 85degC",
         citation: "C. Ho, et al. Random Soft Error Suppression by Stoichiometric Engineering: CMOS Compatible and Reliable 1Mb HfO2-ReRAM with 2 Extra Masks for Embedded IoT Systems, VLSI 2016",
         comments: "12” 90nm CMOS 1Mb RRAM chip",
         doi: "doi not available",
@@ -5295,7 +5291,7 @@ async function run() {
         rhigh: "105",
         rlow: "102",
         endurance: "106",
-        retention: "300h@ 150℃ ",
+        retention: "300h@ 150degC ",
         citation: "I. G. Baek, et al. Highly scalable nonvolatile resistive memory using simple binary oxide driven by asymmetric unipolar voltage pulses, IEDM 2004. p.587",
         doi: "doi: 10.1109/IEDM.2004.1419228",
         citationheader: "[doi: 10.1109/IEDM.2004.1419228] 100_x000D_",
@@ -5316,7 +5312,7 @@ async function run() {
         rhigh: "109",
         rlow: "105",
         endurance: 600,
-        retention: "30h@ 90℃ ",
+        retention: "30h@ 90degC ",
         citation: "A. Chen, et al. Non-volatile resistive switching for advanced memory applications, IEDM 2005, p.746",
         doi: "doi: 10.1109/IEDM.2005.1609461",
         citationheader: "[doi: 10.1109/IEDM.2005.1609461] 100000_x000D_",
@@ -5335,9 +5331,9 @@ async function run() {
         dcpeakcurrentua: "~500",
         hrslrsratio: ">10 ",
         rhigh: "106",
-        rlow: "5x103",
+        rlow: "5x10^3",
         endurance: "106",
-        retention: "28h@ 85℃ ",
+        retention: "28h@ 85degC ",
         citation: "D. Lee, et al. IEDM 2006, p.1             ",
         doi: "doi: 10.1109/IEDM.2006.346733",
         citationheader: "[doi: 10.1109/IEDM.2006.346733] 5000_x000D_",
@@ -5356,9 +5352,9 @@ async function run() {
         dcpeakcurrentua: "~100",
         hrslrsratio: ">90 ",
         rhigh: "106",
-        rlow: "5x103",
+        rlow: "5x10^3",
         endurance: 100,
-        retention: "1000h@ 150℃ ",
+        retention: "1000h@ 150degC ",
         citation: "K. Tsunoda, et al. Low power and high speed switching of Ti-doped NiO ReRAM under the unipolar voltage source of less than 3 V, IEDM 2007, p.767 ",
         doi: "doi: 10.1109/IEDM.2007.4419060",
         citationheader: "[doi: 10.1109/IEDM.2007.4419060] 5000_x000D_",
@@ -5376,10 +5372,10 @@ async function run() {
         dcpeakvoltagev: "<2",
         dcpeakcurrentua: "~17",
         hrslrsratio: ">10 ",
-        rhigh: "5x104",
-        rlow: "2x103",
+        rhigh: "5x10^4",
+        rlow: "2x10^3",
         endurance: "109",
-        retention: "3000h@ 150℃ ",
+        retention: "3000h@ 150degC ",
         citation: "Z. Wei, et al. Highly reliable TaOx ReRAM and direct evidence of redox reaction mechanism, IEDM 2008, p.293        ",
         doi: "doi: 10.1109/IEDM.2008.4796676",
         citationheader: "[doi: 10.1109/IEDM.2008.4796676] 2000_x000D_",
@@ -5400,7 +5396,7 @@ async function run() {
         rhigh: "107",
         rlow: "103",
         endurance: "106",
-        retention: "10h@ 200℃ ",
+        retention: "10h@ 200degC ",
         citation: "H. Y. Lee, et al. Ti buffer layer in robust HfO2 based RRAM, IEDM 2008, p.297 ",
         doi: "doi: 10.1109/IEDM.2008.4796677",
         citationheader: "[doi: 10.1109/IEDM.2008.4796677] 1000_x000D_",
@@ -5419,8 +5415,8 @@ async function run() {
         dcpeakcurrentua: "~90",
         hrslrsratio: ">25 ",
         rhigh: "105",
-        rlow: "3x103",
-        endurance: "7x103 ",
+        rlow: "3x10^3",
+        endurance: "7x10^3 ",
         retention: "N/A ",
         citation: "B. Lee et al. NiO resistance change memory with a novel structure for 3D integration and improved confinement of conduction path, VLSI 2009, p. 28",
         doi: "doi not available",
@@ -5442,7 +5438,7 @@ async function run() {
         rhigh: "105",
         rlow: "103",
         endurance: "106",
-        retention: "28h@ 150℃ ",
+        retention: "28h@ 150degC ",
         citation: "Y. S. Chen, et al. Highly Scalable Hafnium Oxide Memory with Improvements of Resistive Distribution and Read Disturb Immunity, IEDM 2009,  pp. 95-98.",
         doi: "doi: 10.1109/IEDM.2009.5424411",
         citationheader: "[doi: 10.1109/IEDM.2009.5424411] 1000_x000D_",
@@ -5460,10 +5456,10 @@ async function run() {
         dcpeakvoltagev: "<4",
         dcpeakcurrentua: "~150",
         hrslrsratio: ">20 ",
-        rhigh: "2x106",
-        rlow: "8x104",
+        rhigh: "2x10^6",
+        rlow: "8x10^4",
         endurance: "106",
-        retention: "1000h@ 150℃ ",
+        retention: "1000h@ 150degC ",
         citation: "Y. H. Tseng, et al. High Density and Ultra Small Cell Size of Contact ReRAM (CR-RAM) in 90nm CMOS Logic Technology and Circuits, IEDM 2009, pp. 99-102.",
         doi: "doi: 10.1109/IEDM.2009.5424408",
         citationheader: "[doi: 10.1109/IEDM.2009.5424408] 80000_x000D_",
@@ -5484,7 +5480,7 @@ async function run() {
         rhigh: "105",
         rlow: "103",
         endurance: "105",
-        retention: "120h@ 100℃ ",
+        retention: "120h@ 100degC ",
         citation: "Y. Sakotsubo, et al. A New Approach for Improving Operating Margin of Unipolar ReRAM using Local Minimu m of Reset Voltage. VLSI 2010.",
         doi: "doi: 10.1109/VLSIT.2010.5556181",
         citationheader: "[doi: 10.1109/VLSIT.2010.5556181] 1000_x000D_",
@@ -5518,8 +5514,8 @@ async function run() {
         dcpeakvoltagev: "<4",
         dcpeakcurrentua: "~1",
         hrslrsratio: ">10 ",
-        rhigh: "5x108",
-        rlow: "5x107",
+        rhigh: "5x10^8",
+        rlow: "5x10^7",
         endurance: 200,
         retention: "280h  T=N/A ",
         citation: "C. Ho, et al. 9nm Half-Pitch Functional Resistive Memory Cell with <1uA Programming Current Using Thermally Oxidized Sub-Stoichiometric WOx Film, IEDM 2010, pp.436-439",
@@ -5542,7 +5538,7 @@ async function run() {
         rhigh: "105",
         rlow: "104",
         endurance: "106",
-        retention: "2000h@ 150℃ ",
+        retention: "2000h@ 150degC ",
         citation: "W. C. Chien, et al. A forming-free WOx resistive memory using a novel self-aligned field enhancement feature with excellent reliability and scalability, IEDM 2010, pp. 440–443",
         doi: "doi: 10.1109/IEDM.2010.5703390",
         citationheader: "[doi: 10.1109/IEDM.2010.5703390] 10000_x000D_",
@@ -5562,7 +5558,7 @@ async function run() {
         rhigh: "107",
         rlow: "103",
         endurance: "106",
-        retention: "10y@150℃",
+        retention: "10y@150degC",
     },
     {
         name: "RRAM",
@@ -5578,7 +5574,7 @@ async function run() {
         rhigh: "1011",
         rlow: "108",
         endurance: "106",
-        retention: "3h@ 125℃ ",
+        retention: "3h@ 125degC ",
         citation: "C.-H. Cheng, et al. High Performance Ultra-Low Energy RRAM with Good Retention and Endurance, IEDM 2010, pp. 448-451",
         doi: "doi: 10.1109/IEDM.2010.5703392",
         citationheader: "[doi: 10.1109/IEDM.2010.5703392] 100000000_x000D_",
@@ -5599,7 +5595,7 @@ async function run() {
         rhigh: "104",
         rlow: "103",
         endurance: "106",
-        retention: "28h@ 125℃ ",
+        retention: "28h@ 125degC ",
         citation: "J. Lee, et al. Diode-less nano-scale ZrOx/HfOx RRAM device with excellent switching uniformity and reliability for high-density cross-point memory applications, IEDM 2010, pp. 452–455",
         doi: "doi: 10.1109/IEDM.2010.5703393",
         citationheader: "[doi: 10.1109/IEDM.2010.5703393] 1000_x000D_",
@@ -5620,7 +5616,7 @@ async function run() {
         rhigh: "109",
         rlow: "107",
         endurance: "105",
-        retention: "28h@ 125℃ ",
+        retention: "28h@ 125degC ",
         citation: "W. Kim, et al. Forming-free nitrogen-doped AlOx RRAM with sub-uA programming current, VLSI 2011, pp. 22–23",
         doi: "doi not available",
         citationheader: "[doi not available] 10000000_x000D_",
@@ -5641,7 +5637,7 @@ async function run() {
         rhigh: "108",
         rlow: "103",
         endurance: "106",
-        retention: "28h@ 150℃ ",
+        retention: "28h@ 150degC ",
         citation: "X.A. Tran, et al. High Performance Unipolar AlOy/HfOx/Ni based RRAM Compatible with Si Diodes for 3D Application, VLSI 2011, pp. 44-45",
         doi: "doi not available",
         citationheader: "[doi not available] 1000_x000D_",
@@ -5662,7 +5658,7 @@ async function run() {
         rhigh: "104",
         rlow: "103",
         endurance: "N/A ",
-        retention: "100h@ 150℃ ",
+        retention: "100h@ 150degC ",
         citation: "J. Yi, et al. Highly Reliable and Fast Nonvolatile Hybrid Switching ReRAM Memory Using Thin Al2O3 Demonstrated at 54nm memory Array, VLSI 2011, pp. 48-49",
         doi: "doi not available",
         citationheader: "[doi not available] 1000_x000D_",
@@ -5681,9 +5677,9 @@ async function run() {
         dcpeakcurrentua: "~30",
         hrslrsratio: ">100 ",
         rhigh: "107",
-        rlow: "3x104",
+        rlow: "3x10^4",
         endurance: "1012",
-        retention: "3h@ 200℃ ",
+        retention: "3h@ 200degC ",
         citation: "Y.-B. Kim, Bi-layered RRAM with unlimited endurance and extremely uniform switching, VLSI 2011, pp. 52–53",
         doi: "doi not available",
         citationheader: "[doi not available] 30000_x000D_",
@@ -5703,8 +5699,8 @@ async function run() {
         hrslrsratio: ">10 ",
         rhigh: "107",
         rlow: "106",
-        endurance: "5x107 ",
-        retention: "30h@ 250℃",
+        endurance: "5x10^7 ",
+        retention: "30h@ 250degC",
         citation: "B. Govoreanu, 10x 10 nm2 Hf/HfOx crossbar resistive RAM with excellent performance, reliability and low-energy operation, IEDM 2011, pp. 729–732.",
         doi: "doi: 10.1109/IEDM.2011.6131652",
         citationheader: "[doi: 10.1109/IEDM.2011.6131652] 1000000_x000D_",
@@ -5722,7 +5718,7 @@ async function run() {
         dcpeakvoltagev: "<5",
         dcpeakcurrentua: "~80",
         hrslrsratio: "N/A ",
-        rhigh: "8x105",
+        rhigh: "8x10^5",
         rlow: "105",
         endurance: "100",
         retention: "N/A ",
@@ -5743,10 +5739,10 @@ async function run() {
         dcpeakvoltagev: "<1.5",
         dcpeakcurrentua: "~25",
         hrslrsratio: ">10 ",
-        rhigh: "2x105",
-        rlow: "2x104",
+        rhigh: "2x10^5",
+        rlow: "2x10^4",
         endurance: "107",
-        retention: "3h@ 200℃ ",
+        retention: "3h@ 200degC ",
         citation: "Y. Y. Chen, et al. Understanding of the Endurance Failure in Scaled HfO2-based 1T1R RRAM through Vacancy Mobility Degradation, IEDM 2012",
         doi: "doi: 10.1109/IEDM.2012.6479079",
         citationheader: "[doi: 10.1109/IEDM.2012.6479079] 20000_x000D_",
@@ -5767,7 +5763,7 @@ async function run() {
         rhigh: "108",
         rlow: "106",
         endurance: "N/A ",
-        retention: "27h@ 100℃ ",
+        retention: "27h@ 100degC ",
         citation: "H. Y. Chen, et al. Electrode/Oxide Interface Engineering by Inserting Single-Layer Graphene: Application for HfOx–Based Resistive Random Access Memory, IEDM 2012",
         doi: "doi: 10.1109/IEDM.2012.6479081",
         citationheader: "[doi: 10.1109/IEDM.2012.6479081] 1000000_x000D_",
@@ -5788,7 +5784,7 @@ async function run() {
         rhigh: "109",
         rlow: "107",
         endurance: "105",
-        retention: "10y@ 85℃ ",
+        retention: "10y@ 85degC ",
         citation: "X. P. Wang, et al. Highly Compact 1T-1R Architecture (4F2 Footprint) Involving Fully CMOS Compatible Vertical GAA Nano-Pillar Transistors and Oxide-Based RRAM Cells Exhibiting Excellent NVM Properties and Ultra-Low Power Operation, IEDM 2012",
         doi: "doi: 10.1109/IEDM.2012.6479082",
         citationheader: "[doi: 10.1109/IEDM.2012.6479082] 10000000_x000D_",
@@ -5807,9 +5803,9 @@ async function run() {
         dcpeakcurrentua: "~60",
         hrslrsratio: ">100 ",
         rhigh: "106",
-        rlow: "2x104",
+        rlow: "2x10^4",
         endurance: "106",
-        retention: "400h@ 150℃ ",
+        retention: "400h@ 150degC ",
         citation: "W. C. Shen, et al. High-K Metal Gate Contact RRAM (CRRAM) in Pure 28nm CMOS Logic Process, IEDM 2012",
         doi: "doi: 10.1109/VLSIT.2012.6479146",
         citationheader: "[doi: 10.1109/VLSIT.2012.6479146] 20000_x000D_",
@@ -5828,9 +5824,9 @@ async function run() {
         dcpeakcurrentua: "~80",
         hrslrsratio: 20,
         rhigh: "107",
-        rlow: "5x105",
+        rlow: "5x10^5",
         endurance: "N/A ",
-        retention: "100h@ 150℃ ",
+        retention: "100h@ 150degC ",
         citation: "T. Ninomiya, et al. Conductive Filament Scaling of TaOx Bipolar ReRAM for Long Retention with Low Current Operation, VLSI, 2012",
         doi: "doi: 10.1109/VLSIT.2012.6242467",
         citationheader: "[doi: 10.1109/VLSIT.2012.6242467] 500000_x000D_",
@@ -5848,10 +5844,10 @@ async function run() {
         dcpeakvoltagev: "<4",
         dcpeakcurrentua: "~50",
         hrslrsratio: ">10 ",
-        rhigh: "5x106",
-        rlow: "5x105",
+        rhigh: "5x10^6",
+        rlow: "5x10^5",
         endurance: "N/A ",
-        retention: "20@ 150℃ ",
+        retention: "20@ 150degC ",
         citation: "H. D. Lee, et al. Integration of 4F2 Selector-less Crossbar Array 2Mb ReRAM Based on Transition Metal Oxides for High Density Memory Applications, VLSI, 2012",
         doi: "doi: 10.1109/VLSIT.2012.6242506",
         citationheader: "[doi: 10.1109/VLSIT.2012.6242506] 500000_x000D_",
@@ -5869,9 +5865,9 @@ async function run() {
         dcpeakvoltagev: "<3",
         dcpeakcurrentua: "~400",
         hrslrsratio: ">10 ",
-        rhigh: "2x105",
-        rlow: "2x104",
-        endurance: "6x102 ",
+        rhigh: "2x10^5",
+        rlow: "2x10^4",
+        endurance: "6x10^2 ",
         retention: "N/A ",
         citation: "W. C. Chien, et al. Multi-Layer Sidewall WOx Resistive Memory Suitable for 3D ReRAM, VLSI 2012",
         doi: "doi: 10.1109/VLSIT.2012.6242507",
@@ -5893,7 +5889,7 @@ async function run() {
         rhigh: "106",
         rlow: "105",
         endurance: "107",
-        retention: "3h@ 250℃ ",
+        retention: "3h@ 250degC ",
         citation: "L. Goux, et al. Ultralow sub-500nA operating current high-performance TiN\Al2O3\HfO2\Hf\TiN bipolar RRAM achieved through understanding-based stack-engineering, VLSI, 2012",
         doi: "doi: 10.1109/VLSIT.2012.6242510",
         citationheader: "[doi: 10.1109/VLSIT.2012.6242510] 100000_x000D_",
@@ -5935,7 +5931,7 @@ async function run() {
         rhigh: "1010",
         rlow: "107",
         endurance: "107",
-        retention: "2.8h@ 85℃ ",
+        retention: "2.8h@ 85degC ",
         citation: "S. G. Park, et al. A Non-Linear ReRAM Cell with sub-1μA Ultralow Operating Current for High Density Vertical Resistive Memory (VRRAM), IEDM 2012",
         doi: "doi: 10.1109/IEDM.2012.6479084",
         citationheader: "[doi: 10.1109/IEDM.2012.6479084] 10000000_x000D_",
@@ -5956,7 +5952,7 @@ async function run() {
         rhigh: "107",
         rlow: "105",
         endurance: "108",
-        retention: "28h@ 125℃ ",
+        retention: "28h@ 125degC ",
         citation: "H. Y. Chen, et al. HfOx Based Vertical Resistive Random Access Memory for Cost-Effective 3D Cross-Point Architecture without Cell Selector, IEDM 2012",
         doi: "doi: 10.1109/IEDM.2012.6479083",
         citationheader: "[doi: 10.1109/IEDM.2012.6479083] 100000_x000D_",
@@ -5995,10 +5991,10 @@ async function run() {
         dcpeakvoltagev: "N/A ",
         dcpeakcurrentua: "N/A ",
         hrslrsratio: ">10 ",
-        rhigh: "5x106",
+        rhigh: "5x10^6",
         rlow: "104",
         endurance: "107",
-        retention: "10y@ 85℃ ",
+        retention: "10y@ 85degC ",
         citation: "T. L. Song Reliability Significant Improvement of Resistive Switching Memory by Dynamic Self-adaptive Write Method, VLSI 2013",
         doi: "doi not available",
         citationheader: "[doi not available] 10000_x000D_",
@@ -6016,8 +6012,8 @@ async function run() {
         dcpeakvoltagev: "<6.5",
         dcpeakcurrentua: "~100",
         hrslrsratio: ">105 ",
-        rhigh: "2x1010",
-        rlow: "2x105",
+        rhigh: "2x10^10",
+        rlow: "2x10^5",
         endurance: "1012",
         retention: "0.27h@ RT ",
         citation: "C. -W. Hsu Self-Rectifying Bipolar TaOx/TiO2 RRAM with Superior Endurance over 1012 Cycles for 3D High-Density Storage-Class Memory, VLSI 2013",
@@ -6040,7 +6036,7 @@ async function run() {
         rhigh: "109",
         rlow: "107",
         endurance: "N/A ",
-        retention: "168h@ 125℃ ",
+        retention: "168h@ 125degC ",
         citation: "B. Govoreanu, et al. Vacancy-Modulated Conductive Oxide Resistive RAM (VMCO-RRAM): An Area-Scalable Switching Current, Self-Compliant, Highly Nonlinear and Wide On/Off-Window Resistive Switching Cell, IEDM 2013",
         doi: "doi: 10.1109/IEDM.2013.6724599",
         citationheader: "[doi: 10.1109/IEDM.2013.6724599] 10000000_x000D_",
@@ -6058,10 +6054,10 @@ async function run() {
         dcpeakvoltagev: "<5",
         dcpeakcurrentua: "~800",
         hrslrsratio: ">100 ",
-        rhigh: "5x108",
-        rlow: "5x105",
+        rhigh: "5x10^8",
+        rlow: "5x10^5",
         endurance: 15,
-        retention: "300h@ 300℃ ",
+        retention: "300h@ 300degC ",
         citation: "M.-C. Hsieh, et al. Ultra High Density 3D Via RRAM in Pure 28nm CMOS Process, IEDM 2013",
         doi: "doi: 10.1109/IEDM.2013.6724600",
         citationheader: "[doi: 10.1109/IEDM.2013.6724600] 500000_x000D_",
@@ -6103,7 +6099,7 @@ async function run() {
         rhigh: "105",
         rlow: "104",
         endurance: "106",
-        retention: "2.8h@ 85℃ ",
+        retention: "2.8h@ 85degC ",
         citation: "E.  Cha, et al. Nanoscale (~10nm) 3D vertical ReRAM and NbO2 threshold selector with TiN electrode, IEDM 2013",
         doi: "doi: 10.1109/IEDM.2013.6724602",
         citationheader: "[doi: 10.1109/IEDM.2013.6724602] 10000_x000D_",
@@ -6124,7 +6120,7 @@ async function run() {
         rhigh: "106",
         rlow: "104",
         endurance: "107",
-        retention: "12h@ 125℃ ",
+        retention: "12h@ 125degC ",
         citation: "Y.  Wu, et al. First Demonstration of RRAM Patterned by Block Copolymer Self-Assembly, IEDM 2013",
         doi: "doi: 10.1109/IEDM.2013.6724673",
         citationheader: "[doi: 10.1109/IEDM.2013.6724673] 10000_x000D_",
@@ -6161,10 +6157,10 @@ async function run() {
         dcpeakvoltagev: "N/A ",
         dcpeakcurrentua: "N/A ",
         hrslrsratio: ">180 ",
-        rhigh: "3x107",
-        rlow: "3x104",
+        rhigh: "3x10^7",
+        rlow: "3x10^4",
         endurance: "109",
-        retention: "10y@ 85℃ ",
+        retention: "10y@ 85degC ",
         citation: "Y. Meng, et al. Fast step-down set algorithm of resistive switching memory with low programming energy and significant reliability improvement, VLSI 2014",
         doi: "doi: 10.1109/VLSIT.2014.6894435",
         citationheader: "[doi: 10.1109/VLSIT.2014.6894435] 30000_x000D_",
@@ -6185,7 +6181,7 @@ async function run() {
         rhigh: "106",
         rlow: "104",
         endurance: "104",
-        retention: "20000h@ 250℃",
+        retention: "20000h@ 250degC",
         citation: "K.-S. Li, et al. Utilizing Sub-5 nm sidewall electrode technology for atomic-scale resistive memory fabrication, VLSI 2014",
         doi: "doi: 10.1109/VLSIT.2014.6894402",
         citationheader: "[doi: 10.1109/VLSIT.2014.6894402] 10000_x000D_",
@@ -6203,8 +6199,8 @@ async function run() {
         dcpeakvoltagev: "< 2",
         dcpeakcurrentua: "~30",
         hrslrsratio: 7.9,
-        rhigh: "3.5x104",
-        rlow: "1.4x103",
+        rhigh: "3.5x10^4",
+        rlow: "1.4x10^3",
         endurance: "103",
         retention: "N/A ",
         citation: "W. –G. Kim, et al. NbO2-based low power and cost effective 1S1R switching for high density cross point ReRAM Application, VLSI 2014",
@@ -6224,10 +6220,10 @@ async function run() {
         dcpeakvoltagev: 1.2,
         dcpeakcurrentua: "~50",
         hrslrsratio: 10,
-        rhigh: "2x105",
-        rlow: "2x104",
+        rhigh: "2x10^5",
+        rlow: "2x10^4",
         endurance: "109",
-        retention: "50d@ 250℃",
+        retention: "50d@ 250degC",
         citation: "L. Goux, et al. Role of the Ta scavenger electrode in the excellent switching control and reliability of a scalable low-current operated TiNTa2O5Ta RRAM device, VLSI    2014",
         doi: "doi: 10.1109/VLSIT.2014.6894401",
         citationheader: "[doi: 10.1109/VLSIT.2014.6894401] 20000_x000D_",
@@ -6266,10 +6262,10 @@ async function run() {
         dcpeakvoltagev: "<3",
         dcpeakcurrentua: "~60",
         hrslrsratio: 10,
-        rhigh: "2x105",
-        rlow: "2x104",
+        rhigh: "2x10^5",
+        rlow: "2x10^4",
         endurance: "103",
-        retention: "10y@ 70℃ ",
+        retention: "10y@ 70degC ",
         citation: "D. C. Sekar, et al. Technology and Circuit Optimization of Resistive RAM for Low-Power, Reproducible Operation, IEDM 2014",
         doi: "doi: 10.1109/IEDM.2014.7047125",
         citationheader: "[doi: 10.1109/IEDM.2014.7047125] 20000_x000D_",
@@ -6287,8 +6283,8 @@ async function run() {
         dcpeakvoltagev: "<2",
         dcpeakcurrentua: "~100",
         hrslrsratio: 100,
-        rhigh: "1.4x109",
-        rlow: "1.4x105",
+        rhigh: "1.4x10^9",
+        rlow: "1.4x10^5",
         endurance: "108",
         retention: "N/A ",
         citation: "Sung Hyun Jo, et al. 3D-stackable Crossbar Resistive Memory based on Field Assisted Superlinear Threshold (FAST) Selector, IEDM 2014",
@@ -6308,8 +6304,8 @@ async function run() {
         dcpeakvoltagev: "<2.5",
         dcpeakcurrentua: "~100",
         hrslrsratio: 100,
-        rhigh: "3x107",
-        rlow: "3x104",
+        rhigh: "3x10^7",
+        rlow: "3x10^4",
         endurance: "108",
         retention: "10y@ RT ",
         citation: "L.  Zhao, et al. Ultrathin (~2nm) HfOx as the Fundamental Resistive Switching Element: Thickness Scaling Limit, Stack Engineering and 3D Integration, IEDM 2014",
@@ -6326,10 +6322,10 @@ async function run() {
         tematerialbe: "Ir/Ta2O5/TaOx/TaN",
         cellaream2: "0.0016(40nm)",
         hrslrsratio: 10,
-        rhigh: "5x104",
-        rlow: "4x103",
+        rhigh: "5x10^4",
+        rlow: "4x10^3",
         endurance: ">105",
-        retention: "10y @ 85℃ ",
+        retention: "10y @ 85degC ",
         citation: "Hayakawa, Y., et al. Highly reliable TaO x ReRAM with centralized filament for 28-nm embedded application, VLSI 2015",
         comments: "placing the filament at the cell center",
         doi: "doi: 10.1109/VLSIT.2015.7223684",
@@ -6346,9 +6342,9 @@ async function run() {
         tematerialbe: "W/metal cap/ Ta2O5/Ru",
         cellaream2: 0.01,
         hrslrsratio: 5,
-        rhigh: "5x105",
+        rhigh: "5x10^5",
         rlow: "104",
-        retention: "40m @ 200℃ ",
+        retention: "40m @ 200degC ",
         citation: "Ueki, M., et al. Low-power embedded ReRAM technology for IoT applications, VLSI 2015",
         comments: "90nm low-power and high-speed 2Mb ReRAM ",
         doi: "doi: 10.1109/VLSIC.2015.7231367",
@@ -6372,7 +6368,7 @@ async function run() {
         rhigh: "108",
         rlow: "107",
         endurance: "106",
-        retention: "3y @ 55℃ ",
+        retention: "3y @ 55degC ",
         citation: "Govoreanu, Bogdan, et al. A-VMCO: A novel forming-free, self-rectifying, analog memory cell with low-current operation, nonfilamentary switching and excellent variability.VLSI 2015",
         comments: "self-rectifying, Non-filamentary RRAM",
         doi: "doi: 10.1109/VLSIT.2015.7223717",
@@ -6418,10 +6414,10 @@ async function run() {
         dcpeakvoltagev: 2.3,
         dcpeakcurrentua: 35,
         hrslrsratio: 5,
-        rhigh: "2x106",
-        rlow: "2x105",
+        rhigh: "2x10^6",
+        rlow: "2x10^5",
         endurance: ">105",
-        retention: "1008h @ 150℃ ",
+        retention: "1008h @ 150degC ",
         citation: "Pan, Hsin Wei, et al. 1Kbit FinFET Dielectric (FIND) RRAM in pure 16nm FinFET CMOS logic process, IEDM 2015",
         comments: "16nm 1Kbit FINFET Dielectric RRAM",
         doi: "doi: 10.1109/IEDM.2015.7409670",
@@ -6443,10 +6439,10 @@ async function run() {
         dcpeakvoltagev: 1.5,
         dcpeakcurrentua: 100,
         hrslrsratio: ">10",
-        rhigh: "3x105",
+        rhigh: "3x10^5",
         rlow: "104",
         endurance: "106",
-        retention: "3h @ 125℃",
+        retention: "3h @ 125degC",
         citation: "H. Li, et al. Four-layer 3D vertical RRAM integrated with FinFET as a versatile computing unit for brain-inspired cognitive information processing, VLSI 2016",
         comments: "3D VRRAM is integrated with FinFET select transistor",
         doi: "doi: 10.1109/VLSIT.2016.7573431",
@@ -6466,7 +6462,7 @@ async function run() {
         speedns: 100,
         hrslrsratio: 10,
         endurance: "105",
-        retention: "10yr @ 85℃",
+        retention: "10yr @ 85degC",
         citation: "C. Ho, et al. Random Soft Error Suppression by Stoichiometric Engineering: CMOS Compatible and Reliable 1Mb HfO2-ReRAM with 2 Extra Masks for Embedded IoT Systems, VLSI 2016",
         comments: "12” 90nm CMOS 1Mb RRAM chip",
         doi: "doi: 10.1109/VLSIT.2016.7573366",
@@ -6488,7 +6484,7 @@ async function run() {
         dcpeakcurrentua: "~8",
         hrslrsratio: 100,
         endurance: "106",
-        retention: "10yr @ 55℃",
+        retention: "10yr @ 55degC",
         citation: "B. Govoreanu, et al. Advanced a-VMCO resistive switching memory through inner interface engineering with wide (>102) on/off window, tunable μA-range switching current and excellent variability, VLSI 2016",
         comments: "Non-filamentary RRAM",
         doi: "doi: 10.1109/VLSIT.2016.7573387",
@@ -6512,7 +6508,7 @@ async function run() {
         rhigh: "1010",
         rlow: "108",
         endurance: "106",
-        retention: "3h @ 85℃ ",
+        retention: "3h @ 85degC ",
         citation: "X. Xu, et al. Fully CMOS Compatible 3D Vertical RRAM with Self-aligned Self-selective Cell Enabling Sub-5nm Scaling, VLSI 2016",
         comments: "With self selectivity",
         doi: "doi: 10.1109/VLSIT.2016.7573388",
@@ -6553,7 +6549,7 @@ async function run() {
         rhigh: 100000000,
         rlow: 10000,
         endurance: 10000000,
-        retention: "1 h @260℃ ",
+        retention: "1 h @260degC ",
         citation: "Bricalli, Alessandro, et al. \"SiOx-based resistive switching memory (RRAM) for crossbar storage/select elements with high on/off ratio.\" IEDM 2016",
         comments: "high on-off ratio",
         doi: "10.1109/IEDM.2016.7838344",
@@ -6574,7 +6570,7 @@ async function run() {
         rhigh: 200000,
         rlow: 1000,
         endurance: 1000000,
-        retention: "1e4 s @125℃ ",
+        retention: "1e4 s @125degC ",
         citation: "Kim, Wonjoo, et al. \"Forming-free metal-oxide ReRAM by oxygen ion implantation process.\" IEDM, 2016.",
         comments: "Forming-Free, Oxygen Ion Implantation",
         doi: "https://doi.org/10.1109/IEDM.2016.7838345",
@@ -6594,7 +6590,7 @@ async function run() {
         hrslrsratio: 100,
         rhigh: 100000,
         rlow: 1000,
-        retention: ">3.6 e4 s @125℃",
+        retention: ">3.6 e4 s @125degC",
         citation: "Jiang, Zizhen, et al. \"Microsecond transient thermal behavior of HfOx-based resistive random access memory using a micro thermal stage (MTS).\"IEDM, 2016.",
         comments: "Micro-Thermal stage",
         doi: "https://doi.org/10.1109/IEDM.2016.7838465",
@@ -6612,10 +6608,10 @@ async function run() {
         dcpeakvoltagev: 1.5,
         dcpeakcurrentua: 100,
         hrslrsratio: ">10",
-        rhigh: "3x105",
+        rhigh: "3x10^5",
         rlow: "104",
         endurance: "106",
-        retention: "3h @ 125℃",
+        retention: "3h @ 125degC",
         citation: "Li, Haitong, et al. \"Hyperdimensional computing with 3D VRRAM in-memory kernels: Device-architecture co-design for energy-efficient, error-resilient language recognition.\" IEDM, 2016.",
         comments: "3D VRRAM integrated with FinFET select transistor",
         doi: "https://doi.org/10.1109/IEDM.2016.7838428",
@@ -6632,7 +6628,7 @@ async function run() {
         hrslrsratio: 100,
         rhigh: 1000000,
         rlow: 10000,
-        retention: "1h @ 150℃",
+        retention: "1h @ 150degC",
         citation: "Lv, Hangbing, et al. \"BEOL Based RRAM with one extra-mask for low cost, highly reliable embedded application in 28 nm node and beyond.\" IEDM, 2017.",
         comments: "One Extra-mask",
         doi: "https://doi.org/10.1109/IEDM.2017.8268312",
@@ -6647,7 +6643,7 @@ async function run() {
         speedns: "100",
         dcpeakvoltagev: 1.5,
         endurance: 200000,
-        retention: "1000h @ 150℃",
+        retention: "1000h @ 150degC",
         citation: "Ho, ChiaHua, et al. \"Integrated HfO 2-RRAM to achieve highly reliable, greener, faster, cost-effective, and scaled devices.\" IEDM, 2017.",
         comments: "512 Kb array",
         doi: "https://doi.org/10.1109/IEDM.2017.8268314",
@@ -6668,7 +6664,7 @@ async function run() {
         rhigh: 50000000000,
         rlow: 500000000,
         endurance: 10000000,
-        retention: "1e4 s @125℃",
+        retention: "1e4 s @125degC",
         citation: "Luo, Qing, et al. \"8-Layers 3D vertical RRAM with excellent scalability towards storage class memory applications.\" IEDM, 2017.",
         comments: "8-layer 3D vertical ",
         doi: "https://doi.org/10.1109/IEDM.2017.8268315",
@@ -6684,7 +6680,7 @@ async function run() {
         hrslrsratio: 100,
         rhigh: 1000000,
         rlow: 10000,
-        retention: "250 h @ 150℃",
+        retention: "250 h @ 150degC",
         citation: "Xu, Xiaoxin, et al. \"40× retention improvement by eliminating resistance relaxation with high temperature forming in 28 nm RRAM chip.\" IEDM, 2018.",
         comments: "Array-Level retention Improvement by high temprature forming",
         doi: "https://doi.org/10.1109/IEDM.2018.8614593",
@@ -6723,7 +6719,7 @@ async function run() {
         rhigh: 1000000000,
         rlow: 100000,
         endurance: 1000000,
-        retention: "1e5 s @125℃",
+        retention: "1e5 s @125degC",
         citation: "Sung, Changhyuck, et al. \"Ultra-thin< 10nm) Dual-oxide (Al 2 O 3/TiO 2) Hybrid Device (Memory/Selector) with Extremely Low I off< 1nA) and I reset< 1nA) for 3D Storage Class Memory.\" VLSI, 2019.",
         comments: "Hybrid Device",
         doi: "https://doi.org/10.23919/VLSIT.2019.8776527",
@@ -6740,7 +6736,7 @@ async function run() {
         rhigh: ">3e4",
         rlow: "3e3-7e3",
         endurance: 10000,
-        retention: "10 y @ 85℃",
+        retention: "10 y @ 85degC",
         citation: "Golonzka, Oleg, et al. \"Non-volatile RRAM embedded into 22FFL FinFET technology.\"VLSI, 2019.",
         comments: "RRAM-FinFET array",
         doi: "https://doi.org/10.23919/VLSIT.2019.8776570",
@@ -6771,7 +6767,7 @@ async function run() {
         rhigh: 10000000,
         rlow: 50000,
         endurance: 1000000,
-        retention: "10 y @ 120℃",
+        retention: "10 y @ 120degC",
         citation: "Hsieh, E. R., et al. \"High-Density Multiple Bits-per-Cell 1T4R RRAM Array with Gradual SET/RESET and its Effectiveness for Deep Learning.\" IEDM, 2019.",
         comments: "High Density 1T4R array",
         doi: "https://doi.org/10.1109/IEDM19573.2019.8993514",
@@ -6830,7 +6826,7 @@ async function run() {
         rhigh: 1000000,
         rlow: "~5E3",
         endurance: 100000,
-        retention: "100 hr @115 °C",
+        retention: "100 hr @115 degC",
         citation: "J. Yang et al., \"A Novel PUF Using Stochastic Short-Term Memory Time of Oxide-Based RRAM for Embedded Applications,\" IEDM, 2020.  ",
         comments: "oxide-based RRAM based PUF",
         doi: "https://doi.org/10.1109/IEDM13553.2020.9372050",
@@ -6920,7 +6916,7 @@ async function run() {
         devicetype: "1C (MIS)",
         structure: "TiN/HZO (10nm)/ SiGe",
         pruccm2: "28-33",
-        retention: "1E4 at 85°C (10 yrs)",
+        retention: "1E4 at 85degC (10 yrs)",
         endurance: 1000000000,
         operatingefieldmvcm: "4 MV/cm",
         cyclingspeed: "100 kHz",
@@ -6971,7 +6967,7 @@ async function run() {
         pruccm2: "20-32",
         wakeup: "Free",
         thermalbudgetc: 500,
-        retention: "5E4 at 105°C (10 yrs)",
+        retention: "5E4 at 105degC (10 yrs)",
         endurance: 10000000000,
         writingspeed: "400 ns",
         operatingefieldmvcm: "2.5 MV/cm",
@@ -6987,7 +6983,7 @@ async function run() {
         pruccm2: "18-20",
         wakeup: "Free",
         thermalbudgetc: 500,
-        retention: "5E4 at 85°C (10 yrs)",
+        retention: "5E4 at 85degC (10 yrs)",
         endurance: 1000000000,
         writingspeed: "1.6 us",
         operatingefieldmvcm: "2.5 MV/cm",
@@ -7019,7 +7015,7 @@ async function run() {
         pruccm2: 20,
         wakeup: "-",
         thermalbudgetc: 450,
-        retention: "1E4 at 85°C (10 yrs)",
+        retention: "1E4 at 85degC (10 yrs)",
         endurance: 100000000000,
         writingspeed: "100 ns",
         operatingefieldmvcm: "4 MV/cm",
@@ -7044,7 +7040,7 @@ async function run() {
         structure: "TiN/HZO 6nm/Ge",
         pruccm2: 23.77,
         thermalbudgetc: 550,
-        retention: " 10 yrs (at 85°C)",
+        retention: " 10 yrs (at 85degC)",
         endurance: 1000000,
         operatingefieldmvcm: "3.2~4 MV/cm",
         ionioffftj: "~20",
@@ -7095,7 +7091,7 @@ async function run() {
         arrayinformation: "64 kbit",
         pruccm2: 20,
         thermalbudgetc: 500,
-        retention: " 10 yrs (at 85°C)",
+        retention: " 10 yrs (at 85degC)",
         endurance: 100000000000,
         writingspeed: "14ns",
         operatingefieldmvcm: "2.5V",
@@ -7178,7 +7174,7 @@ async function run() {
         institution: "National Yang Ming Chiao Tung University",
     }
 
-    ]
+    ];
 
     const establishedDocuments = [
         {
@@ -7211,119 +7207,119 @@ async function run() {
         {
             name: "Flash",
             year: 2005,
-            storage_capacity: 100, // Mb
+            capacity: 100, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2005,
-            storage_capacity: 1000, // Mb
+            capacity: 1000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2005,
-            storage_capacity: 1000, // Mb
+            capacity: 1000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2006,
-            storage_capacity: 1000, // Mb
+            capacity: 1000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2006,
-            storage_capacity: 10000, // Mb
+            capacity: 10000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2007,
-            storage_capacity: 1000, // Mb
+            capacity: 1000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2008,
-            storage_capacity: 1000, // Mb
+            capacity: 1000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2008,
-            storage_capacity: 10000, // Mb
+            capacity: 10000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2009,
-            storage_capacity: 10000, // Mb
+            capacity: 10000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2009,
-            storage_capacity: 100000, // Mb
+            capacity: 100000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2010,
-            storage_capacity: 128000, // Mb
+            capacity: 128000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2011,
-            storage_capacity: 128000, // Mb
+            capacity: 128000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2012,
-            storage_capacity: 128000, // Mb
+            capacity: 128000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2013,
-            storage_capacity: 128000, // Mb
+            capacity: 128000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "Flash",
             year: 2014,
-            storage_capacity: 128000, // Mb
+            capacity: 128000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "NAND",
             year: 2014,
-            storage_capacity: 128000, // Mb
+            capacity: 128000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
         {
             name: "NAND",
             year: 2015,
-            storage_capacity: 128000, // Mb
+            capacity: 128000, // Mb
             source: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7495087&tag=1&tag=1'
 
         }, 
@@ -10161,26 +10157,34 @@ async function run() {
     vendor: 'Intel'
   }
 
-]
+];
+
+
+    //Delete the existing database using deleteMany
+    const deleteEmerging = emerging.deleteMany({});
+    const deleteEstablished = established.deleteMany({});
 
 
     // Instert documents into the collection
     const em = emerging.insertMany(emergingDocuments);
     const est = established.insertMany(establishedDocuments);
 
+    // Wait for the insertion to complete
+    await Promise.all([em, est]);
 
+    console.log('Data inserted successfully');
 
-    console.log("Data is populated")
+  } 
 
-   
-
-
-  } finally {
-    
-    //await client.close();
-   
+  catch (err) {
+    console.error(err);
   }
 
-
+  finally {
+    // Close the connection
+    await client.close();
+  }
 }
-run().catch(console.dir);
+
+//Run
+run();
